@@ -1,14 +1,9 @@
-# TODO: Add Missing Years (10-13) and Folder Structures
-
-- [x] Create directories for y10, y11, y12, y13
-- [x] Create yr{year}-index.html for each new year
-- [ ] Create subjects/english/en-index.html for each
-- [x] Create subjects/english/autumn/index.html for each
-- [ ] Create subjects/english/spring/index.html for each
-- [ ] Create subjects/english/summer/index.html for each
-- [x] Create subjects/maths/ma-index.html for each
-- [x] Create subjects/maths/autumn/index.html for each
-- [ ] Create subjects/maths/spring/index.html for each
-- [ ] Create subjects/maths/summer/index.html for each
-- [x] Update index.html to add KS4 and KS5 sections with Year 10,11,12,13
-- [ ] Verify the new structure
+- [x] Add unique id attributes to reception subject links in yeargroups/EYFS/y0/yrR-index.html
+  - [x] Add id="early-maths" to Early Maths link
+  - [x] Add id="phonics" to Phonics link
+  - [x] Add id="understanding-the-world" to Understanding the World link
+  - [x] Add id="creative-play" to Creative Play link
+- [x] Add smooth scroll to content area when subject is selected (for mobile usability)
+- [x] Implement for Year 7: add ids and smooth scroll
+- [x] Implement for Year 1: add ids
+- [x] Implement for Year 3: add ids

@@ -113,10 +113,10 @@
         <aside class="sidebar">
             <h2>Subjects</h2>
             <ul id="subject-links">
-                <li><a href="subjects/maths/ma-index.html">Early Maths</a></li>
-                <li><a href="subjects/phonics/index.html">Phonics</a></li>
-                <li><a href="subjects/understanding-the-world/index.html">Understanding the World</a></li>
-                <li><a href="subjects/creative-play/index.html">Creative Play</a></li>
+                <li><a id="early-maths" href="subjects/maths/ma-index.html">Early Maths</a></li>
+                <li><a id="phonics" href="subjects/phonics/index.html">Phonics</a></li>
+                <li><a id="understanding-the-world" href="subjects/understanding-the-world/index.html">Understanding the World</a></li>
+                <li><a id="creative-play" href="subjects/creative-play/index.html">Creative Play</a></li>
             </ul>
         </aside>
 
@@ -163,6 +163,9 @@
                             // Find the <main> element in the fetched document and get its content
                             const newContent = doc.querySelector('main').innerHTML;
                             contentArea.innerHTML = newContent;
+
+                            // Scroll to the content area smoothly, especially useful on mobile
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
                         })
                         .catch(error => {
                             console.error('Error fetching the page:', error);
