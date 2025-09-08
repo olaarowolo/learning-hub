@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub - Choose Your Year</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & Resets --- */
+        :root {
+            --color-year-1: #ffc107; /* Amber */
+            --color-year-2: #2196f3; /* Blue */
+            --color-year-3: #4caf50; /* Green */
+            --color-year-4: #ff9800; /* Orange */
+            --color-year-5: #9c27b0; /* Purple */
+            --color-year-6: #e91e63; /* Pink */
+            --color-year-7: #009688; /* Teal */
+            --color-year-8: #f44336; /* Red */
+            --bg-color: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #6c757d;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Main Content: Year Grid --- */
+        main {
+            padding: 1rem 2rem 3rem;
+        }
+
+        .year-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Year Card Styling --- */
+        .year-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 180px;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .year-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .year-card h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+
+        /* --- Individual Card Colors with Gradients --- */
+        .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
+        .year-2 { background: linear-gradient(45deg, var(--color-year-2), #64b5f6); }
+        .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
+        .year-4 { background: linear-gradient(45deg, var(--color-year-4), #ffb74d); }
+        .year-5 { background: linear-gradient(45deg, var(--color-year-5), #ba68c8); }
+        .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
+        .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
+        .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .year-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 1rem;
+            }
+            .year-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome, Future Stars! ✨</h1>
+        <p>Ready for an adventure? Pick your year to start learning!</p>
+    </header>
+
+    <main>
+        <div class="year-grid">
+            <a href="yeargroups/year1.html" class="year-card year-1"><h2>Year 1</h2></a>
+            <a href="yeargroups/year2.html" class="year-card year-2"><h2>Year 2</h2></a>
+            <a href="yeargroups/year3.html" class="year-card year-3"><h2>Year 3</h2></a>
+            <a href="yeargroups/year4.html" class="year-card year-4"><h2>Year 4</h2></a>
+            <a href="yeargroups/year5.html" class="year-card year-5"><h2>Year 5</h2></a>
+            <a href="yeargroups/year6.html" class="year-card year-6"><h2>Year 6</h2></a>
+            <a href="yeargroups/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
+            <a href="yeargroups/year8.html" class="year-card year-8"><h2>Year 8</h2></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learning Hub. Happy Learning!</p>
+    </footer>
+
+</body>
+</html>
