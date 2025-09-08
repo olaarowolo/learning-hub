@@ -3,6 +3,13 @@
   - [x] Add id="phonics" to Phonics link
   - [x] Add id="understanding-the-world" to Understanding the World link
   - [x] Add id="creative-play" to Creative Play link
+
+- [x] Extend implementation to all year groups (EYFS, KS1, KS2, KS3, KS4, KS5)
+  - [x] Add id="subject-links" to ul in all year index pages
+  - [x] Add unique ids to subject links in all year index pages
+  - [x] Add dynamic content loading script with smooth scroll and error handling to all year index pages
+  - [x] Add CSS for dynamically loaded subject content to all year index pages
+  - [x] Create 404 error page for consistent error handling
 - [x] Add smooth scroll to content area when subject is selected (for mobile usability)
 - [x] Implement for Year 7: add ids and smooth scroll
 - [x] Implement for Year 1: add ids

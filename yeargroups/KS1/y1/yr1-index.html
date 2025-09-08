@@ -57,6 +57,61 @@
         .back-link:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+
+        /* Styles for dynamically loaded subject content (e.g., Maths page) */
+        .subject-title {
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .resource-links,
+        .term-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .resource-links li {
+            margin-bottom: 0.5rem;
+        }
+        .resource-links a {
+            display: block;
+            text-decoration: none;
+            background-color: #f1f3f5;
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+        .resource-links a:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .term-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .term-links li {
+            flex: 1 1 150px;
+        }
+        .term-links a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--theme-color-light);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+        .term-links a:hover {
+            background-color: var(--theme-color);
+            transform: translateY(-2px);
+        }
         .container {
             display: flex;
             max-width: 1200px;
@@ -145,7 +200,7 @@
 
     <header class="year-header">
         <h1>Year 1 Learning Notes</h1>
-        <a href="/§" class="back-link">← Back to Home</a>
+        <a href="/index.html" class="back-link">← Back to Home</a>
     </header>
 
     <div class="container">
@@ -172,5 +227,49 @@
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.querySelector('.content');
+            const sidebarLinks = document.querySelectorAll('#subject-links a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the browser from navigating to the link
+
+                    // Remove 'active' class from all links
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    const url = link.getAttribute('href');
+
+                    // Fetch the content of the linked page
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            // Use DOMParser to parse the fetched HTML string
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+
+                            // Find the <main> element in the fetched document and get its content
+                            const newContent = doc.querySelector('main').innerHTML;
+                            contentArea.innerHTML = newContent;
+
+                            // Scroll to the content area smoothly, especially useful on mobile
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
+                        })
+                        .catch(error => {
+                            console.error('Error fetching the page:', error);
+                            window.location.href = '/yeargroups/404.html';
+                        });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

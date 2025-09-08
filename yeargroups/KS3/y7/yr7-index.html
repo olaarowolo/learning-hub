@@ -164,7 +164,7 @@
                         })
                         .catch(error => {
                             console.error('Error fetching the page:', error);
-                            contentArea.innerHTML = `<h2>Error</h2><p>Sorry, there was an error loading the content. Please try again.</p>`;
+                            window.location.href = '/yeargroups/404.html';
                         });
                 });
             });
