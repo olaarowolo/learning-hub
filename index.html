@@ -10,6 +10,7 @@
     <style>
         /* --- Global Styles & Resets --- */
         :root {
+            --color-reception: #7e57c2; /* Deep Purple */
             --color-year-1: #ffc107; /* Amber */
             --color-year-2: #2196f3; /* Blue */
             --color-year-3: #4caf50; /* Green */
@@ -97,6 +98,7 @@
         }
 
         /* --- Individual Card Colors with Gradients --- */
+        .reception { background: linear-gradient(45deg, var(--color-reception), #9575cd); }
         .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
         .year-2 { background: linear-gradient(45deg, var(--color-year-2), #64b5f6); }
         .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
@@ -144,6 +146,7 @@
 
     <main>
         <div class="year-grid">
+            <a href="yeargroups/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
             <a href="yeargroups/year1.html" class="year-card year-1"><h2>Year 1</h2></a>
             <a href="yeargroups/year2.html" class="year-card year-2"><h2>Year 2</h2></a>
             <a href="yeargroups/year3.html" class="year-card year-3"><h2>Year 3</h2></a>

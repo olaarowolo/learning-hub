@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Term - Early Maths</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-reception: #7e57c2; --color-reception-light: #9575cd;
+            --theme-color: var(--color-reception);
+            --theme-color-light: var(--color-reception-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 2.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main p { margin-bottom: 1rem; }
+        .week-links {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .week-links li a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--theme-color-light);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .week-links li a:hover {
+            background-color: var(--theme-color);
+            transform: translateY(-2px);
+        }
+        .week-links li.disabled a {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="year-header">
+        <h1>Spring Term - Early Maths</h1>
+        <a href="../ma-index.html" class="back-link">← Back to Early Maths</a>
+    </header>
+    <main>
+        <h2>Spring Term Weeks</h2>
+        <p>Select a week to view the learning materials.</p>
+        <ul class="week-links">
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li class="disabled"><a href="week3.html">Week 3</a></li>
+            <li class="disabled"><a href="week4.html">Week 4</a></li>
+            <li class="disabled"><a href="week5.html">Week 5</a></li>
+            <li class="disabled"><a href="week6.html">Week 6</a></li>
+            <li class="disabled"><a href="week7.html">Week 7</a></li>
+            <li class="disabled"><a href="week8.html">Week 8</a></li>
+            <li class="disabled"><a href="week9.html">Week 9</a></li>
+            <li class="disabled"><a href="week10.html">Week 10</a></li>
+            <li class="disabled"><a href="week11.html">Week 11</a></li>
+            <li class="disabled"><a href="week12.html">Week 12</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    </footer>
+</body>
+</html>

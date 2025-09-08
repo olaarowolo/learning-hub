@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Maths Plan - Reception</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-reception: #7e57c2; --color-reception-light: #9575cd;
+            --theme-color: var(--color-reception);
+            --theme-color-light: var(--color-reception-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        
+        /* Standalone page styles */
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 2.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .page-container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+
+        /* Content styles (for dynamic loading) */
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--theme-color); }
+
+        .plan-section, .assessment-section {
+            background-color: #fdfdfd;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--theme-color-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .plan-section h3, .assessment-section h3 {
+            font-size: 1.4rem;
+            color: var(--theme-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .plan-section h4, .assessment-section h4 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        .plan-section ul, .assessment-section ul {
+            padding-left: 20px;
+            list-style-type: '🎨'; /* Fun emoji bullet */
+            margin-top: 0.5rem;
+        }
+        .plan-section li, .assessment-section li {
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .vocab-list {
+            background-color: #f3e5f5; /* Light purple */
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-style: italic;
+            color: #5d4037; /* Brownish text for contrast */
+        }
+
+        .maths-plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+        .maths-plan-table th, .maths-plan-table td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .maths-plan-table thead {
+            background-color: var(--theme-color-light);
+            color: white;
+            font-weight: 600;
+        }
+        .maths-plan-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .maths-plan-table td:first-child {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="year-header">
+        <h1>Early Maths Plan</h1>
+        <a href="ma-index.html" class="back-link">← Back to Early Maths</a>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <h2>📅 12-Week Early Maths Plan (Year R)</h2>
+
+            <div class="plan-section">
+                <h3>Weeks 1–3: Numbers and Counting Foundations</h3>
+                <p><strong>Focus:</strong> Counting to 5, recognising numerals 0–5.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Counting everyday objects (toys, snacks, natural items).</li>
+                    <li>Number songs/rhymes (e.g., "5 little ducks").</li>
+                    <li>Matching numerals to quantities.</li>
+                    <li>Sorting and comparing small sets (more/less, same).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">one, two, three, more, less, same, count.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 4–6: Building to 10</h3>
+                <p><strong>Focus:</strong> Numbers 6–10, ordering and comparing.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Ten frames for number recognition and counting.</li>
+                    <li>Ordering numbers on a washing line (0–10).</li>
+                    <li>Counting forwards and backwards to 10.</li>
+                    <li>Begin simple addition using objects (e.g., 3 + 2).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">first, last, next, before, after, add, altogether.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 7–9: Shapes, Space & Patterns</h3>
+                <p><strong>Focus:</strong> Shape recognition and spatial awareness.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Recognise and name 2D shapes (circle, square, triangle, rectangle).</li>
+                    <li>Explore patterns (ABAB using colours, sounds, actions).</li>
+                    <li>Building with 3D shapes (blocks, junk modelling).</li>
+                    <li>Positional language (under, next to, behind).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">circle, square, triangle, rectangle, pattern, behind, in front.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 10–12: Developing Number Sense</h3>
+                <p><strong>Focus:</strong> Numbers beyond 10, early problem solving.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Counting to 20 with confidence.</li>
+                    <li>One more / one less games.</li>
+                    <li>Sharing and grouping (link to halving/sharing).</li>
+                    <li>Simple subtraction using real objects.</li>
+                    <li>Revisiting patterns and extending them.</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">more than, fewer than, one more, one less, double, share, half.</p>
+            </div>
+
+            <div class="assessment-section">
+                <h3>📊 Assessment & Review</h3>
+                <p><strong>Ongoing:</strong> Observe children during play and group activities.</p>
+                <h4>End of 12 Weeks: Check progress towards:</h4>
+                <ul>
+                    <li>Confident counting to 10 (and beyond).</li>
+                    <li>Recognising numerals to 10+.</li>
+                    <li>Understanding one more/less.</li>
+                    <li>Beginning to add and subtract practically.</li>
+                    <li>Recognising and using patterns.</li>
+                    <li>Using shape and positional vocabulary.</li>
+                </ul>
+            </div>
+            <table class="maths-plan-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Focus / Objective</th>
+                        <th>Activities</th>
+                        <th>Resources</th>
+                        <th>Vocabulary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Counting up to 3</td>
+                        <td>Count objects (toys, fingers), number songs</td>
+                        <td>Small toys, fingers, counting rhymes</td>
+                        <td>one, two, three, count</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Counting up to 5</td>
+                        <td>Match numerals 0–5 to objects; sorting into sets</td>
+                        <td>Number cards 0–5, everyday objects</td>
+                        <td>more, less, same</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Recognising numbers 0–5</td>
+                        <td>Number hunts in classroom/outdoor area</td>
+                        <td>Number cards hidden around space</td>
+                        <td>zero, before, after</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Counting to 10</td>
+                        <td>Ten frame counting; clap counting</td>
+                        <td>Ten frames, counters, clapping</td>
+                        <td>one, two… ten, altogether</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ordering numbers 1–10</td>
+                        <td>Washing line ordering; missing number game</td>
+                        <td>Number cards, string & pegs</td>
+                        <td>order, next, before, after</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Addition within 10</td>
+                        <td>Use objects to combine 2 groups (e.g., 3 + 2)</td>
+                        <td>Counters, cubes, toys</td>
+                        <td>add, altogether, total</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>2D Shape recognition</td>
+                        <td>Shape hunt indoors/outdoors; shape art</td>
+                        <td>Shape cut-outs, crayons, paper</td>
+                        <td>circle, square, triangle, rectangle</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Exploring patterns</td>
+                        <td>Make ABAB patterns with colours, sounds, actions</td>
+                        <td>Beads, coloured blocks, musical instruments</td>
+                        <td>pattern, repeat, same, different</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>3D Shapes & Position</td>
+                        <td>Build towers, describe positions (under, next to)</td>
+                        <td>Blocks, boxes, construction toys</td>
+                        <td>cube, cone, under, behind, next to</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Counting beyond 10</td>
+                        <td>Count to 20; spot numbers in environment</td>
+                        <td>Number line to 20, books, posters</td>
+                        <td>eleven, twelve… twenty</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>One more / one less</td>
+                        <td>Dice games, "What's missing?" number line</td>
+                        <td>Dice, number line 0–20</td>
+                        <td>more than, less than, one more, one less</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Sharing & simple subtraction</td>
+                        <td>Share objects equally; take away using toys</td>
+                        <td>Counters, small snacks (fruit, crackers)</td>
+                        <td>double, half, share, take away</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    </footer>
+
+</body>
+</html>
