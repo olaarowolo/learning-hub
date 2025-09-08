@@ -19,6 +19,7 @@
             --color-year-6: #e91e63; /* Pink */
             --color-year-7: #009688; /* Teal */
             --color-year-8: #f44336; /* Red */
+            --color-year-9: #3f51b5; /* Indigo */
             --bg-color: #f8f9fa;
             --text-dark: #343a40;
             --text-light: #6c757d;
@@ -107,6 +108,20 @@
         .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
         .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
         .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
+        .year-9 { background: linear-gradient(45deg, var(--color-year-9), #6573c3); }
+        .year-10 { background: linear-gradient(45deg, #3f51b5, #6573c3); }
+        .year-11 { background: linear-gradient(45deg, #2196f3, #64b5f6); }
+        .year-12 { background: linear-gradient(45deg, #4caf50, #81c784); }
+        .year-13 { background: linear-gradient(45deg, #ff9800, #ffb74d); }
+
+        /* --- Key Stage Headings --- */
+        .ks-heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
 
         /* --- Footer --- */
         footer {
@@ -134,6 +149,15 @@
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
+            header h1 {
+                font-size: 2.8rem;
+            }
+            .year-card h2 {
+                font-size: 2.2rem;
+            }
+            body {
+                font-size: 110%;
+            }
         }
     </style>
 </head>
@@ -145,21 +169,43 @@
     </header>
 
     <main>
-        <div class="year-grid">
-            <a href="yeargroups/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
-            <a href="yeargroups/year1.html" class="year-card year-1"><h2>Year 1</h2></a>
-            <a href="yeargroups/year2.html" class="year-card year-2"><h2>Year 2</h2></a>
-            <a href="yeargroups/year3.html" class="year-card year-3"><h2>Year 3</h2></a>
-            <a href="yeargroups/year4.html" class="year-card year-4"><h2>Year 4</h2></a>
-            <a href="yeargroups/year5.html" class="year-card year-5"><h2>Year 5</h2></a>
-            <a href="yeargroups/year6.html" class="year-card year-6"><h2>Year 6</h2></a>
-            <a href="yeargroups/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
-            <a href="yeargroups/year8.html" class="year-card year-8"><h2>Year 8</h2></a>
+        <h2 class="ks-heading">Key Stage 1</h2>
+        <div class="year-grid ks1">
+            <a href="yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
+            <a href="yeargroups/KS1/y1/yr1-index.html" class="year-card year-1"><h2>Year 1</h2></a>
+            <a href="yeargroups/KS1/y2/yr2-index.html" class="year-card year-2"><h2>Year 2</h2></a>
+        </div>
+
+        <h2 class="ks-heading">Key Stage 2</h2>
+        <div class="year-grid ks2">
+            <a href="yeargroups/KS2/y3/yr3-index.html" class="year-card year-3"><h2>Year 3</h2></a>
+            <a href="yeargroups/KS2/y4/yr4-index.html" class="year-card year-4"><h2>Year 4</h2></a>
+            <a href="yeargroups/KS2/y5/yr5-index.html" class="year-card year-5"><h2>Year 5</h2></a>
+            <a href="yeargroups/KS2/y6/yr6-index.html" class="year-card year-6"><h2>Year 6</h2></a>
+        </div>
+
+        <h2 class="ks-heading">Key Stage 3</h2>
+        <div class="year-grid ks3">
+            <a href="yeargroups/KS3/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
+            <a href="yeargroups/KS3/y8/yr8-index.html" class="year-card year-8"><h2>Year 8</h2></a>
+            <a href="yeargroups/KS3/y9/yr9-index.html" class="year-card year-9"><h2>Year 9</h2></a>
+        </div>
+
+        <h2 class="ks-heading">Key Stage 4</h2>
+        <div class="year-grid ks4">
+            <a href="yeargroups/KS4/y10/yr10-index.html" class="year-card year-10"><h2>Year 10</h2></a>
+            <a href="yeargroups/KS4/y11/yr11-index.html" class="year-card year-11"><h2>Year 11</h2></a>
+        </div>
+
+        <h2 class="ks-heading">Key Stage 5</h2>
+        <div class="year-grid ks5">
+            <a href="yeargroups/KS5/y12/yr12-index.html" class="year-card year-12"><h2>Year 12</h2></a>
+            <a href="yeargroups/KS5/y13/yr13-index.html" class="year-card year-13"><h2>Year 13</h2></a>
         </div>
     </main>
 
     <footer>
-        <p>&copy;         2025 Learning Hub by  <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
 
 </body>
