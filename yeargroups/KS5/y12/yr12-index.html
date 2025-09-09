@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Year 12 Learning Notes</title>
+    <title>Year 12 Lessons</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
         :root {
-            --color-year-12: #3f51b5; /* Indigo */
-            --color-year-12-light: #6573c3;
-            --theme-color: var(--color-year-12);
-            --theme-color-light: var(--color-year-12-light);
-            --bg-color: #f8f9fa;
-            --text-dark: #343a40;
-            --text-light: #6c757d;
-            --card-bg: #ffffff;
-            --border-color: #dee2e6;
+            --color-year-7: #009688; --color-year-7-light: #4db6ac;
+            --theme-color: var(--color-year-7);
+            --theme-color-light: var(--color-year-7-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
             --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
         }
         * {
@@ -39,22 +35,22 @@
             position: relative;
         }
         .year-header h1 {
-            font-size: 2.2rem;
+            font-size: 3rem;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
-        .back-link {
-            position: absolute;
-            top: 50%;
-            left: 2rem;
-            transform: translateY(-50%);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            transition: background 0.3s ease;
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 2.5rem; }
         }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }
+        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
         .back-link:hover {
             background: rgba(255, 255, 255, 0.3);
         }
@@ -145,33 +141,86 @@
 <body>
 
     <header class="year-header">
-        <h1>Year 12 Learning Notes</h1>
-        <a href="/" class="back-link">← Back to Home</a>
+        <h1>Year 12 Lessons</h1>
+        <a href="/index.html" class="back-link">← Back to Home</a>
     </header>
 
     <div class="container">
         <aside class="sidebar">
             <h2>Subjects</h2>
-            <ul>
-                <li><a href="subjects/maths/ma-index.html" class="active">Mathematics</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Geography</a></li>
-                <li><a href="#">Art</a></li>
+            <ul id="subject-links">
+                <li><a id="mathematics" href="/yeargroups/KS5/y12/subjects/maths/ma-index.html">Mathematics</a></li>
+                <li><a id="english" href="/yeargroups/KS5/y12/subjects/english/en-index.html">English</a></li>
+                <li><a id="science" href="/yeargroups/KS5/y12/subjects/science.html">Science</a></li>
+                <li><a id="history" href="/yeargroups/KS5/y12/subjects/history.html">History</a></li>
+                <li><a id="geography" href="/yeargroups/KS5/y12/subjects/geography.html">Geography</a></li>
+                <li><a id="art" href="/yeargroups/KS5/y12/subjects/art.html">Art</a></li>
+                <li><a id="coding-class" href="/yeargroups/KS5/y12/subjects/coding-class.html">Coding Class +</a></li>
             </ul>
         </aside>
 
         <main class="content">
-            <h2>Welcome to Year 12 Mathematics!</h2>
-            <p>This is a placeholder for your learning materials. You can add notes, videos, and exercises here for each subject.</p>
-            <p>Select another subject from the sidebar to see different content. For now, this is just a template to show you how it looks.</p>
+            <h2>Welcome to Year 12!</h2>
+            <p>This is your central hub for all subjects in Year 12. Use the sidebar to navigate to your desired subject and find all the learning materials you need.</p>
+            <p>Let's make this a great year of learning and discovery! Select a subject to get started.</p>
         </main>
     </div>
 
     <footer>
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.querySelector('.content');
+            const sidebarLinks = document.querySelectorAll('#subject-links a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const url = link.getAttribute('href');
+
+                    // Don't do anything for placeholder links
+                    if (url === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
+                    event.preventDefault(); // Prevent the browser from navigating to the link
+
+                    // Remove 'active' class from all links
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    // Fetch the content of the linked page
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newContent = doc.querySelector('main').innerHTML;
+                            contentArea.innerHTML = newContent;
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
+                        })
+                        .catch(error => {
+                            console.error('Error fetching content:', error);
+                            contentArea.innerHTML = `
+                                <div style="text-align: center; padding: 3rem 1rem;">
+                                    <h2 style="color: #d9534f; font-size: 1.8rem; margin-bottom: 1rem;">Oops! Content Not Found</h2>
+                                    <p style="margin-bottom: 1.5rem; color: var(--text-light);">We couldn't load the content for this subject. It might be under construction or the link is broken.</p>
+                                    <a href="/" style="display: inline-block; background-color: var(--theme-color); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600;">Back to Homepage</a>
+                                </div>
+                            `;
+                        });
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

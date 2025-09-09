@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 8 English - Summer Term</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/yeargroups/KS3/y8/subjects/english/english.css" />
+    <style>
+        .week-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .week-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .week-list a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .week-list a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-shadow);
+            border-left: 4px solid var(--theme-color);
+            padding-left: calc(1.5rem - 4px); /* Adjust padding to keep text aligned */
+        }
+
+        .week-list .week-number {
+            background-color: var(--theme-color-light);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.4rem 0.7rem;
+            border-radius: 6px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .week-list li.disabled a {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        /* Floating back button */
+        .floating-back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-back-btn:hover {
+            background-color: var(--theme-color-light);
+            transform: scale(1.1);
+        }
+
+        .floating-back-btn.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .floating-back-btn:hover .close-btn {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="year-header">
+        <h1>Summer Term</h1>
+        <a href="/yeargroups/KS3/y8/subjects/english/en-index.html" class="back-link">&larr; Back to Year 8 English</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Weekly Content</h2>
+            <p>This term is currently under development. Check back later for updates!</p>
+            <ul class="week-list">
+                <li class="disabled"><a href="week1.html" class="week-link"><span class="week-number">Week 1</span> Reading Comprehension – Evaluating Texts</a></li>
+                <li class="disabled"><a href="week2.html" class="week-link"><span class="week-number">Week 2</span> Reading Comprehension – Comparing Techniques</a></li>
+                <li class="disabled"><a href="week3.html" class="week-link"><span class="week-number">Week 3</span> Imaginative Writing – Complex Narratives</a></li>
+                <li class="disabled"><a href="week4.html" class="week-link"><span class="week-number">Week 4</span> Imaginative Writing – Character Development</a></li>
+                <li class="disabled"><a href="week5.html" class="week-link"><span class="week-number">Week 5</span> Non-fiction – Formal Letters</a></li>
+                <li class="disabled"><a href="week6.html" class="week-link"><span class="week-number">Week 6</span> Non-fiction – Persuasive Writing</a></li>
+                <li class="disabled"><a href="week7.html" class="week-link"><span class="week-number">Week 7</span> Creative Writing – Descriptive Passages</a></li>
+                <li class="disabled"><a href="week8.html" class="week-link"><span class="week-number">Week 8</span> Creative Writing – Diary Entries</a></li>
+                <li class="disabled"><a href="week9.html" class="week-link"><span class="week-number">Week 9</span> Grammar and Vocabulary – Compound-Complex Sentences</a></li>
+                <li class="disabled"><a href="week10.html" class="week-link"><span class="week-number">Week 10</span> Grammar and Vocabulary – Figurative Language</a></li>
+                <li class="disabled"><a href="week11.html" class="week-link"><span class="week-number">Week 11</span> End-of-year Assessment – Reading Fluency</a></li>
+                <li class="disabled"><a href="week12.html" class="week-link"><span class="week-number">Week 12</span> End-of-year Assessment – Writing</a></li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Floating Back Button -->
+    <button class="floating-back-btn" onclick="window.location.href='/yeargroups/KS3/y8/subjects/english/en-index.html'">
+        ←
+        <button class="close-btn" onclick="event.stopPropagation(); hideButton()">×</button>
+    </button>
+
+    <script>
+        function hideButton() {
+            const btn = document.querySelector('.floating-back-btn');
+            btn.classList.add('hidden');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    </footer>
+</body>
+</html>

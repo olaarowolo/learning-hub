@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Year 8 Learning Notes</title>
+    <title>Year 8 Lessons</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -38,8 +38,20 @@
             position: relative;
         }
         .year-header h1 {
-            font-size: 2.2rem;
+            font-size: 3rem;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 2.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
         }
         .back-link {
             position: absolute;
@@ -144,7 +156,7 @@
 <body>
 
     <header class="year-header">
-        <h1>Year 8 Learning Notes</h1>
+        <h1>Year 8 Lessons</h1>
         <a href="/" class="back-link">← Back to Home</a>
     </header>
 

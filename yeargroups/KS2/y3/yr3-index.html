@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Year 3 Learning Notes</title>
+    <title>Year 3 Lessons</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -38,8 +38,20 @@
             position: relative;
         }
         .year-header h1 {
-            font-size: 2.2rem;
+            font-size: 3rem;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 2.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
         }
         .back-link {
             position: absolute;
@@ -199,7 +211,7 @@
 <body>
 
     <header class="year-header">
-        <h1>Year 3 Learning Notes</h1>
+        <h1>Year 3 Lessons</h1>
         <a href="/" class="back-link">← Back to Home</a>
     </header>
 
@@ -209,10 +221,10 @@
             <ul id="subject-links">
                 <li><a id="mathematics" href="subjects/maths/ma-index.html" class="active">Mathematics</a></li>
                 <li><a id="english" href="subjects/english/en-index.html">English</a></li>
-                <li><a id="science" href="#">Science</a></li>
-                <li><a id="history" href="#">History</a></li>
-                <li><a id="geography" href="#">Geography</a></li>
-                <li><a id="art" href="#">Art</a></li>
+                <li><a id="science" href="subjects/science.html">Science</a></li>
+                <li><a id="history" href="subjects/history.html">History</a></li>
+                <li><a id="geography" href="subjects/geography.html">Geography</a></li>
+                <li><a id="art" href="subjects/art.html">Art</a></li>
             </ul>
         </aside>
 
@@ -234,14 +246,20 @@
 
             sidebarLinks.forEach(link => {
                 link.addEventListener('click', (event) => {
+                    const url = link.getAttribute('href');
+
+                    // Don't do anything for placeholder links
+                    if (url === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
                     event.preventDefault(); // Prevent the browser from navigating to the link
 
                     // Remove 'active' class from all links
                     sidebarLinks.forEach(l => l.classList.remove('active'));
                     // Add 'active' class to the clicked link
                     link.classList.add('active');
-
-                    const url = link.getAttribute('href');
 
                     // Fetch the content of the linked page
                     fetch(url)
@@ -252,20 +270,21 @@
                             return response.text();
                         })
                         .then(html => {
-                            // Use DOMParser to parse the fetched HTML string
                             const parser = new DOMParser();
                             const doc = parser.parseFromString(html, 'text/html');
-
-                            // Find the <main> element in the fetched document and get its content
                             const newContent = doc.querySelector('main').innerHTML;
                             contentArea.innerHTML = newContent;
-
-                            // Scroll to the content area smoothly, especially useful on mobile
                             contentArea.scrollIntoView({ behavior: 'smooth' });
                         })
                         .catch(error => {
-                            console.error('Error fetching the page:', error);
-                            window.location.href = '/yeargroups/404.html';
+                            console.error('Error fetching content:', error);
+                            contentArea.innerHTML = `
+                                <div style="text-align: center; padding: 3rem 1rem;">
+                                    <h2 style="color: #d9534f; font-size: 1.8rem; margin-bottom: 1rem;">Oops! Content Not Found</h2>
+                                    <p style="margin-bottom: 1.5rem; color: var(--text-light);">We couldn't load the content for this subject. It might be under construction or the link is broken.</p>
+                                    <a href="/" style="display: inline-block; background-color: var(--theme-color); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600;">Back to Homepage</a>
+                                </div>
+                            `;
                         });
                 });
             });
