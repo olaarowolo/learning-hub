@@ -1,6 +1,6 @@
 :root {
-    --color-year-6: #e91e63;
-    --color-year-6-light: #f06292;
+    --color-year-6: #2196F3;
+    --color-year-6-light: #64B5F6;
     --theme-color: var(--color-year-6);
     --theme-color-light: var(--color-year-6-light);
     --bg-color: #f8f9fa;
@@ -113,3 +113,4 @@ footer {
         margin-top: 1rem;
     }
 }
+

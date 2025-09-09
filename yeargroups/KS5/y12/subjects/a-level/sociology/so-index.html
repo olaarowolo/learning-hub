@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A-Level Sociology - Year 12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --color-year-a-level: #9c27b0; --color-year-a-level-light: #ba68c8;
+            --theme-color: var(--color-year-a-level);
+            --theme-color-light: var(--color-year-a-level-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 2.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }
+        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { display: flex; max-width: 1200px; margin: 2rem auto; padding: 0 2rem; gap: 2rem; }
+        .sidebar { flex: 0 0 250px; background-color: var(--card-bg); padding: 1.5rem; border-radius: 12px; box-shadow: var(--card-shadow); height: fit-content; }
+        .sidebar h2 { font-size: 1.4rem; padding-bottom: 0.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); }
+        .sidebar ul { list-style: none; }
+        .sidebar ul li a { display: block; padding: 0.75rem 1rem; color: var(--text-light); text-decoration: none; border-radius: 8px; margin-bottom: 0.5rem; font-weight: 600; transition: background-color 0.3s, color 0.3s; border-left: 4px solid transparent; }
+        .sidebar ul li a:hover { background-color: #f1f3f5; color: var(--text-dark); }
+        .sidebar ul li a.active { background-color: var(--bg-color); color: var(--text-dark); border-left: 4px solid var(--theme-color); }
+        .content { flex-grow: 1; background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        .content h2 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--theme-color); }
+        .content p { margin-bottom: 1rem; }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        main p { margin-bottom: 1rem; }
+        main ul { padding-left: 40px; margin-bottom: 1rem; }
+        main ul li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        .resource-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .resource-links li {
+            margin-bottom: 0.5rem;
+        }
+        .resource-links a {
+            display: block;
+            text-decoration: none;
+            background-color: #f1f3f5;
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .resource-links a:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .subject-title {
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .term-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .term-links li {
+            flex: 1 1 150px;
+            margin-bottom: 0;
+        }
+        .term-links a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--theme-color-light);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .term-links a:hover {
+            background-color: var(--theme-color);
+            transform: translateY(-2px);
+        }
+        .term-links li.disabled a {
+            background-color: #ced4da;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="year-header">
+        <h1>A-Level Sociology - Year 12</h1>
+        <a href="/yeargroups/KS5/y12/yr12-index.html" class="back-link">← Back to Year 12 Home</a>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul id="content-links">
+                <li><a id="plan" href="/yeargroups/KS5/y12/subjects/a-level/sociology/plan.html">Curriculum Plan</a></li>
+                <li><a id="autumn" href="/yeargroups/KS5/y12/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a id="spring" href="/yeargroups/KS5/y12/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a id="summer" href="/yeargroups/KS5/y12/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Welcome to A-Level Sociology!</h2>
+            <p>This course covers introduction to sociology, research methods, education, and families & households.</p>
+            <p>Add notes, videos, exercises, and other learning materials here.</p>
+
+            <h3 class="subject-title">Curriculum Resources</h3>
+            <ul class="resource-links">
+                <li><a href="/yeargroups/KS5/y12/subjects/a-level/sociology/plan.html">A-Level Sociology Curriculum Plan</a></li>
+            </ul>
+
+            <h3 class="subject-title">Term Content</h3>
+            <ul class="term-links">
+                <li><a href="/yeargroups/KS5/y12/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a href="/yeargroups/KS5/y12/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a href="/yeargroups/KS5/y12/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.querySelector('.content');
+            const contentLinks = document.querySelectorAll('#content-links a');
+
+            contentLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const url = link.getAttribute('href');
+
+                    // Don't do anything for placeholder links
+                    if (url === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
+                    event.preventDefault(); // Prevent the browser from navigating to the link
+
+                    // Remove 'active' class from all links
+                    contentLinks.forEach(l => l.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    // Fetch the content of the linked page
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newContent = doc.querySelector('main').innerHTML;
+                            contentArea.innerHTML = newContent;
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
+                        })
+                        .catch(error => {
+                            console.error('Error fetching content:', error);
+                            contentArea.innerHTML = `
+                                <div style="text-align: center; padding: 3rem 1rem;">
+                                    <h2 style="color: #d9534f; font-size: 1.8rem; margin-bottom: 1rem;">Oops! Content Not Found</h2>
+                                    <p style="margin-bottom: 1.5rem; color: var(--text-light);">We couldn't load the content for this subject. It might be under construction or the link is broken.</p>
+                                    <a href="/yeargroups/KS5/y12/yr12-index.html" style="display: inline-block; background-color: var(--theme-color); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600;">Back to Year 12 Home</a>
+                                </div>
+                            `;
+                        });
+                });
+            });

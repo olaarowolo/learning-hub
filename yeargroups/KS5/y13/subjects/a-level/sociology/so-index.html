@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A-Level Sociology - Year 13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="sociology.css" />
+</head>
+<body>
+    <header class="year-header">
+        <h1>A-Level Sociology - Year 13</h1>
+        <a href="/yeargroups/KS5/y13/yr13-index.html" class="back-link">← Back to Year 13 Home</a>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul id="content-links">
+                <li><a id="plan" href="/yeargroups/KS5/y13/subjects/a-level/sociology/plan.html">Curriculum Plan</a></li>
+                <li><a id="autumn" href="/yeargroups/KS5/y13/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a id="spring" href="/yeargroups/KS5/y13/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a id="summer" href="/yeargroups/KS5/y13/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Welcome to A-Level Sociology!</h2>
+            <p>This course covers crime & deviance, beliefs in society, and theory & methods.</p>
+            <p>Add notes, videos, exercises, and other learning materials here.</p>
+
+            <h3 class="subject-title">Curriculum Resources</h3>
+            <ul class="resource-links">
+                <li><a href="/yeargroups/KS5/y13/subjects/a-level/sociology/plan.html">A-Level Sociology Curriculum Plan</a></li>
+            </ul>
+
+            <h3 class="subject-title">Term Content</h3>
+            <ul class="term-links">
+                <li><a href="/yeargroups/KS5/y13/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a href="/yeargroups/KS5/y13/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a href="/yeargroups/KS5/y13/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.querySelector('.content');
+            const contentLinks = document.querySelectorAll('#content-links a');
+
+            contentLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const url = link.getAttribute('href');
+
+                    // Don't do anything for placeholder links
+                    if (url === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
+                    event.preventDefault(); // Prevent the browser from navigating to the link
+
+                    // Remove 'active' class from all links
+                    contentLinks.forEach(l => l.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    // Fetch the content of the linked page
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newContent = doc.querySelector('main').innerHTML;
+                            contentArea.innerHTML = newContent;
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
+                        })
+                        .catch(error => {
+                            console.error('Error fetching content:', error);
+                            contentArea.innerHTML = `
+                                <div style="text-align: center; padding: 3rem 1rem;">
+                                    <h2 style="color: #d9534f; font-size: 1.8rem; margin-bottom: 1rem;">Oops! Content Not Found</h2>
+                                    <p style="margin-bottom: 1.5rem; color: var(--text-light);">We couldn't load the content for this subject. It might be under construction or the link is broken.</p>
+                                    <a href="/yeargroups/KS5/y13/yr13-index.html" style="display: inline-block; background-color: var(--theme-color); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600;">Back to Year 13 Home</a>
+                                </div>
+                            `;
+                        });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
