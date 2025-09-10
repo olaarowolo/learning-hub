@@ -1,96 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Hub - Choose Your Year</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* --- Global Styles & Resets --- */
-        :root {
-            --color-reception: #7e57c2; /* Deep Purple */
-            --color-year-1: #ffc107; /* Amber */
-            --color-year-2: #2196f3; /* Blue */
-            --color-year-3: #4caf50; /* Green */
-            --color-year-4: #ff9800; /* Orange */
-            --color-year-5: #9c27b0; /* Purple */
-            --color-year-6: #e91e63; /* Pink */
-            --color-year-7: #009688; /* Teal */
-            --color-year-8: #f44336; /* Red */
-            --color-year-9: #3f51b5; /* Indigo */
-            --bg-color: #f8f9fa;
-            --text-dark: #343a40;
-            --text-light: #6c757d;
-            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Hub - Choose Your Year</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- Global Styles --- */
+    :root {
+      --color-reception: #7e57c2;
+      --color-year-1: #ffc107;
+      --color-year-2: #2196f3;
+      --color-year-3: #4caf50;
+      --color-year-4: #ff9800;
+      --color-year-5: #9c27b0;
+      --color-year-6: #e91e63;
+      --color-year-7: #009688;
+      --color-year-8: #f44336;
+      --color-year-9: #3f51b5;
+      --bg-color: #f8f9fa;
+      --text-dark: #343a40;
+      --text-light: #6c757d;
+      --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        /* --- Header --- */
-        header {
-            text-align: center;
-            padding: 3rem 1rem 2rem;
-        }
-/* --- Navbar --- */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
 
-.logo a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    text-decoration: none;
-}
+    /* --- Navbar --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
+    .logo a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-decoration: none;
+    }
 
-.nav-links a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--text-dark);
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--color-year-2);
-}
-
-/* Hamburger for Mobile */
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
     .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-year-2);
+    }
+
+    .nav-links a.active {
+      color: var(--color-year-2);
+      border-bottom: 2px solid var(--color-year-2);
+      padding-bottom: 2px;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
         position: absolute;
         top: 70px;
         right: 0;
@@ -101,219 +103,204 @@
         padding: 1rem;
         display: none;
         box-shadow: var(--card-shadow);
-    }
-
-    .nav-links.show {
+      }
+      .nav-links.show {
         display: flex;
-    }
-
-    .hamburger {
+      }
+      .hamburger {
         display: block;
+      }
     }
-}
 
-/* --- Hero Section --- */
-.hero {
-    text-align: center;
-    padding: 4rem 1rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
-}
+    /* --- Hero --- */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
 
-.hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
+    /* --- Main Content --- */
+    main {
+      padding: 1rem 2rem 3rem;
+    }
 
-.hero p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-}
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: var(--text-dark);
-        }
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        header p {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    .year-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 180px;
+      padding: 1.5rem;
+      border-radius: 16px;
+      text-decoration: none;
+      color: white;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .year-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .year-card h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
 
-        /* --- Main Content: Year Grid --- */
-        main {
-            padding: 1rem 2rem 3rem;
-        }
+    /* --- Colors --- */
+    .reception { background: linear-gradient(45deg, var(--color-reception), #9575cd); }
+    .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
+    .year-2 { background: linear-gradient(45deg, var(--color-year-2), #64b5f6); }
+    .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
+    .year-4 { background: linear-gradient(45deg, var(--color-year-4), #ffb74d); }
+    .year-5 { background: linear-gradient(45deg, var(--color-year-5), #ba68c8); }
+    .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
+    .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
+    .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
+    .year-9 { background: linear-gradient(45deg, var(--color-year-9), #6573c3); }
+    .year-10 { background: linear-gradient(45deg, #3f51b5, #6573c3); }
+    .year-11 { background: linear-gradient(45deg, #2196f3, #64b5f6); }
+    .year-12 { background: linear-gradient(45deg, #4caf50, #81c784); }
+    .year-13 { background: linear-gradient(45deg, #ff9800, #ffb74d); }
 
-        .year-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    /* --- Section Headings --- */
+    .ks-heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin: 2rem 0 1rem;
+      text-align: center;
+    }
 
-        /* --- Year Card Styling --- */
-        .year-card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 180px;
-            padding: 1.5rem;
-            border-radius: 16px;
-            text-decoration: none;
-            color: white;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
 
-        .year-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--card-shadow-hover);
-        }
-
-        .year-card h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-        }
-
-        /* --- Individual Card Colors with Gradients --- */
-        .reception { background: linear-gradient(45deg, var(--color-reception), #9575cd); }
-        .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
-        .year-2 { background: linear-gradient(45deg, var(--color-year-2), #64b5f6); }
-        .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
-        .year-4 { background: linear-gradient(45deg, var(--color-year-4), #ffb74d); }
-        .year-5 { background: linear-gradient(45deg, var(--color-year-5), #ba68c8); }
-        .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
-        .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
-        .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
-        .year-9 { background: linear-gradient(45deg, var(--color-year-9), #6573c3); }
-        .year-10 { background: linear-gradient(45deg, #3f51b5, #6573c3); }
-        .year-11 { background: linear-gradient(45deg, #2196f3, #64b5f6); }
-        .year-12 { background: linear-gradient(45deg, #4caf50, #81c784); }
-        .year-13 { background: linear-gradient(45deg, #ff9800, #ffb74d); }
-
-        /* --- Key Stage Headings --- */
-        .ks-heading {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin: 2rem 0 1rem 0;
-            text-align: center;
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        /* --- Responsive Adjustments --- */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .year-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            }
-        }
-
-        @media (max-width: 480px) {
-            main {
-                padding: 1rem;
-            }
-            
-            .year-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .year-card h2 {
-                font-size: 2.2rem;
-            }
-            body {
-                font-size: 110%;
-            }
-        }
-        
-        
-    </style>
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .year-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .year-card h2 { font-size: 2rem; }
+      .year-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Navbar + Hero -->
   <header>
     <nav class="navbar">
-        <div class="logo">
-            <a href="/">Learning Hub</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="#ks1">KS1</a></li>
-            <li><a href="#ks2">KS2</a></li>
-            <li><a href="#ks3">KS3</a></li>
-            <li><a href="#ks4">KS4</a></li>
-            <li><a href="#ks5">KS5</a></li>
-        </ul>
-        <div class="hamburger">&#9776;</div>
+      <div class="logo">
+        <a href="/">Learning Hub</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#ks1">KS1</a></li>
+        <li><a href="#ks2">KS2</a></li>
+        <li><a href="#ks3">KS3</a></li>
+        <li><a href="#ks4">KS4</a></li>
+        <li><a href="#ks5">KS5</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
     </nav>
 
     <div class="hero">
-        <h1>Welcome, Future Stars! ✨</h1>
-        <p>Ready for an adventure? Pick your year to start learning!</p>
+      <h1>Welcome, Future Stars! ✨</h1>
+      <p>Ready for an adventure? Pick your year to start learning!</p>
     </div>
-</header>
+  </header>
 
-    <main>
-        <h2 class="ks-heading">Key Stage 1</h2>
-        <div class="year-grid ks1">
-            <a href="yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
-            <a href="yeargroups/KS1/y1/yr1-index.html" class="year-card year-1"><h2>Year 1</h2></a>
-            <a href="yeargroups/KS1/y2/yr2-index.html" class="year-card year-2"><h2>Year 2</h2></a>
-        </div>
+  <!-- Main -->
+  <main>
+    <h2 id="ks1" class="ks-heading">Key Stage 1</h2>
+    <div class="year-grid ks1">
+      <a href="yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
+      <a href="yeargroups/KS1/y1/yr1-index.html" class="year-card year-1"><h2>Year 1</h2></a>
+      <a href="yeargroups/KS1/y2/yr2-index.html" class="year-card year-2"><h2>Year 2</h2></a>
+    </div>
 
-        <h2 class="ks-heading">Key Stage 2</h2>
-        <div class="year-grid ks2">
-            <a href="yeargroups/KS2/y3/yr3-index.html" class="year-card year-3"><h2>Year 3</h2></a>
-            <a href="yeargroups/KS2/y4/yr4-index.html" class="year-card year-4"><h2>Year 4</h2></a>
-            <a href="yeargroups/KS2/y5/yr5-index.html" class="year-card year-5"><h2>Year 5</h2></a>
-            <a href="yeargroups/KS2/y6/yr6-index.html" class="year-card year-6"><h2>Year 6</h2></a>
-        </div>
+    <h2 id="ks2" class="ks-heading">Key Stage 2</h2>
+    <div class="year-grid ks2">
+      <a href="yeargroups/KS2/y3/yr3-index.html" class="year-card year-3"><h2>Year 3</h2></a>
+      <a href="yeargroups/KS2/y4/yr4-index.html" class="year-card year-4"><h2>Year 4</h2></a>
+      <a href="yeargroups/KS2/y5/yr5-index.html" class="year-card year-5"><h2>Year 5</h2></a>
+      <a href="yeargroups/KS2/y6/yr6-index.html" class="year-card year-6"><h2>Year 6</h2></a>
+    </div>
 
-        <h2 class="ks-heading">Key Stage 3</h2>
-        <div class="year-grid ks3">
-            <a href="yeargroups/KS3/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
-            <a href="yeargroups/KS3/y8/yr8-index.html" class="year-card year-8"><h2>Year 8</h2></a>
-            <a href="yeargroups/KS3/y9/yr9-index.html" class="year-card year-9"><h2>Year 9</h2></a>
-        </div>
+    <h2 id="ks3" class="ks-heading">Key Stage 3</h2>
+    <div class="year-grid ks3">
+      <a href="yeargroups/KS3/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
+      <a href="yeargroups/KS3/y8/yr8-index.html" class="year-card year-8"><h2>Year 8</h2></a>
+      <a href="yeargroups/KS3/y9/yr9-index.html" class="year-card year-9"><h2>Year 9</h2></a>
+    </div>
 
-        <h2 class="ks-heading">Key Stage 4</h2>
-        <div class="year-grid ks4">
-            <a href="yeargroups/KS4/y10/yr10-index.html" class="year-card year-10"><h2>Year 10</h2></a>
-            <a href="yeargroups/KS4/y11/yr11-index.html" class="year-card year-11"><h2>Year 11</h2></a>
-        </div>
+    <h2 id="ks4" class="ks-heading">Key Stage 4</h2>
+    <div class="year-grid ks4">
+      <a href="yeargroups/KS4/y10/yr10-index.html" class="year-card year-10"><h2>Year 10</h2></a>
+      <a href="yeargroups/KS4/y11/yr11-index.html" class="year-card year-11"><h2>Year 11</h2></a>
+    </div>
 
-        <h2 class="ks-heading">Key Stage 5</h2>
-        <div class="year-grid ks5">
-            <a href="yeargroups/KS5/y12/yr12-index.html" class="year-card year-12"><h2>Year 12</h2></a>
-            <a href="yeargroups/KS5/y13/yr13-index.html" class="year-card year-13"><h2>Year 13</h2></a>
-        </div>
-    </main>
+    <h2 id="ks5" class="ks-heading">Key Stage 5</h2>
+    <div class="year-grid ks5">
+      <a href="yeargroups/KS5/y12/yr12-index.html" class="year-card year-12"><h2>Year 12</h2></a>
+      <a href="yeargroups/KS5/y13/yr13-index.html" class="year-card year-13"><h2>Year 13</h2></a>
+    </div>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
-    </footer>
-<script>
-document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('show');
-});
-</script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank">OA Tutors</a>. Happy Learning!</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Toggle mobile menu
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll("main h2[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
