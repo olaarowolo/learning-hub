@@ -40,7 +40,7 @@ Implement curriculum content for [Year/Subject: year 6, Maths"] based on [source
 
 ### 5. Ensure Consistency:
 
-- Use absolute link paths throughout for reliable navigation (e.g., /yeargroups/KS1/y1/subjects/english/).
+- Use absolute link paths throughout for reliable navigation (e.g., /year-round/KS1/y1/subjects/english/).
 - Maintain consistent styling with the reference template (inline CSS for main pages, linked for sub-pages).
 - Include appropriate back links and footer information with OA Tutors branding.
 - Handle unimplemented content with disabled links and visual indicators.
