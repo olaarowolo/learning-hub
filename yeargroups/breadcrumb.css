@@ -1,0 +1,32 @@
+.breadcrumb-nav {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+.breadcrumb-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        font-size: 12px;
+        top: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+}
