@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Year 3: Multiplication Tables — Interactive Worksheet</title>
+<link rel="stylesheet" href="/yeargroups/breadcrumb.css" />
+<style>
+body{font-family:system-ui,Arial,sans-serif;background:#f4f6fb;margin:20px;color:#111;}
+.wrap{max-width:850px;margin:0 auto;background:#fff;padding:20px;border-radius:10px;
+      box-shadow:0 5px 25px rgba(0,0,0,0.1);}
+h1{font-size:24px;margin-bottom:6px;text-align:center;color:#2b7cff;}
+h2{margin-top:18px;color:#2b7cff;}
+.section{margin:16px 0;padding:12px;background:#fbfbff;border-radius:8px;border:1px solid #dfe6ff;}
+.box{padding:10px;background:#fff;border-radius:6px;border:1px solid #e2e7ff;margin-bottom:12px;}
+input[type=text]{padding:8px;font-size:16px;border:1px solid #ccd7f8;border-radius:6px;width:60px;text-align:center;}
+button{padding:10px 14px;margin-top:10px;border:none;border-radius:6px;font-weight:600;cursor:pointer;background:#2b7cff;color:#fff;}
+.feedback{margin-top:12px;}
+.correct{background:#e9fff0;border-left:4px solid #44b36b;padding:8px;border-radius:6px;}
+.incorrect{background:#fff1f1;border-left:4px solid #e06a6a;padding:8px;border-radius:6px;}
+.small{font-size:14px;color:#555;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="breadcrumb" style="margin-bottom: 10px; font-size: 14px;">
+    <a href="/index.html">Home</a> >
+    <a href="/yeargroups/">Year Groups</a> >
+    <a href="/yeargroups/KS2/">KS2</a> >
+    <a href="/yeargroups/KS2/y3/">Year 3</a> >
+    <a href="/yeargroups/KS2/y3/subjects/">Subjects</a> >
+    <a href="/yeargroups/KS2/y3/subjects/maths/">Maths</a> >
+    <a href="/yeargroups/KS2/y3/subjects/maths/activities/">Activities</a> >
+    <span>Multiplication Tables</span>
+  </nav>
+  <button onclick="window.location.href='/index.html'">Back to Home Page</button>
+  <h1>Year 3 Maths: Multiplication Tables</h1>
+
+  <div class="section">
+    <h2>📘 Self-Paced Lesson Note</h2>
+    <p>
+      Today we will practice multiplication tables. Multiplication is repeated addition.
+      <strong>Multiplication tables</strong> help us quickly calculate how many items we have when we group them.
+    </p>
+    <p class="small">
+      Example: 3 × 4 = 12 means 3 groups of 4 items = 12 items total.
+      Or: 4 + 4 + 4 = 12
+    </p>
+    <p>
+      Key facts to remember:
+      <ul>
+        <li>Any number multiplied by 0 equals 0</li>
+        <li>Any number multiplied by 1 equals the number itself</li>
+        <li>Multiplication is commutative: 3 × 4 = 4 × 3</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>📝 Practice Problems</h2>
+    <div class="box">
+      1. 2 × 3 = <input type="text" id="q1" title="Answer for question 1: 2 times 3">
+    </div>
+    <div class="box">
+      2. 4 × 5 = <input type="text" id="q2" title="Answer for question 2: 4 times 5">
+    </div>
+    <div class="box">
+      3. 6 × 2 = <input type="text" id="q3" title="Answer for question 3: 6 times 2">
+    </div>
+    <div class="box">
+      4. 3 × 7 = <input type="text" id="q4" title="Answer for question 4: 3 times 7">
+    </div>
+    <div class="box">
+      5. 5 × 5 = <input type="text" id="q5" title="Answer for question 5: 5 times 5">
+    </div>
+    <div class="box">
+      6. 8 × 1 = <input type="text" id="q6" title="Answer for question 6: 8 times 1">
+    </div>
+    <div class="box">
+      7. 9 × 0 = <input type="text" id="q7" title="Answer for question 7: 9 times 0">
+    </div>
+    <div class="box">
+      8. 2 × 6 = <input type="text" id="q8" title="Answer for question 8: 2 times 6">
+    </div>
+  </div>
+
+  <button onclick="checkAnswers()">Check Answers</button>
+  <div id="feedback" class="feedback"></div>
+</div>
+
+<script>
+const answers = {
+  q1: {ans:6, expl:"2 × 3 = 6 (2 groups of 3)"},
+  q2: {ans:20, expl:"4 × 5 = 20 (4 groups of 5)"},
+  q3: {ans:12, expl:"6 × 2 = 12 (6 groups of 2)"},
+  q4: {ans:21, expl:"3 × 7 = 21 (3 groups of 7)"},
+  q5: {ans:25, expl:"5 × 5 = 25 (5 groups of 5)"},
+  q6: {ans:8, expl:"8 × 1 = 8 (any number multiplied by 1 equals itself)"},
+  q7: {ans:0, expl:"9 × 0 = 0 (any number multiplied by 0 equals 0)"},
+  q8: {ans:12, expl:"2 × 6 = 12 (2 groups of 6)"},
+};
+
+function checkAnswers(){
+  let fb = '';
+  for(let q in answers){
+    let user = document.getElementById(q).value.trim();
+    let correct = answers[q].ans;
+    if(Number(user) === correct){
+      fb += `<div class="correct">✅ Q${q.slice(1)} Correct! ${answers[q].expl}</div>`;
+    } else {
+      fb += `<div class="incorrect">❌ Q${q.slice(1)} Incorrect. ${answers[q].expl}</div>`;
+    }
+  }
+  document.getElementById('feedback').innerHTML = fb;
+}
+</script>
+</body>
+</html>

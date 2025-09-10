@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Year 7 - English</title>
+    <title>Year 11 - Mathematics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/yeargroups/breadcrumb.css" />
     <style>
         :root {
-            --color-year-7: #009688; --color-year-7-light: #4db6ac;
-            --theme-color: var(--color-year-7);
-            --theme-color-light: var(--color-year-7-light);
+            --color-year-11: #795548; --color-year-11-light: #a1887f;
+            --theme-color: var(--color-year-11);
+            --theme-color-light: var(--color-year-11-light);
             --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
             --card-bg: #ffffff; --border-color: #dee2e6;
             --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
@@ -26,11 +26,12 @@
         .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
         main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
         main h2 { color: var(--theme-color); margin-bottom: 1rem; }
-        main h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
         main p { margin-bottom: 1rem; }
-        main ul { padding-left: 40px; margin-bottom: 1rem; }
-        main ul li { margin-bottom: 0.5rem; }
-        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        .subject-title {
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
         .resource-links {
             list-style: none;
             padding: 0;
@@ -48,17 +49,12 @@
             border-radius: 8px;
             font-weight: 600;
             border: 1px solid var(--border-color);
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            transition: all 0.2s ease-in-out;
         }
         .resource-links a:hover {
             background-color: #e9ecef;
             transform: translateY(-2px);
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        .subject-title {
-            margin-top: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
         }
         .term-links {
             list-style: none;
@@ -92,10 +88,10 @@
             cursor: not-allowed;
             pointer-events: none;
         }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
         @media (max-width: 768px) {
             .year-header { padding-bottom: 1rem; }
             .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
-            .term-links { flex-direction: column; }
         }
     </style>
 </head>
@@ -104,37 +100,27 @@
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
             <a href="/index.html">Home</a> >
             <span>Year Groups</span> >
-            <span>KS3</span> >
-            <a href="/yeargroups/KS3/y7/yr7-index.html">Year 7</a> >
-            <span>English</span>
+            <span>KS4</span> >
+            <a href="/yeargroups/KS4/y11/yr11-index.html">Year 11</a> >
+            <span>Mathematics</span>
         </nav>
-        <h1>Year 7 - English</h1>
-        <a href="/yeargroups/KS3/y7/yr7-index.html" class="back-link">← Back to Year 7 Home</a>
+        <h1>Year 11 - Mathematics</h1>
+        <a href="/yeargroups/KS4/y11/yr11-index.html" class="back-link">← Back to Year 11 Home</a>
     </header>
     <main>
-        <h2>Welcome to Year 7 English!</h2>
-        <p>Develop your reading, writing, and communication skills through engaging literature, creative writing, and language analysis. Build confidence in expressing your ideas and understanding complex texts.</p>
-
-        <h3 class="subject-title">Key Skills & Topics</h3>
-        <ul class="resource-links">
-            <li><a href="/yeargroups/KS3/y7/subjects/english/reading-comprehension.html">Reading Comprehension & Analysis</a></li>
-            <li><a href="/yeargroups/KS3/y7/subjects/english/creative-writing.html">Creative Writing & Storytelling</a></li>
-            <li><a href="/yeargroups/KS3/y7/subjects/english/grammar.html">Grammar & Language Structure</a></li>
-            <li><a href="/yeargroups/KS3/y7/subjects/english/poetry.html">Poetry & Literary Devices</a></li>
-            <li><a href="/yeargroups/KS3/y7/subjects/english/shakespeare.html">Shakespeare & Classic Literature</a></li>
-            <li><a href="/yeargroups/KS3/y7/subjects/english/media-literacy.html">Media & Digital Literacy</a></li>
-        </ul>
+        <h2>Welcome to Year 11 Mathematics!</h2>
+        <p>Explore the world of numbers, shapes, and problem-solving. Use the links below to navigate through the curriculum and term content.</p>
 
         <h3 class="subject-title">Curriculum Resources</h3>
         <ul class="resource-links">
-            <li><a href="/yeargroups/KS3/y7/subjects/english/plan.html">Year 7 English Curriculum Plan</a></li>
+            <li><a href="/yeargroups/KS4/y11/subjects/maths/plan.html">Year 11 Maths Curriculum Plan</a></li>
         </ul>
 
         <h3 class="subject-title">Term Content</h3>
         <ul class="term-links">
-            <li><a href="/yeargroups/KS3/y7/subjects/english/autumn/">Autumn Term</a></li>
-            <li class="disabled"><a href="/yeargroups/KS3/y7/subjects/english/spring/">Spring Term</a></li>
-            <li class="disabled"><a href="/yeargroups/KS3/y7/subjects/english/summer/">Summer Term</a></li>
+            <li class="disabled"><a href="#">Autumn Term</a></li>
+            <li class="disabled"><a href="#">Spring Term</a></li>
+            <li class="disabled"><a href="#">Summer Term</a></li>
         </ul>
     </main>
     <footer>
@@ -142,4 +128,3 @@
     </footer>
 </body>
 </html>
-

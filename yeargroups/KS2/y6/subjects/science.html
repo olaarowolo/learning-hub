@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>year 6 - Science</title>
+    <title>Year 6 - Science</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/yeargroups/breadcrumb.css" />
     <style>
         :root {
             --color-year-6: #2196F3; --color-year-6-light: #64B5F6;
@@ -26,22 +27,107 @@
         main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
         main h2 { color: var(--theme-color); margin-bottom: 1rem; }
         main p { margin-bottom: 1rem; }
+        .subject-title {
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .resource-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .resource-links li {
+            margin-bottom: 0.5rem;
+        }
+        .resource-links a {
+            display: block;
+            text-decoration: none;
+            background-color: #f1f3f5;
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+        .resource-links a:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .term-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .term-links li {
+            flex: 1 1 150px;
+            margin-bottom: 0;
+        }
+        .term-links a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--theme-color-light);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .term-links a:hover {
+            background-color: var(--theme-color);
+            transform: translateY(-2px);
+        }
+        .term-links li.disabled a {
+            background-color: #ced4da;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
         footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
         @media (max-width: 768px) {
             .year-header { padding-bottom: 1rem; }
             .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+            .term-links { flex-direction: column; }
         }
     </style>
 </head>
 <body>
     <header class="year-header">
-        <h1>year 6 - Science</h1>
-        <a href="/yeargroups/KS3/y6/yr6-index.html" class="back-link">← Back to year 6 Home</a>
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <a href="/index.html">Home</a> >
+            <span>Year Groups</span> >
+            <span>KS2</span> >
+            <a href="/yeargroups/KS2/y6/yr6-index.html">Year 6</a> >
+            <span>Science</span>
+        </nav>
+        <h1>Year 6 - Science</h1>
+        <a href="/yeargroups/KS2/y6/yr6-index.html" class="back-link">← Back to Year 6 Home</a>
     </header>
     <main>
-        <h2>Welcome to year 6 Science!</h2>
-        <p>This is a placeholder page for year 6 Science subject content.</p>
-        <p>Add notes, videos, exercises, and other learning materials here.</p>
+        <h2>Welcome to Year 6 Science!</h2>
+        <p>Explore the fascinating world of science through hands-on experiments, interactive lessons, and real-world applications. Discover how science shapes our understanding of the universe.</p>
+
+        <h3 class="subject-title">Key Topics</h3>
+        <ul class="resource-links">
+            <li><a href="#">Living Things & Habitats</a></li>
+            <li><a href="#">Evolution & Inheritance</a></li>
+            <li><a href="#">Light & Sound</a></li>
+            <li><a href="#">Electricity</a></li>
+            <li><a href="#">Forces & Magnets</a></li>
+            <li><a href="#">Earth & Space</a></li>
+        </ul>
+
+        <h3 class="subject-title">Term Content</h3>
+        <ul class="term-links">
+            <li class="disabled"><a href="#">Autumn Term</a></li>
+            <li class="disabled"><a href="#">Spring Term</a></li>
+            <li class="disabled"><a href="#">Summer Term</a></li>
+        </ul>
     </main>
     <footer>
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
