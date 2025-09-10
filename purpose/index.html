@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="/nav.css" rel="stylesheet">
 <title>Purpose-in-Motion™ – OA Tutors</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -13,6 +15,13 @@
     --text-light: #6c757d;
     --card-shadow: 0 4px 15px rgba(0,0,0,0.08);
     --card-shadow-hover: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.navbar-mainbg {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #5161ce;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -76,20 +85,7 @@ footer { text-align:center; padding:2rem 1rem; color: var(--text-light); font-si
 </style>
 </head>
 <body>
-<header class="nav-container">
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <div class="nav-inner">
-        <div class="logo"><a href="/">Learning Hub</a></div>
-        <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
-    </div>
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="/">Tuition</a></li>
-            <li><a href="/">Resources</a></li>
-            <li><a href="#">Purpose-in-Motion™</a></li>
-        </ul>
-    </nav>
-</header>
+
 
 <header>
     <h1>Purpose-in-Motion™</h1>
@@ -159,5 +155,7 @@ footer { text-align:center; padding:2rem 1rem; color: var(--text-light); font-si
     scrollBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 })();
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/new-nav.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/nav.css" />
     <style>
         :root {
             --color-year-13: #673AB7; --color-year-13-light: #9575CD;
@@ -38,6 +39,23 @@
     </style>
 </head>
 <body>
+    <header class="nav-container">
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
+        <div class="nav-inner">
+            <div class="logo"><a href="/">Learning Hub</a></div>
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+        </div>
+        <nav class="mobile-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/#ks1">KS1</a></li>
+                <li><a href="/#ks2">KS2</a></li>
+                <li><a href="/#ks3">KS3</a></li>
+                <li><a href="/#ks4">KS4</a></li>
+                <li><a href="/#ks5">KS5</a></li>
+                <li><a href="/purpose/index.html">Purpose-in-Motion™</a></li>
+            </ul>
+        </nav>
+    </header>
     <header class="year-header">
         <h1>Year 13 English - Curriculum Plan</h1>
         <a href="/yeargroups/KS5/y13/subjects/english/en-index.html" class="back-link">← Back to English Home</a>
@@ -80,5 +98,6 @@
     <footer>
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
+    <script src="/nav.js" defer></script>
 </body>
 </html>

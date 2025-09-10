@@ -1,421 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Learning Hub - by OA Tutors</title>
+
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-    /* --- Global Styles & Resets --- */
-    :root {
-        --color-reception: #7e57c2; /* Deep Purple */
-        --color-year-1: #ffc107; /* Amber */
-        --color-year-2: #2196f3; /* Blue */
-        --color-year-3: #4caf50; /* Green */
-        --color-year-4: #ff9800; /* Orange */
-        --color-year-5: #9c27b0; /* Purple */
-        --color-year-6: #e91e63; /* Pink */
-        --color-year-7: #009688; /* Teal */
-        --color-year-8: #f44336; /* Red */
-        --color-year-9: #3f51b5; /* Indigo */
-        --bg-color: #f8f9fa;
-        --text-dark: #343a40;
-        --text-light: #6c757d;
-        --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
-        --primary: #2196f3;
-        --nav-height: 64px;
-    }
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+<!-- Font Awesome (single import) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-dark);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
-    }
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="/index.css" rel="stylesheet">
 
-    /* --- Skip link for accessibility --- */
-    .skip-link {
-        position: absolute;
-        left: -9999px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-    .skip-link:focus {
-        left: 1rem;
-        top: 1rem;
-        width: auto;
-        height: auto;
-        padding: .5rem .75rem;
-        background: #fff;
-        color: var(--text-dark);
-        border-radius: 4px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        z-index: 2000;
-    }
+<!-- jQuery (single import) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    /* --- Header --- */
-    header {
-        text-align: center;
-        padding: 3rem 1rem 2rem;
-    }
 
-    header h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        color: var(--text-dark);
-    }
-
-    header p {
-        font-size: 1.1rem;
-        color: var(--text-light);
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    /* --- Navigation --- */
-    .nav-container {
-        position: sticky;
-        top: 0;
-        z-index: 1200;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .menu-toggle {
-        position: absolute;
-        left: -9999px;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-    .nav-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: .9rem 1.25rem;
-        min-height: var(--nav-height);
-    }
-    .logo { font-weight: 700; font-size: 1.2rem; text-decoration: none; }
-  
-  /* --- Navigation --- */
-.logo a,
-.mobile-nav a {
-    text-decoration: none; /* Remove underline */
-    color: inherit;        /* Keep original color */
-}
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 22px;
-        cursor: pointer;
-    }
-    .hamburger span {
-        display: block;
-        height: 3px;
-        background: var(--text-dark);
-        border-radius: 3px;
-        transition: transform .28s ease, opacity .18s ease, background .18s ease;
-    }
-
-    .mobile-nav {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .36s ease;
-        border-top: 1px solid #eee;
-        background: #fff;
-            text-decoration: none;
-    }
-    .mobile-nav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    .mobile-nav li { margin: 0; }
-    .mobile-nav a {
-        display: block;
-        padding: .95rem 1.25rem;
-        color: var(--text-dark);
-        font-weight: 600;
-        border-bottom: 1px solid #f0f0f0;
-    }
-    .mobile-nav a:hover,
-    .mobile-nav a:focus { background: #fbfbfb; }
-
-    /* Hamburger animation */
-    .menu-toggle:checked + .nav-inner .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(5px,5px);
-        background: var(--primary);
-    }
-    .menu-toggle:checked + .nav-inner .hamburger span:nth-child(2) {
-        opacity: 0; transform: translateX(-12px);
-    }
-    .menu-toggle:checked + .nav-inner .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px,-5px);
-        background: var(--primary);
-    }
-    .menu-toggle:checked ~ .mobile-nav {
-        max-height: 520px;
-    }
-
-    @media(min-width:768px){
-        .hamburger{display:none;}
-        .mobile-nav{max-height:none;}
-        .mobile-nav ul{flex-direction:row;gap:1.5rem;align-items:center;padding:0 1.25rem;}
-        .mobile-nav a{border-bottom:none;padding:0;}
-    }
-
-    .mobile-nav a.active{
-        color: var(--primary);
-        border-bottom: 2px solid var(--primary);
-        padding-bottom: 6px;
-    }
-
-    /* --- Main Content: Year Grid --- */
-    main {
-        padding: 1rem 2rem 3rem;
-    }
-
-    .year-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    /* --- Year Card Styling --- */
-    .year-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 180px;
-        padding: 1.5rem;
-        border-radius: 16px;
-        text-decoration: none;
-        color: white;
-        box-shadow: var(--card-shadow);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .year-card:hover {
-        transform: translateY(-8px);
-        box-shadow: var(--card-shadow-hover);
-    }
-
-    .year-card h2 {
-        font-size: 2rem;
-        font-weight: 600;
-        text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-    }
-
-    /* --- Individual Card Colors with Gradients --- */
-    .reception { background: linear-gradient(45deg, var(--color-reception), #9575cd); }
-    .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
-    .year-2 { background: linear-gradient(45deg, var(--color-year-2), #64b5f6); }
-    .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
-    .year-4 { background: linear-gradient(45deg, var(--color-year-4), #ffb74d); }
-    .year-5 { background: linear-gradient(45deg, var(--color-year-5), #ba68c8); }
-    .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
-    .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
-    .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
-    .year-9 { background: linear-gradient(45deg, var(--color-year-9), #6573c3); }
-    .year-10 { background: linear-gradient(45deg, #3f51b5, #6573c3); }
-    .year-11 { background: linear-gradient(45deg, #2196f3, #64b5f6); }
-    .year-12 { background: linear-gradient(45deg, #4caf50, #81c784); }
-    .year-13 { background: linear-gradient(45deg, #ff9800, #ffb74d); }
-
-    /* --- Key Stage Headings --- */
-    .ks-heading {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: var(--text-dark);
-        margin: 2rem 0 1rem 0;
-        text-align: center;
-    }
-
-    /* --- Footer --- */
-    footer {
-        text-align: center;
-        padding: 2rem 1rem;
-        color: var(--text-light);
-        font-size: 0.9rem;
-    }
-
-    /* --- Scroll to top button --- */
-    #scrollTopBtn {
-        position: fixed;
-        right: 20px;
-        bottom: 26px;
-        z-index: 1500;
-        background: var(--primary);
-        color: #fff;
-        border: 0;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        font-size: 20px;
-        cursor: pointer;
-        box-shadow: 0 6px 14px rgba(33,150,243,.18);
-        display: none;
-        align-items: center;
-        justify-content: center;
-    }
-    #scrollTopBtn:hover { background: #1976d2; }
-
-    /* --- Responsive Adjustments --- */
-    @media (max-width: 768px) {
-        header h1 { font-size: 2rem; }
-        .year-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    }
-    @media (max-width: 480px) {
-        main { padding: 1rem; }
-        .year-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-        header h1 { font-size: 1.8rem; }
-        .year-card h2 { font-size: 2.2rem; }
-        body { font-size: 110%; }
-    }
-</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 
-<header class="nav-container" aria-expanded="false">
-    <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
-    <div class="nav-inner" style="text-decoration:none">
-        <div class="logo"><a href="/">Learning Hub</a></div>
-        <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
-    </div>
-    <nav class="mobile-nav" aria-label="Primary navigation">
-        <ul>
-            <li><a href="#ks1">KS1</a></li>
-            <li><a href="#ks2">KS2</a></li>
-            <li><a href="#ks3">KS3</a></li>
-            <li><a href="#ks4">KS4</a></li>
-            <li><a href="#ks5">KS5</a></li>
-            <li><a href="#purpose">Purpose-in-Motion™</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+  <a class="navbar-brand navbar-logo" href="/">Learning Hub</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+      <li class="nav-item active"><a class="nav-link" href="#ks1">KS1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#ks2">KS2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#ks3">KS3</a></li>
+      <li class="nav-item"><a class="nav-link" href="#ks4">KS4</a></li>
+      <li class="nav-item"><a class="nav-link" href="#ks5">KS5</a></li>
+      <li class="nav-item"><a class="nav-link" href="#purpose">Purpose-in-Motion™</a></li>
+      <li class="nav-item"><a class="nav-link" href="#purpose">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#purpose">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
 <header>
-    <h1>Welcome, Future Stars! ✨</h1>
-    <p>Ready for an adventure? Pick your year to start learning!</p>
+  <h1>Welcome, Future Stars! ✨</h1>
+  <p>Ready for an adventure? Pick your year to start learning!</p>
 </header>
 
 <main id="main-content">
-    <!-- KS1 -->
-    <h2 id="ks1" class="ks-heading">Key Stage 1</h2>
-    <div class="year-grid">
-        <a href="yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
-        <a href="yeargroups/KS1/y1/yr1-index.html" class="year-card year-1"><h2>Year 1</h2></a>
-        <a href="yeargroups/KS1/y2/yr2-index.html" class="year-card year-2"><h2>Year 2</h2></a>
-    </div>
+  <!-- KS1 -->
+  <h2 id="ks1" class="ks-heading">Key Stage 1</h2>
+  <div class="year-grid">
+    <a href="yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"><h2>Reception</h2></a>
+    <a href="yeargroups/KS1/y1/yr1-index.html" class="year-card year-1"><h2>Year 1</h2></a>
+    <a href="yeargroups/KS1/y2/yr2-index.html" class="year-card year-2"><h2>Year 2</h2></a>
+  </div>
 
-    <!-- KS2 -->
-    <h2 id="ks2" class="ks-heading">Key Stage 2</h2>
-    <div class="year-grid">
-        <a href="yeargroups/KS2/y3/yr3-index.html" class="year-card year-3"><h2>Year 3</h2></a>
-        <a href="yeargroups/KS2/y4/yr4-index.html" class="year-card year-4"><h2>Year 4</h2></a>
-        <a href="yeargroups/KS2/y5/yr5-index.html" class="year-card year-5"><h2>Year 5</h2></a>
-        <a href="yeargroups/KS2/y6/yr6-index.html" class="year-card year-6"><h2>Year 6</h2></a>
-    </div>
+  <!-- KS2 -->
+  <h2 id="ks2" class="ks-heading">Key Stage 2</h2>
+  <div class="year-grid">
+    <a href="yeargroups/KS2/y3/yr3-index.html" class="year-card year-3"><h2>Year 3</h2></a>
+    <a href="yeargroups/KS2/y4/yr4-index.html" class="year-card year-4"><h2>Year 4</h2></a>
+    <a href="yeargroups/KS2/y5/yr5-index.html" class="year-card year-5"><h2>Year 5</h2></a>
+    <a href="yeargroups/KS2/y6/yr6-index.html" class="year-card year-6"><h2>Year 6</h2></a>
+  </div>
 
-    <!-- KS3 -->
-    <h2 id="ks3" class="ks-heading">Key Stage 3</h2>
-    <div class="year-grid">
-        <a href="yeargroups/KS3/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
-        <a href="yeargroups/KS3/y8/yr8-index.html" class="year-card year-8"><h2>Year 8</h2></a>
-        <a href="yeargroups/KS3/y9/yr9-index.html" class="year-card year-9"><h2>Year 9</h2></a>
-    </div>
+  <!-- KS3 -->
+  <h2 id="ks3" class="ks-heading">Key Stage 3</h2>
+  <div class="year-grid">
+    <a href="yeargroups/KS3/y7/yr7-index.html" class="year-card year-7"><h2>Year 7</h2></a>
+    <a href="yeargroups/KS3/y8/yr8-index.html" class="year-card year-8"><h2>Year 8</h2></a>
+    <a href="yeargroups/KS3/y9/yr9-index.html" class="year-card year-9"><h2>Year 9</h2></a>
+  </div>
 
-    <!-- KS4 -->
-    <h2 id="ks4" class="ks-heading">Key Stage 4</h2>
-    <div class="year-grid">
-        <a href="yeargroups/KS4/y10/yr10-index.html" class="year-card year-10"><h2>Year 10</h2></a>
-        <a href="yeargroups/KS4/y11/yr11-index.html" class="year-card year-11"><h2>Year 11</h2></a>
-    </div>
+  <!-- KS4 -->
+  <h2 id="ks4" class="ks-heading">Key Stage 4</h2>
+  <div class="year-grid">
+    <a href="yeargroups/KS4/y10/yr10-index.html" class="year-card year-10"><h2>Year 10</h2></a>
+    <a href="yeargroups/KS4/y11/yr11-index.html" class="year-card year-11"><h2>Year 11</h2></a>
+  </div>
 
-    <!-- KS5 -->
-    <h2 id="ks5" class="ks-heading">Key Stage 5</h2>
-    <div class="year-grid">
-        <a href="yeargroups/KS5/y12/yr12-index.html" class="year-card year-12"><h2>Year 12</h2></a>
-        <a href="yeargroups/KS5/y13/yr13-index.html" class="year-card year-13"><h2>Year 13</h2></a>
-    </div>
+  <!-- KS5 -->
+  <h2 id="ks5" class="ks-heading">Key Stage 5</h2>
+  <div class="year-grid">
+    <a href="yeargroups/KS5/y12/yr12-index.html" class="year-card year-12"><h2>Year 12</h2></a>
+    <a href="yeargroups/KS5/y13/yr13-index.html" class="year-card year-13"><h2>Year 13</h2></a>
+  </div>
 
-    <!-- Purpose-in-Motion™ -->
-    <h2 id="purpose" class="ks-heading">Purpose-in-Motion™</h2>
-    <div style="max-width:960px;margin:0 auto 3rem;padding:0 1rem;text-align:center;color:var(--text-light)">
-        <p><strong>Purpose-in-Motion™</strong> — short blurb or link to the program page.</p>
-        <p><a href="purpose/index.html" style="color:var(--primary);font-weight:700;text-decoration:underline">Learn more</a></p>
-    </div>
+  <!-- Purpose-in-Motion -->
+  <h2 id="purpose" class="ks-heading">Purpose-in-Motion™</h2>
+  <div style="max-width:960px;margin:0 auto 3rem;padding:0 1rem;text-align:center;color:var(--text-light)">
+    <p><strong>Purpose-in-Motion™</strong> — short blurb or link to the program page.</p>
+    <p><a href="purpose/index.html" style="color:var(--primary);font-weight:700;text-decoration:underline">Learn more</a></p>
+  </div>
 </main>
 
 <footer>
-    <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+  <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
 </footer>
 
 <button id="scrollTopBtn" aria-label="Back to top" title="Back to top">↑</button>
 
+<!-- Popper + Bootstrap JS (loaded after jQuery) -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <script>
-(function(){
-    const menuToggle = document.getElementById('menu-toggle');
-    const navContainer = document.querySelector('.nav-container');
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
+/* ---------- NAV JS ---------- */
+/* Global function test() so any other script that expects test() will work */
+function test(){
+  var $tabs = $('#navbarSupportedContent');
+  var $active = $tabs.find('li.active');
 
-    menuToggle.addEventListener('change', ()=>{
-        navContainer.setAttribute('aria-expanded', menuToggle.checked ? 'true' : 'false');
-    });
+  if ($active.length === 0) {
+    $active = $tabs.find('li').first().addClass('active');
+  }
 
-    mobileNavLinks.forEach(link => {
-        link.addEventListener('click', ()=>{
-            if(window.innerWidth < 768){
-                menuToggle.checked = false;
-                navContainer.setAttribute('aria-expanded','false');
-            }
-        });
-    });
+  var activeHeight = $active.innerHeight();
+  var activeWidth = $active.innerWidth();
+  var itemPos = $active.position(); // relative to parent (#navbarSupportedContent)
 
-    const sections = document.querySelectorAll('main h2[id]');
-    const navLinks = document.querySelectorAll('.mobile-nav a');
-    const observer = new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-            if(entry.isIntersecting){
-                const id = entry.target.getAttribute('id');
-                navLinks.forEach(a => a.classList.remove('active'));
-                const active = document.querySelector('.mobile-nav a[href="#'+id+'"]');
-                if(active) active.classList.add('active');
-            }
-        });
-    },{root:null,rootMargin:'0px 0px -48% 0px',threshold:0});
-    sections.forEach(s=>observer.observe(s));
+  var $selector = $(".hori-selector");
+  // If selector not present, create minimal fallback (ensures no errors)
+  if (!$selector.length) {
+    $selector = $('<div class="hori-selector"><div class="left"></div><div class="right"></div></div>');
+    $('#navbarSupportedContent > ul').prepend($selector);
+  }
 
-    window.addEventListener('scroll', ()=>{
-        scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? 'flex' : 'none';
-    });
-    scrollTopBtn.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
+  $selector.css({
+    "top": itemPos.top + "px",
+    "left": itemPos.left + "px",
+    "height": activeHeight + "px",
+    "width": activeWidth + "px"
+  });
+}
 
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth >= 768){
-            menuToggle.checked=false;
-            navContainer.setAttribute('aria-expanded','false');
+/* Initialize nav behavior (clicks, resize, toggler) */
+$(document).ready(function(){
+  // Apply active from URL hash (e.g. #ks3) if present
+  var hash = window.location.hash;
+  if (hash) {
+    var $link = $('#navbarSupportedContent ul li a[href="' + hash + '"]');
+    if ($link.length) {
+      $('#navbarSupportedContent ul li').removeClass('active');
+      $link.parent().addClass('active');
+    }
+  } else {
+    // fallback: ensure at least first item active
+    if ($('#navbarSupportedContent ul li.active').length === 0) {
+      $('#navbarSupportedContent ul li').first().addClass('active');
+    }
+  }
+
+  // initial position
+  setTimeout(function(){ test(); }, 10);
+
+  // click handler (delegated)
+  $('#navbarSupportedContent').on('click', 'li', function(e){
+    $('#navbarSupportedContent ul li').removeClass('active');
+    $(this).addClass('active');
+    test();
+  });
+
+  // on collapse toggle (mobile)
+  $('.navbar-toggler').on('click', function(){
+    // let bootstrap finish toggling, then update selector
+    setTimeout(function(){ test(); }, 300);
+  });
+
+  // resize -> reposition
+  $(window).on('resize', function(){
+    setTimeout(function(){ test(); }, 300);
+  });
+});
+
+/* ---------- Scroll-based active highlighting ---------- */
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  const sections = document.querySelectorAll('main h2[id]');
+
+  if (sections.length > 0 && (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname === '')) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          const $navItems = $('#navbarSupportedContent ul li');
+          $navItems.removeClass('active');
+          const $activeLink = $('#navbarSupportedContent ul li a[href="#' + id + '"]');
+          if ($activeLink.length) {
+            $activeLink.parent().addClass('active');
+            test();
+          }
         }
-    });
-})();
+      });
+    }, { root: null, rootMargin: '0px 0px -48% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  }
+
+  // scroll top button
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? 'flex' : 'none';
+  });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+});
 </script>
 </body>
 </html>
