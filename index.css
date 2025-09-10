@@ -9,7 +9,8 @@ body{
   }
   i { margin-right: 10px; }
 
-  .navbar-logo{ padding: 15px; color: #fff; }
+  .navbar-logo{ padding: 15px; color: #fff; display: flex; align-items: center; }
+  .navbar-logo-img { height: 40px; width: auto; margin-right: 10px; vertical-align: middle; background: white; border-radius: 20%; padding: 5px; }
   .navbar-mainbg{ background-color: #5161ce; padding: 0px; position: sticky; top: 0; z-index: 1020; }
   #navbarSupportedContent{ overflow: hidden; position: relative; }
   #navbarSupportedContent ul{ padding: 0px; margin: 0px; }
