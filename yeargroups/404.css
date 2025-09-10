@@ -1,7 +1,7 @@
 body {
     font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-    font-weight: bold;
+    font-weight: 900;
     color: #fff;
     display: flex;
     flex-direction: column;
