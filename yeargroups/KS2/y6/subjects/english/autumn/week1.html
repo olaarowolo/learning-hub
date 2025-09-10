@@ -105,6 +105,49 @@
             padding: 1rem 1.5rem;
             border-radius: 8px;
         }
+        /* Added styles for floating back button */
+        .floating-back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .floating-back-btn:hover {
+            background-color: var(--theme-color-dark);
+        }
+        .close-btn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            line-height: 1;
+        }
+        .hidden {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -212,6 +255,18 @@
     <footer>
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
+    <!-- Floating Back Button -->
+    <button class="floating-back-btn" onclick="window.location.href='../en-index.html'">
+        ←
+    </button>
+    <button class="close-btn" onclick="hideButton()">×</button>
+
+    <script>
+        function hideButton() {
+            const btn = document.querySelector('.floating-back-btn');
+            btn.classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
 

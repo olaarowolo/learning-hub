@@ -55,6 +55,54 @@
             pointer-events: none;
             cursor: not-allowed;
         }
+        .floating-back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-back-btn:hover {
+            background-color: var(--theme-color-light);
+            transform: scale(1.1);
+        }
+
+        .floating-back-btn.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .floating-back-btn:hover .close-btn {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -81,9 +129,23 @@
             </ul>
         </main>
     </div>
+
     <footer>
         <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
     </footer>
+
+    <!-- Floating Back Button -->
+    <button class="floating-back-btn" onclick="window.location.href='../en-index.html'">
+        ←
+        <button class="close-btn" onclick="event.stopPropagation(); hideButton()">×</button>
+    </button>
+
+    <script>
+        function hideButton() {
+            const btn = document.querySelector('.floating-back-btn');
+            btn.classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
 
