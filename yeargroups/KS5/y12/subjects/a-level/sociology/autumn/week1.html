@@ -129,7 +129,8 @@
         @media (max-width: 360px) {
             .year-header h1 { font-size: 0.9rem !important; }
         }
-    </style>
+    .download-links a.disabled { pointer-events: none; color: gray; opacity: 0.5; }
+</style>
 </head>
 <body>
     <header class="year-header">
@@ -218,7 +219,7 @@
             </div>
 
             <div class="solution-request">
-                If you are ready to request for the solution, please use this link: <a href="#" target="_blank" rel="noopener">Solution Link</a>.
+                If you are ready to request for the solution, please use this link: <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">Solution Link</a>.
             </div>
         </main>
     </div>
@@ -227,4 +228,5 @@
     </footer>
 </body>
 </html>
+
 

@@ -96,7 +96,8 @@
             border-radius: 8px;
             margin-bottom: 1rem;
         }
-    </style>
+    .download-links a.disabled { pointer-events: none; color: gray; opacity: 0.5; }
+</style>
 </head>
 <body>
     <header class="year-header">
@@ -152,15 +153,15 @@
             </div>
 
             <div class="download-links">
-                <a href="#" target="_blank" rel="noopener">
+                <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     <span>Download the narrative planning worksheet</span>
                 </a>
-                <a href="#" target="_blank" rel="noopener">
+                <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.71,3.5,1.15,15,4.58,21,11.14,9.5Zm8.58,0L9.73,15,13.16,21,22.85,3.5ZM6,16.25,2.63,22h12.74L18.75,16.25Z"/></svg>
                     <span>Access on Google Drive</span>
                 </a>
-                <a href="#" target="_blank" rel="noopener">
+                <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 14.5v-10A2.5 2.5 0 0 1 6.5 2z"/><circle cx="12" cy="8" r="2"/><path d="M12 12v4"/></svg>
                     <span>Access on Google Classroom</span>
                 </a>
@@ -179,7 +180,7 @@
             </div>
 
             <div class="solution-request">
-                If you have completed the assessment and would like to request solutions, please use this link: <a href="#" target="_blank" rel="noopener">Solution Link</a>.
+                If you have completed the assessment and would like to request solutions, please use this link: <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">Solution Link</a>.
             </div>
 
         </main>
@@ -189,4 +190,5 @@
     </footer>
 </body>
 </html>
+
 
