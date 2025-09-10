@@ -6,10 +6,13 @@ RewriteEngine On
 # Redirect 404 errors to custom 404 page
 ErrorDocument 404 /yeargroups/404.html
 
-# Remove .html extension from URLs
+# Remove .html extension from URLs and hide .html in URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^/]+)/?$ $1.html [L]
+RewriteRule ^(.*)/?$ $1.html [L]
 
 # Optional: Redirect all requests for non-existent files to 404 page
 RewriteCond %{REQUEST_FILENAME} !-f
