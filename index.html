@@ -196,6 +196,29 @@
       font-size: 0.9rem;
     }
 
+    /* --- Scroll to Top Button --- */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--color-year-2);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 1100;
+    }
+    #scrollTopBtn:hover {
+      background: #1769aa;
+      transform: scale(1.1);
+    }
+
     /* --- Responsive --- */
     @media (max-width: 768px) {
       .hero h1 { font-size: 2rem; }
@@ -274,6 +297,9 @@
     <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank">OA Tutors</a>. Happy Learning!</p>
   </footer>
 
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" title="Back to top">↑</button>
+
   <!-- Script -->
   <script>
     // Toggle mobile menu
@@ -300,6 +326,19 @@
           link.classList.add("active");
         }
       });
+
+      // Show/hide scroll-to-top button
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+
+    // Scroll to top when button clicked
+    document.getElementById("scrollTopBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
