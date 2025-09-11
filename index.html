@@ -76,12 +76,15 @@
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link href="/index.css" rel="stylesheet">
+<link rel="stylesheet" href="search.css">
 <link rel="stylesheet" href="data/yeargroups/breadcrumb.css">
 
 <!-- jQuery (single import) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="footer.css">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -223,183 +226,7 @@
 
   <!-- Bottom Bar -->
   <div class="footer-bottom">
-    <p>Designed & Developed by OA Tutors • All Rights Reserved • <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
-  </div>
-</footer>
-<script>
-  // Dynamic copyright year
-  document.addEventListener('DOMContentLoaded', function() {
-    const yearEl = document.getElementById('copyright-year');
-    if (yearEl) {
-      const currentYear = new Date().getFullYear();
-      yearEl.textContent = `© ${currentYear} OA Tutors`;
-    }
-  });
-</script>
-
-<style>
-@media(max-width:768px){
-  .footer-container{flex-direction:column;gap:1.5rem;}
-}
-.footer-column a:hover{color:#81c784;}
-
-.search-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-  position: relative; /* This is needed to position the search results dropdown correctly */
-}
-
-#search-input {
-  position: relative; /* This allows us to use z-index */
-  z-index: 1101;      /* This lifts the search bar above the overlay */
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 2px solid #ddd;
-  border-radius: 25px;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-#search-input:focus {
-  border-color: #007bff;
-}
-
-#search-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  z-index: 1100; /* Sits below the search input but above other content */
-}
-
-#search-results {
-  position: absolute; /* Changed from fixed to be a dropdown */
-  top: 100%;          /* Position below the search container */
-  left: 0;
-  right: 0;
-  margin-top: 8px;    /* A small gap for aesthetics */
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
-  padding: 1rem;
-  max-height: 70vh;   /* Limit the height of the results */
-  overflow-y: auto;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  display: none;
-  z-index: 1102;      /* Sits on top of everything, including the nav */
-  text-align: left;   /* Align results to the left for readability */
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.search-group {
-  margin-bottom: 1rem;
-}
-
-.search-group h3 {
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.search-group ul {
-  list-style: none;
-  padding: 0;
-}
-
-.search-group li {
-  margin-bottom: 0.25rem;
-}
-
-.search-group a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.search-group a:hover {
-  text-decoration: underline;
-}
-
-.week-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.week-list li {
-  margin-bottom: 0.75rem;
-}
-
-.week-list a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: var(--text-dark, #333);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  border: 1px solid var(--border-color, #ddd);
-  transition: all 0.2s ease-in-out;
-}
-
-.week-list a:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--card-shadow, 0 4px 8px rgba(0,0,0,0.1));
-  border-left: 4px solid var(--theme-color, #007bff);
-  padding-left: calc(1.5rem - 4px);
-}
-
-@media (max-width: 768px) {
-  .week-list a {
-    font-size: 0.6em;
-    font-weight: lighter;
-  }
-}
-</style>
-
-
-<button id="scrollTopBtn" aria-label="Back to top" title="Back to top">↑</button>
-
-<!-- Popper + Bootstrap JS (loaded after jQuery) -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-/* ---------- NAV JS ---------- */
-/* Global function test() so any other script that expects test() will work */
-function test(){
-  var $tabs = $('#navbarSupportedContent');
-  var $active = $tabs.find('li.active');
-
-  if ($active.length === 0) {
-    $active = $tabs.find('li').first().addClass('active');
-  }
-
-  var activeHeight = $active.innerHeight();
-  var activeWidth = $active.innerWidth();
-  var itemPos = $active.position(); // relative to parent (#navbarSupportedContent)
-
-  var $selector = $(".hori-selector");
-  // If selector not present, create minimal fallback (ensures no errors)
-  if (!$selector.length) {
-    $selector = $('<div class="hori-selector"><div class="left"></div><div class="right"></div></div>');
-    $('#navbarSupportedContent > ul').prepend($selector);
-  }
-
-  $selector.css({
+selector.css({
     "top": itemPos.top + "px",
     "left": itemPos.left + "px",
     "height": activeHeight + "px",
@@ -559,6 +386,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
+
+
 
 
 
