@@ -1,5 +1,4 @@
 [
-  // EYFS Reception Maths
   {
     "title": "Week 1: Counting up to 3",
     "url": "/yeargroups/EYFS/y0/subjects/maths/autumn/week1.html",
@@ -16,8 +15,6 @@
     "term": "Autumn",
     "comment": "EYFS Reception Maths"
   },
-
-  // KS1 Year 1 English
   {
     "title": "Week 5: Writing Simple Sentences",
     "url": "/yeargroups/KS1/y1/subjects/english/autumn/week5.html",
@@ -26,8 +23,6 @@
     "term": "Autumn",
     "comment": "KS1 Year 1 English"
   },
-
-  // KS1 Year 2 English
   {
     "title": "Week 4: Sequencing Events in a Story",
     "url": "/yeargroups/KS1/y2/subjects/english/autumn/week4.html",
@@ -36,8 +31,6 @@
     "term": "Autumn",
     "comment": "KS1 Year 2 English"
   },
-
-  // KS2 Year 3 Maths
   {
     "title": "Week 1: Addition and Subtraction",
     "url": "/yeargroups/KS2/y3/subjects/maths/autumn/week1.html",
@@ -78,8 +71,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 3 Maths"
   },
-
-  // KS2 Year 3 English
   {
     "title": "Week 1: Reading Comprehension",
     "url": "/yeargroups/KS2/y3/subjects/english/autumn/week1.html",
@@ -120,8 +111,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 3 English"
   },
-
-  // KS2 Year 4 Maths
   {
     "title": "Week 1: Addition and Subtraction",
     "url": "/yeargroups/KS2/y4/subjects/maths/autumn/week1.html",
@@ -162,8 +151,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 4 Maths"
   },
-
-  // KS2 Year 4 English
   {
     "title": "Week 1: Reading Comprehension",
     "url": "/yeargroups/KS2/y4/subjects/english/autumn/week1.html",
@@ -204,8 +191,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 4 English"
   },
-
-  // KS2 Year 5 Maths
   {
     "title": "Week 1: Addition and Subtraction",
     "url": "/yeargroups/KS2/y5/subjects/maths/autumn/week1.html",
@@ -246,8 +231,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 5 Maths"
   },
-
-  // KS2 Year 5 English
   {
     "title": "Week 1: Reading Comprehension",
     "url": "/yeargroups/KS2/y5/subjects/english/autumn/week1.html",
@@ -288,8 +271,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 5 English"
   },
-
-  // KS2 Year 6 Maths
   {
     "title": "Week 10: Money",
     "url": "/yeargroups/KS2/y6/subjects/maths/autumn/week10.html",
@@ -386,8 +367,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 6 Maths"
   },
-
-  // KS2 Year 6 English
   {
     "title": "Week 1: Reading Comprehension",
     "url": "/yeargroups/KS2/y6/subjects/english/autumn/week1.html",
@@ -428,8 +407,6 @@
     "term": "Autumn",
     "comment": "KS2 Year 6 English"
   },
-
-  // KS3 Year 7 Maths
   {
     "title": "Week 1: Number Systems",
     "url": "/yeargroups/KS3/y7/subjects/maths/autumn/week1.html",
@@ -470,8 +447,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 7 Maths"
   },
-
-  // KS3 Year 7 English
   {
     "title": "Week 1: Introduction to Literature",
     "url": "/yeargroups/KS3/y7/subjects/english/autumn/week1.html",
@@ -512,8 +487,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 7 English"
   },
-
-  // KS3 Year 8 Maths
   {
     "title": "Week 1: Number Systems",
     "url": "/yeargroups/KS3/y8/subjects/maths/autumn/week1.html",
@@ -554,8 +527,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 8 Maths"
   },
-
-  // KS3 Year 8 English
   {
     "title": "Week 1: Introduction to Literature",
     "url": "/yeargroups/KS3/y8/subjects/english/autumn/week1.html",
@@ -596,8 +567,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 8 English"
   },
-
-  // KS3 Year 9 Maths
   {
     "title": "Week 1: Number Systems",
     "url": "/yeargroups/KS3/y9/subjects/maths/autumn/week1.html",
@@ -638,8 +607,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 9 Maths"
   },
-
-  // KS3 Year 9 English
   {
     "title": "Week 1: Introduction to Literature",
     "url": "/yeargroups/KS3/y9/subjects/english/autumn/week1.html",
@@ -680,8 +647,6 @@
     "term": "Autumn",
     "comment": "KS3 Year 9 English"
   },
-
-  // KS4 Year 10 Maths
   {
     "title": "Week 1: Number",
     "url": "/yeargroups/KS4/y10/subjects/maths/autumn/week1.html",
@@ -738,8 +703,6 @@
     "term": "Autumn",
     "comment": "KS4 Year 10 Maths"
   },
-
-  // KS4 Year 11 Maths
   {
     "title": "Week 1: Number",
     "url": "/yeargroups/KS4/y11/subjects/maths/autumn/week1.html",
@@ -892,8 +855,6 @@
     "term": "Spring",
     "comment": "KS4 Year 11 Maths"
   },
-
-  // KS5 Year 12 Maths
   {
     "title": "Week 1: Pure Mathematics",
     "url": "/yeargroups/KS5/y12/subjects/maths/autumn/week1.html",
@@ -934,8 +895,6 @@
     "term": "Autumn",
     "comment": "KS5 Year 12 Maths"
   },
-
-  // KS5 Year 12 English
   {
     "title": "Week 1: Introduction to Literary Theory",
     "url": "/yeargroups/KS5/y12/subjects/english/autumn/week1.html",
@@ -976,8 +935,6 @@
     "term": "Autumn",
     "comment": "KS5 Year 12 English"
   },
-
-  // KS5 Year 13 Maths
   {
     "title": "Week 1: Pure Mathematics",
     "url": "/yeargroups/KS5/y13/subjects/maths/autumn/week1.html",
@@ -1018,8 +975,6 @@
     "term": "Autumn",
     "comment": "KS5 Year 13 Maths"
   },
-
-  // KS5 Year 13 English
   {
     "title": "Week 1: Introduction to Literary Theory",
     "url": "/yeargroups/KS5/y13/subjects/english/autumn/week1.html",
