@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Which Even or Odd Number Comes Before or After - Year 3 Maths</title>
+    <link rel="stylesheet" href="/yeargroups/breadcrumb.css" />
+    <style>
+      :root {
+        --color-year-3: #4caf50;
+        --color-year-3-light: #81c784;
+        --theme-color: var(--color-year-3);
+        --theme-color-light: var(--color-year-3-light);
+        --bg-color: #f8f9fa;
+        --text-dark: #343a40;
+        --text-light: #6c757d;
+        --card-bg: #fff;
+        --border-color: #dee2e6;
+        --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+      .year-header {
+        background: linear-gradient(
+          45deg,
+          var(--theme-color),
+          var(--theme-color-light)
+        );
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+      }
+      .year-header h1 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+      .back-link {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+      .back-link:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+      main {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: var(--card-shadow);
+        margin-bottom: 2rem;
+      }
+      .lesson-note {
+        background-color: #fff3e0;
+        border-left: 5px solid #ff9800;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+      }
+      .lesson-note h3 {
+        margin-bottom: 0.5rem;
+        color: #e65100;
+      }
+      .interactive-box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      @media (min-width: 768px) {
+        .interactive-box-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .interactive-box {
+        padding: 1rem;
+        border-radius: 6px;
+        text-align: center;
+        background-color: #e0f7fa;
+      }
+      input.number-input {
+        width: 50px;
+        text-align: center;
+        margin-right: 0.5rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        background-color: var(--theme-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      button:hover {
+        background-color: var(--theme-color-light);
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+      ul li {
+        margin-bottom: 0.5rem;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="year-header">
+      <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <a href="/index.html">Home</a> &gt;<span>Year Groups</span> &gt;<span
+          >KS2</span
+        >
+        &gt;<a href="/yeargroups/KS2/y3/yr3-index.html">Year 3</a> &gt;<a
+          href="/yeargroups/KS2/y3/subjects/maths/activities/index.html"
+          >Activities Index</a
+        >
+        &gt;<span>Before or After Even/Odd</span>
+      </nav>
+      <h1>Which Even or Odd Number Comes Before or After?</h1>
+      <a
+        href="/yeargroups/KS2/y3/subjects/maths/activities/index.html"
+        class="back-link"
+        >← Back to Activities Index</a
+      >
+    </header>
+
+    <div class="container">
+      <main>
+        <h2>Lesson Note</h2>
+        <div class="lesson-note">
+          <h3>Finding Numbers Before and After</h3>
+          <ul>
+            <li>Even numbers are every second number on the number line.</li>
+            <li>Odd numbers fill the gaps between even numbers.</li>
+            <li>Practice spotting numbers before and after independently.</li>
+          </ul>
+        </div>
+      </main>
+
+      <main>
+        <h2>Interactive Exercise</h2>
+        <div class="interactive-box-container" id="before-after"></div>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Learning Hub by
+        <a href="https://oatutors.co.uk" target="_blank">OA Tutors</a>
+      </p>
+    </footer>
+
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const container = document.getElementById("before-after");
+      numbers.forEach((n, i) => {
+        const div = document.createElement("div");
+        div.className = "interactive-box";
+        div.innerHTML = `${n}: Before <input type="number" class="number-input" id="before-${i}" placeholder="?"> After <input type="number" class="number-input" id="after-${i}" placeholder="?"> <button onclick="checkBA(${i})">Check</button> <span id="ba-feedback-${i}"></span>`;
+        container.appendChild(div);
+      });
+      function checkBA(i) {
+        const n = numbers[i];
+        const before = document.getElementById(`before-${i}`).value;
+        const after = document.getElementById(`after-${i}`).value;
+        const feedback = document.getElementById(`ba-feedback-${i}`);
+        if (parseInt(before) === n - 1 && parseInt(after) === n + 1) {
+          feedback.textContent = " ✅ Correct!";
+          feedback.style.color = "green";
+        } else {
+          feedback.textContent = ` ❌ Correct: Before=${n - 1}, After=${n + 1}`;
+          feedback.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

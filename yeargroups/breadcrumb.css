@@ -5,10 +5,18 @@
     transform: translateX(-50%);
     color: white;
     font-size: 14px;
+    z-index: 10;
 }
 
 .breadcrumb-nav a {
     color: white;
+    text-decoration: none; /* remove underline */
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-nav a:hover {
+    color: #ffe082; /* subtle hover highlight */
     text-decoration: none;
 }
 

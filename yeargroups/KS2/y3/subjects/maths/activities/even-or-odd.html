@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Even or Odd - Year 3 Maths</title>
+<link rel="stylesheet" href="/yeargroups/breadcrumb.css" />
+<style>
+:root{--color-year-3:#4caf50;--color-year-3-light:#81c784;--theme-color:var(--color-year-3);--theme-color-light:var(--color-year-3-light);--bg-color:#f8f9fa;--text-dark:#343a40;--text-light:#6c757d;--card-bg:#fff;--border-color:#dee2e6;--card-shadow:0 4px 15px rgba(0,0,0,0.06);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background-color:var(--bg-color);color:var(--text-dark);line-height:1.6;}
+.year-header{background:linear-gradient(45deg,var(--theme-color),var(--theme-color-light));color:white;padding:2rem;text-align:center;position:relative;}
+.year-header h1{font-size:2rem;text-shadow:1px 1px 3px rgba(0,0,0,0.2);}
+.back-link{position:absolute;top:50%;left:2rem;transform:translateY(-50%);color:white;text-decoration:none;font-weight:600;background:rgba(255,255,255,0.2);padding:0.5rem 1rem;border-radius:20px;transition:0.3s;}
+.back-link:hover{background-color:rgba(255,255,255,0.3);}
+.container{max-width:900px;margin:2rem auto;padding:0 2rem;}
+main{background-color:var(--card-bg);padding:2rem;border-radius:12px;box-shadow:var(--card-shadow);margin-bottom:2rem;}
+.lesson-note{background-color:#fff3e0;border-left:5px solid #ff9800;padding:1rem;margin-bottom:2rem;border-radius:6px;}
+.lesson-note h3{margin-bottom:0.5rem;color:#e65100;}
+.interactive-box-container{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem;}
+@media(min-width:768px){.interactive-box-container{grid-template-columns:1fr 1fr;}}
+.interactive-box{background-color:#e0f7fa;border-left:5px solid #4caf50;padding:1rem;border-radius:6px;text-align:center;}
+.interactive-box input[type=text]{margin-right:0.5rem;width:80px;text-align:center;}
+button{padding:0.5rem 1rem;margin-top:0.5rem;cursor:pointer;background-color:var(--theme-color);color:white;border:none;border-radius:5px;font-weight:600;}
+button:hover{background-color:var(--theme-color-light);}
+ul{list-style-type:disc;padding-left:2rem;margin-bottom:1rem;}
+ul li{margin-bottom:0.5rem;}
+footer{text-align:center;padding:2rem 1rem;color:var(--text-light);font-size:0.9rem;}
+</style>
+</head>
+<body>
+<header class="year-header">
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <a href="/index.html">Home</a> >
+  <span>Year Groups</span> >
+  <span>KS2</span> >
+  <a href="/yeargroups/KS2/y3/yr3-index.html">Year 3</a> >
+  <a href="/yeargroups/KS2/y3/subjects/maths.html">Mathematics</a> >
+  <a href="/yeargroups/KS2/y3/subjects/maths/activities/index.html">Activities Index</a> >
+  <span>Even or Odd</span>
+</nav>
+<h1>Even or Odd</h1>
+<a href="/yeargroups/KS2/y3/subjects/maths/activities/index.html" class="back-link">← Back to Activities Index</a>
+</header>
+
+<div class="container">
+<main>
+<h2>Lesson Note</h2>
+<div class="lesson-note">
+<h3>Understanding Even and Odd Numbers</h3>
+<ul>
+<li>Even numbers are divisible by 2 with no remainder (0,2,4...).</li>
+<li>Odd numbers leave a remainder of 1 when divided by 2 (1,3,5...).</li>
+<li>Practice recognising patterns independently to strengthen understanding.</li>
+</ul>
+</div>
+</main>
+
+<main>
+    <h2>Activity Overview</h2>
+    <p>Determine whether each number is even or odd.</p>
+    <h3>Instructions</h3>
+    <ul>
+    <li>Type "Even" or "Odd" for each number below.</li>
+    <li>Check your answers using the button provided.</li>
+    </ul>
+    </main>
+
+<main>
+<h2>Interactive Exercise</h2>
+<div class="interactive-box-container" id="interactive-even-odd"></div>
+</main>
+</div>
+
+<footer>
+<p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank">OA Tutors</a></p>
+</footer>
+
+<script>
+const numbers=[1,2,3,4,5,6,7,8,9,10];
+const container=document.getElementById('interactive-even-odd');
+numbers.forEach((num,idx)=>{
+  const div=document.createElement('div');
+  div.className='interactive-box';
+  div.innerHTML=`${num}: <input type="text" id="eo-${idx}" placeholder="Even/Odd"> <button onclick="checkEO(${idx})">Check</button> <span id="eo-feedback-${idx}"></span>`;
+  container.appendChild(div);
+});
+function checkEO(idx){
+  const num=numbers[idx];
+  const input=document.getElementById(`eo-${idx}`);
+  const feedback=document.getElementById(`eo-feedback-${idx}`);
+  const answer=num%2===0?'Even':'Odd';
+  if(input.value.trim().toLowerCase()===answer.toLowerCase()){
+    feedback.textContent=' ✅ Correct!';
+    feedback.style.color='green';
+  } else{
+    feedback.textContent=` ❌ Try again! Answer: ${answer}`;
+    feedback.style.color='red';
+  }
+}
+</script>
+</body>
+</html>
