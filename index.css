@@ -152,7 +152,55 @@ body{
 
   .ks-heading { font-size:1.8rem; font-weight:700; color:var(--text-dark); margin:2rem 0 1rem 0; text-align:center; }
 
-  footer { text-align:center; padding:2rem 1rem; color:var(--text-light); font-size:.9rem; }
+  footer {
+    background-color: var(--text-dark);
+    color: #fff;
+    padding: 3rem 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer-column {
+    flex: 1 1 200px;
+  }
+  .footer-column h4 {
+    margin-bottom: 1rem;
+    color: var(--color-year-3);
+  }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-column a:hover {
+    color: var(--color-year-3);
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+  .footer-bottom a {
+    color: var(--text-light);
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
 
   #scrollTopBtn {
     position: fixed; right: 20px; bottom: 26px; z-index: 1500;
@@ -167,4 +215,19 @@ body{
   }
   @media (max-width:480px){
     main{ padding:1rem; } .year-grid { grid-template-columns:1fr; gap:1.5rem; } header h1{ font-size:1.8rem; } .year-card h2{ font-size:2.2rem; } body{ font-size:110%; }
+  }
+
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .social-icons a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: var(--color-year-3);
   }

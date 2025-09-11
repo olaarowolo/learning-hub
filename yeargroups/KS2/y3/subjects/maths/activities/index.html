@@ -59,9 +59,18 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+    .footer-container { display: flex; justify-content: space-between; gap: 2rem; margin-bottom: 1rem; }
+    .footer-column { flex: 1; text-align: left; }
+    .footer-column h4 { color: var(--theme-color); margin-bottom: 0.5rem; }
+    .footer-column ul { list-style: none; padding: 0; }
+    .footer-column li { margin-bottom: 0.5rem; }
+    .footer-column a { color: var(--text-light); text-decoration: none; }
+    .footer-column a:hover { color: var(--theme-color); }
+    .footer-bottom { border-top: 1px solid var(--border-color); padding-top: 1rem; }
     @media (max-width: 768px) {
       .year-header { padding-bottom: 1rem; }
       .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+      .footer-container { flex-direction: column; gap: 1.5rem; }
     }
   </style>
 </head>
@@ -126,7 +135,53 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!</p>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Learning Hub</h4>
+        <p>Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.</p>
+        <p id="copyright-year">© 2025 OA Tutors</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/maths.html">Maths</a></li>
+          <li><a href="/english.html">English</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/activities.html">Activities</a></li>
+          <li><a href="/worksheets.html">Worksheets</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div>
+          <a href="#">📘</a>
+          <a href="#">🐦</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed & Developed by OA Tutors • All Rights Reserved • <a href="/privacy.html">Privacy Policy</a></p>
+    </div>
   </footer>
+  <script>
+    // Dynamic copyright year
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearEl = document.getElementById('copyright-year');
+      if (yearEl) {
+        const currentYear = new Date().getFullYear();
+        yearEl.innerHTML = `&copy; ${currentYear} Learning Hub by <a href="https://oatutors.co.uk" target="_blank" rel="noopener noreferrer">OA Tutors</a>. Happy Learning!`;
+      }
+    });
+  </script>
 </body>
 </html>
