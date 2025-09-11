@@ -70,6 +70,7 @@
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link href="/index.css" rel="stylesheet">
+<link rel="stylesheet" href="data/yeargroups/breadcrumb.css">
 
 <!-- jQuery (single import) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -105,6 +106,9 @@
 </nav>
 
 <header>
+  <nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <a href="/">Home</a>
+  </nav>
   <h1>Welcome, Future Stars! ✨</h1>
   <p>Ready for an adventure? Pick your year to start learning!</p>
   <div class="search-container">
@@ -237,9 +241,12 @@
   max-width: 600px;
   margin: 2rem auto;
   text-align: center;
+  position: relative; /* This is needed to position the search results dropdown correctly */
 }
 
 #search-input {
+  position: relative; /* This allows us to use z-index */
+  z-index: 1101;      /* This lifts the search bar above the overlay */
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -261,24 +268,25 @@
   height: 100%;
   background: rgba(0,0,0,0.5);
   display: none;
-  z-index: 999;
+  z-index: 1100; /* Sits below the search input but above other content */
 }
 
 #search-results {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute; /* Changed from fixed to be a dropdown */
+  top: 100%;          /* Position below the search container */
+  left: 0;
+  right: 0;
+  margin-top: 8px;    /* A small gap for aesthetics */
   background: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
   padding: 1rem;
-  max-width: 80%;
-  max-height: 80%;
+  max-height: 70vh;   /* Limit the height of the results */
   overflow-y: auto;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   display: none;
-  z-index: 1000;
+  z-index: 1102;      /* Sits on top of everything, including the nav */
+  text-align: left;   /* Align results to the left for readability */
 }
 
 .close-btn {
@@ -517,7 +525,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const a = document.createElement('a');
         a.href = lesson.url;
         a.className = 'week-link';
-        a.innerHTML = `<span style="background-color: lightgreen; padding: 2px 4px; border-radius: 3px;">${lesson.year}</span> - ${lesson.title}`;
+        a.innerHTML = `<span style="background-color: lightgreen; padding: 2px 4px; border-radius: 3px; font-size: 0.6em;">${lesson.year}</span> - ${lesson.title}`;
         li.appendChild(a);
         ul.appendChild(li);
       });
