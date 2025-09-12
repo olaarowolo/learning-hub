@@ -4,17 +4,17 @@
 RewriteEngine On
 
 # Redirect 404 errors to custom 404 page
-ErrorDocument 404 /yeargroups/404.html
+# This directive tells the server to use the specified file for all 404 errors.
+# The path is relative to the root directory of your website.
+ErrorDocument 404 /data/yeargroups/404.html
 
-# Remove .html extension from URLs and hide .html in URL
+# Hide .html extension from URLs for cleaner links
+# This rule redirects a user to a clean URL if they type the .html extension.
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
 RewriteRule ^ %1 [R=301,L]
 
+# Internally rewrite the clean URL to the correct .html file on the server.
+# This makes it so the server can find the actual file without the user seeing the .html.
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)/?$ $1.html [L]
-
-# Optional: Redirect all requests for non-existent files to 404 page
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$ /yeargroups/404.html [L,R=404]
