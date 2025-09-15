@@ -1,8 +1,8 @@
 :root {
-    --color-year-6: #2196F3;
-    --color-year-6-light: #64B5F6;
-    --theme-color: var(--color-year-6);
-    --theme-color-light: var(--color-year-6-light);
+    --color-year-7: #009688;
+    --color-year-7-light: #4db6ac;
+    --theme-color: var(--color-year-7);
+    --theme-color-light: var(--color-year-7-light);
     --bg-color: #f8f9fa;
     --text-dark: #343a40;
     --text-light: #6c757d;
@@ -113,4 +113,3 @@ footer {
         margin-top: 1rem;
     }
 }
-

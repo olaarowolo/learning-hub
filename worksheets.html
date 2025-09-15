@@ -43,6 +43,22 @@
     <link href="/index.css" rel="stylesheet">
     <link rel="stylesheet" href="/data/yeargroups/breadcrumb.css">
     <link rel="stylesheet" href="/footer.css">
+    <style>
+    @media (max-width: 576px) {
+      .year-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+      .year-card {
+    padding: 1rem 0.5rem;
+    min-height: 60px;
+    border-radius: 8px;
+  }
+      .year-card h2 {
+        font-size: 1rem;
+      }
+    }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -99,6 +115,8 @@
       <!-- EYFS -->
       <h2 class="ks-heading">Early Years Foundation Stage</h2>
       <div class="year-grid">
+        <a href="/data/yeargroups/KS0/y0/yr0-index.html" class="year-card reception"><h2>Pre-School Ideas</h2></a>
+
         <a href="/data/yeargroups/EYFS/y0/yrR-index.html" class="year-card reception"
           ><h2>Reception</h2></a
         >

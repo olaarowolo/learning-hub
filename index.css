@@ -106,7 +106,7 @@ body{
     --color-year-3: #4caf50; /* Green */
     --color-year-4: #ff9800; /* Orange */
     --color-year-5: #9c27b0; /* Purple */
-    --color-year-6: #e91e63; /* Pink */
+    --color-year-6: #2196f3; /* Blue */
     --color-year-7: #009688; /* Teal */
     --color-year-8: #f44336; /* Red */
     --color-year-9: #3f51b5; /* Indigo */
@@ -141,7 +141,7 @@ body{
   .year-3 { background: linear-gradient(45deg, var(--color-year-3), #81c784); }
   .year-4 { background: linear-gradient(45deg, var(--color-year-4), #ffb74d); }
   .year-5 { background: linear-gradient(45deg, var(--color-year-5), #ba68c8); }
-  .year-6 { background: linear-gradient(45deg, var(--color-year-6), #f06292); }
+  .year-6 { background: linear-gradient(45deg, var(--color-year-6), #64b5f6); }
   .year-7 { background: linear-gradient(45deg, var(--color-year-7), #4db6ac); }
   .year-8 { background: linear-gradient(45deg, var(--color-year-8), #e57373); }
   .year-9 { background: linear-gradient(45deg, var(--color-year-9), #6573c3); }
