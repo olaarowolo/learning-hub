@@ -1,1 +1,7 @@
-- [x] update  data\yeargroups\KS0\y0\subjects\maths\autumn\week3-12 .html to reflect structure in data\yeargroups\KS0\y0\subjects\maths\autumn\week2
+- [x] Update meta tags (title, description, keywords, canonical URL) for Year 3
+- [x] Update breadcrumb navigation to KS2 Year 3
+- [x] Update header h1 and back link href
+- [x] Change theme colors from year-0 to year-3
+- [x] Rewrite lesson content: Topic, Introduction, Learning Objectives, Activities for Reading Comprehension - Main Ideas
+- [x] Update download links paths if applicable
+- [x] Verify footer and scripts are correct
