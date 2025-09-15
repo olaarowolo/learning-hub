@@ -65,7 +65,27 @@
 <meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
     
-    <link rel="stylesheet" href="/footer.css"><style>
+    <style>
+        :root {
+            --color-year-8: #009688; --color-year-8-light: #4db6ac;
+            --theme-color: var(--color-year-8);
+            --theme-color-light: var(--color-year-8-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 2.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        main p { margin-bottom: 1rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
         /* Page-specific styles for week 3 can go here if needed */
         .content-section {
             margin-bottom: 2rem;
@@ -154,11 +174,8 @@
             margin-bottom: 1rem;
         }
     .download-links a.disabled { pointer-events: none; color: gray; opacity: 0.5; }
-</style>
-<link rel="stylesheet" href="../footer.css">
-<link rel="stylesheet" href="../../../../../../../footer.css">
-
-    <link rel="stylesheet" href="/footer.css"></head>
+</style><link rel="stylesheet" href="/footer.css">
+</head>
 <body>
     <header class="year-header">
         <h1>Week 3 - Writing Structured Paragraphs</h1>
@@ -296,7 +313,7 @@
 
   <!-- Bottom Bar -->
   <div class="footer-bottom">
-    <p>Designed & Developed by OA Tutors • All Rights Reserved • <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
   </div>
 </footer>
 <script>
@@ -305,22 +322,8 @@
     const yearEl = document.getElementById('copyright-year');
     if (yearEl) {
       const currentYear = new Date().getFullYear();
-      yearEl.textContent = ©  OA Tutors;
+      yearEl.textContent = `© ${currentYear} OA Tutors`;
     }
   });
 </script></body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
