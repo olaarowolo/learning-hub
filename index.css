@@ -124,7 +124,7 @@ body{
   .skip-link:focus{ left: 1rem; top: 1rem; width: auto; height: auto; padding:.5rem .75rem; background:#fff; color:var(--text-dark); border-radius:4px; box-shadow:0 4px 12px rgba(0,0,0,0.12); z-index:2000; }
 
   header { text-align:center; padding:3rem 1rem 2rem; }
-  header h1 { font-size:2.5rem; font-weight:700; margin-bottom:.5rem; color:var(--text-dark); }
+  header h1 { font-size:2.5rem; font-weight:700; margin-bottom:.5rem; color:var(--bg-color); }
   header p { font-size:1.1rem; color:var(--text-light); max-width:600px; margin:0 auto; }
 
   main { padding: 1rem 2rem 3rem; }
@@ -151,6 +151,32 @@ body{
   .year-13 { background: linear-gradient(45deg, #ff9800, #ffb74d); }
 
   .ks-heading { font-size:1.8rem; font-weight:700; color:var(--text-dark); margin:2rem 0 1rem 0; text-align:center; }
+
+  /* ---------- SUB-PAGE HEADER STYLES ---------- */
+  .year-header {
+    background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light));
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .year-header h1 {
+    font-size: 2.75rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+  .back-link, .back-link:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+  }
+  .back-link:hover { background: rgba(255, 255, 255, 0.3); }
 
   footer {
     background-color: var(--text-dark);
@@ -212,9 +238,14 @@ body{
   @media (max-width:768px){
     header h1 { font-size:2rem; }
     .year-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .year-header { padding-bottom: 1rem; }
+    .year-header h1 { font-size: 1.5rem; }
   }
   @media (max-width:480px){
     main{ padding:1rem; } .year-grid { grid-template-columns:1fr; gap:1.5rem; } header h1{ font-size:1.8rem; } .year-card h2{ font-size:2.2rem; } body{ font-size:110%; }
+  }
+  @media (max-width: 576px) {
+    .year-header h1 { font-size: 1.2rem; }
   }
 
   /* Social Icons */
