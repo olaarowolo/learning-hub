@@ -49,95 +49,69 @@
             --color-year-1: #ffc107; --color-year-1-light: #ffd54f;
             --theme-color: var(--color-year-1);
             --theme-color-light: var(--color-year-1-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
         }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) { .year-header h1 { font-size: 1.5rem; } }
+        @media (max-width: 992px) { .year-header h1 { font-size: 1.5rem; } }
+        @media (max-width: 768px) { .year-header h1 { font-size: 1.5rem; } }
+        @media (max-width: 576px) { .year-header h1 { font-size: 1.2rem; } }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
         main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
         main p { margin-bottom: 1rem; }
-        .term { margin-bottom: 2rem; }
-        .term h3 { color: var(--theme-color); margin-bottom: 0.5rem; font-size: 1.4rem; }
-        .term ul { margin-left: 1rem; }
-        .term li { margin-bottom: 0.5rem; }
+        main ul { padding-left: 40px; margin-bottom: 1rem; }
+        main ul li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-custom navbar-mainbg">
-      <a class="navbar-brand navbar-logo" href="/">
-        <img src="/favicons/logo.svg" alt="OA Tutors Logo" class="navbar-logo-img">
-        Learning Hub
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars text-white"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/maths.html">Maths</a></li>
-          <li class="nav-item"><a class="nav-link" href="/english.html">English</a></li>
-          <li class="nav-item"><a class="nav-link" href="/activities.html">Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="/worksheets.html">Worksheets</a></li>
-          <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
 
     <header class="year-header">
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
             <a href="/index.html">Home</a> >
-            <a href="/data/yeargroups/KS1/y1/yr1-index.html">Year 1</a> >
-            <a href="/data/yeargroups/KS1/y1/subjects/english/en-index.html">English</a> >
+            <span>Year Groups</span> >
+            <span>KS1</span> >
+            <a href="/data/yeargroups/KS1/y1/yr1-index.html">Year 1</a> > 
+            <a href="/data/yeargroups/KS1/y1/subjects/english/en-index.html">English</a> > 
             <span>Curriculum Plan</span>
         </nav>
         <h1>Year 1 English - Curriculum Plan</h1>
         <a href="/data/yeargroups/KS1/y1/subjects/english/en-index.html" class="back-link">← Back to English Home</a>
     </header>
-    <div class="container" style="max-width: 900px;">
+    <div class="container">
         <main id="main-content">
-            <h2>Year 1 English Curriculum Plan (UK)</h2>
-            <p>Year 1 English focuses on developing reading, writing, speaking, and listening skills. Lessons should be engaging, practical, and multisensory, with plenty of story-telling, role-play, phonics practice, and writing activities.</p>
-
-            <div class="term">
-                <h3>Autumn Term</h3>
-                <p>Focus: Phonics, early reading, sentence writing, speaking and listening</p>
-                <ul>
-                    <li><strong>Weeks 1–2:</strong> Phonics (Phase 3) – letter sounds and blending for reading.</li>
-                    <li><strong>Weeks 3–4:</strong> Reading simple sentences; recognising high-frequency words.</li>
-                    <li><strong>Weeks 5–6:</strong> Writing simple sentences; capital letters, full stops.</li>
-                    <li><strong>Weeks 7–8:</strong> Story retelling; sequencing events.</li>
-                    <li><strong>Weeks 9–10:</strong> Speaking and listening activities – show-and-tell, class discussions.</li>
-                    <li><strong>Weeks 11–12:</strong> Introduction to descriptive vocabulary and simple question marks.</li>
-                </ul>
-            </div>
-
-            <div class="term">
-                <h3>Spring Term</h3>
-                <p>Focus: Developing fluency, comprehension, and sentence structure</p>
-                <ul>
-                    <li><strong>Weeks 1–2:</strong> Phonics (Phase 4–5) – blending more complex sounds.</li>
-                    <li><strong>Weeks 3–4:</strong> Reading short stories; answering comprehension questions.</li>
-                    <li><strong>Weeks 5–6:</strong> Writing sentences with conjunctions (“and”) and adjectives.</li>
-                    <li><strong>Weeks 7–8:</strong> Retelling stories orally and in writing; sequencing paragraphs.</li>
-                    <li><strong>Weeks 9–10:</strong> Non-fiction texts – writing labels, lists, and captions.</li>
-                    <li><strong>Weeks 11–12:</strong> Introduction to past tense; simple editing skills.</li>
-                </ul>
-            </div>
-
-            <div class="term">
-                <h3>Summer Term</h3>
-                <p>Focus: Consolidation, imaginative writing, punctuation, and grammar</p>
-                <ul>
-                    <li><strong>Weeks 1–2:</strong> Reading comprehension review; discussing favourite stories.</li>
-                    <li><strong>Weeks 3–4:</strong> Writing short narratives; using full stops, capital letters, question marks.</li>
-                    <li><strong>Weeks 5–6:</strong> Writing instructions; beginning to structure paragraphs.</li>
-                    <li><strong>Weeks 7–8:</strong> Poetry and performance – reciting and writing simple poems.</li>
-                    <li><strong>Weeks 9–10:</strong> Grammar and vocabulary review; adjectives, verbs, nouns.</li>
-                    <li><strong>Weeks 11–12:</strong> End-of-year writing assessment and reading fluency check.</li>
-                </ul>
-            </div>
+            <h2>Overview</h2>
+            <p>This page outlines the curriculum plan for Year 1 English, providing a structured overview of the topics and skills to be covered throughout the year. The focus is on developing foundational skills in phonics, reading, writing, and speaking.</p>
+            <h3>Key Areas of Focus</h3>
+            <ul>
+                <li><strong>Phonics:</strong> Securing Phase 3-5 phonics knowledge for reading and spelling.</li>
+                <li><strong>Reading:</strong> Building fluency and comprehension with simple texts and high-frequency words.</li>
+                <li><strong>Writing:</strong> Forming letters correctly and writing simple sentences with correct punctuation.</li>
+                <li><strong>Speaking & Listening:</strong> Participating in discussions and retelling stories.</li>
+            </ul>
+            <h3>Term Breakdown</h3>
+            <ul>
+                <li><strong>Autumn Term:</strong> Phonics, early reading, sentence writing, speaking and listening.</li>
+                <li><strong>Spring Term:</strong> Developing fluency, comprehension, and sentence structure.</li>
+                <li><strong>Summer Term:</strong> Consolidation, imaginative writing, punctuation, and grammar.</li>
+            </ul>
+            <h3>Resources</h3>
+            <p>For detailed weekly plans and activities, please refer to the respective term pages:</p>
+            <ul>
+                <li><a href="/data/yeargroups/KS1/y1/subjects/english/autumn/index.html">Autumn Term English</a></li>
+                <li><a href="/data/yeargroups/KS1/y1/subjects/english/spring/index.html">Spring Term English</a></li>
+                <li><a href="/data/yeargroups/KS1/y1/subjects/english/summer/index.html">Summer Term English</a></li>
+            </ul>
         </main>
     </div>
     <footer>
@@ -195,52 +169,6 @@
   </div>
 </footer>
 
-    <!-- Popper + Bootstrap JS (loaded after jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-      /* ---------- NAV JS ---------- */
-      function test() {
-        var $tabs = $("#navbarSupportedContent");
-        var $active = $tabs.find("li.active");
-
-        if ($active.length === 0) {
-          $active = $tabs.find("li").first().addClass("active");
-        }
-
-        var activeHeight = $active.innerHeight();
-        var activeWidth = $active.innerWidth();
-        var itemPos = $active.position();
-
-        var $selector = $(".hori-selector");
-        if (!$selector.length) {
-          $selector = $(
-            '<div class="hori-selector"><div class="left"></div><div class="right"></div></div>'
-          );
-          $("#navbarSupportedContent > ul").prepend($selector);
-        }
-
-        $selector.css({
-          top: itemPos.top + "px",
-          left: itemPos.left + "px",
-          height: activeHeight + "px",
-          width: activeWidth + "px",
-        });
-      }
-
-      $(document).ready(function () {
-        setTimeout(function () { test(); }, 10);
-        $("#navbarSupportedContent").on("click", "li", function (e) {
-          $("#navbarSupportedContent ul li").removeClass("active");
-          $(this).addClass("active");
-          test();
-        });
-        $(".navbar-toggler").on("click", function () { setTimeout(function () { test(); }, 300); });
-        $(window).on("resize", function () { setTimeout(function () { test(); }, 300); });
-      });
-</script>
 <script>
   // Dynamic copyright year
   document.addEventListener('DOMContentLoaded', function() {

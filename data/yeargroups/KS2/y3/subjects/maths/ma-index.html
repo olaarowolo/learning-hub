@@ -86,6 +86,31 @@
             .year-header { padding-bottom: 4.5rem; }
             .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
         }
+
+        .resource-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .resource-links li {
+            margin-bottom: 0.5rem;
+        }
+        .resource-links a {
+            display: block;
+            text-decoration: none;
+            background-color: #f1f3f5;
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+        .resource-links a:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
     </style>
     <link rel="stylesheet" href="/footer.css">
 </head>
@@ -97,7 +122,10 @@
     <main>
         <h2>Welcome to Year 3 Mathematics!</h2>
         <p>Here you will find all the resources for Year 3 Maths, organised by term. This year focuses on securing number facts, understanding place value, and developing calculation skills.</p>
-
+        <h3 class="subject-title">Curriculum Resources</h3>
+        <ul class="resource-links">
+            <li><a href="/data/yeargroups/KS2/y3/subjects/maths/ma-index.html">Year 3 Maths Curriculum Plan</a></li>
+        </ul>
         <h3 class="subject-title">Term Content</h3>
         <ul class="term-links">
             <li><a href="/data/yeargroups/KS2/y3/subjects/maths/autumn/">Autumn Term</a></li>
