@@ -133,7 +133,7 @@ body{
   .year-card { display:flex; justify-content:center; align-items:center; min-height:180px; padding:1.5rem; border-radius:16px; text-decoration:none; color:white; box-shadow:var(--card-shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .year-card:hover { transform: translateY(-8px); box-shadow:var(--card-shadow-hover); }
   .year-card:hover { transform: translateY(-8px); box-shadow:var(--card-shadow-hover); color: white; text-decoration: none; }
-  .year-card h2 { font-size:2rem; font-weight:600; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+  .year-card h2 { font-size:1.5rem; font-weight:600; text-shadow:1px 1px 5px rgba(0,0,0,0.2); }
 
   .reception { background: linear-gradient(45deg, var(--color-reception), #9575cd); }
   .year-1 { background: linear-gradient(45deg, var(--color-year-1), #ffd54f); }
