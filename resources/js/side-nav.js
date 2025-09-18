@@ -1,8 +1,10 @@
-  document.addEventListener('DOMContentLoaded', function () {
+console.log('side-nav.js loaded');
+document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.getElementById('sidebar');
   const btnCollapse = document.getElementById('btn-collapse');
   const btnToggle = document.getElementById('btn-toggle');
   const overlay = document.getElementById('overlay');
+  const curriculumToggle = document.getElementById('curriculum-toggle');
 
   // --- Sidebar Collapse (Desktop) ---
   if (btnCollapse && sidebar) {
@@ -80,4 +82,7 @@
   if (overlay) {
     overlay.addEventListener('click', toggleMobileSidebar);
   }
+
+  // --- Curriculum Toggle Switch ---
+  // Removed curriculum toggle JS logic as per updated plan
 });

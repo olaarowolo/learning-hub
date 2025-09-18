@@ -6,3 +6,10 @@
 - [x] Update navbar links to point to the new IDs (e.g., href="#primary-1").
 - [ ] Test the menu switching and scrolling behavior.
 - [ ] Update `resources/js/nav.js` if needed to handle new IDs for active highlighting.
+
+## New Tasks: Add Switch Button Toggle for UK/Nigeria Curriculum
+- [x] Add switch toggle button UI in `resources/views/layouts/app.blade.php` just before the NAVIGATION header.
+- [x] Add JavaScript logic in `resources/js/side-nav.js` to handle the toggle switch, storing the selected curriculum in localStorage and reloading the page with the selected curriculum as a query parameter (location=uk or location=ng).
+- [x] On page load, set the toggle state based on the current curriculum from the URL or localStorage.
+- [x] Test the toggle switch functionality.
+- [x] Improve toggle UI appearance with CSS classes, hover effects, shadows, and better styling.

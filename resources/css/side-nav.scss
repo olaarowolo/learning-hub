@@ -626,6 +626,19 @@ a {
   }
 }
 
+.toggle-switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.toggle-switch img {
+  max-width: 30px;
+  height: auto;
+  display: block;
+}
+
 .overlay {
   position: fixed;
   top: 0;
