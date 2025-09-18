@@ -142,10 +142,10 @@
                   @endphp
                   <div class="toggle-switch">
                     <a href="{{ $ngUrl }}" class="{{ $currentLocation === 'ng' ? '' : 'active' }}">
-                      <img src="https://static.vecteezy.com/system/resources/previews/015/309/678/non_2x/nigeria-waving-flag-realistic-transparent-background-free-png.png" alt="Nigeria Flag" />
+                      <img src="{{ asset('favicons/ng-flag.png') }}" alt="Nigeria Flag" />
                     </a>
                     <a href="{{ $ukUrl }}" class="{{ $currentLocation === 'ng' ? 'active' : '' }}">
-                      <img src="https://images.emojiterra.com/google/android-10/512px/1f1ec-1f1e7.png" alt="UK Flag" />
+                      <img src="{{ asset('favicons/br-flag.png') }}" alt="UK Flag" />
                     </a>
                     <div class="toggle-slider {{ $currentLocation === 'ng' ? 'left' : 'right' }}"></div>
                   </div>

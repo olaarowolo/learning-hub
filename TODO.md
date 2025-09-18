@@ -13,3 +13,4 @@
 - [x] On page load, set the toggle state based on the current curriculum from the URL or localStorage.
 - [x] Test the toggle switch functionality.
 - [x] Improve toggle UI appearance with CSS classes, hover effects, shadows, and better styling.
+- [x] Replace flag image sources with local assets using asset helper (ng-flag.png and br-flag.png).
