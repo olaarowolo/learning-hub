@@ -25,9 +25,24 @@ $sidebar-footer-height: 230px;
     display: flex;
     flex-direction: column;
   }
+
   &.has-sidebar {
     display: flex;
     height: 100vh;
+  }
+
+  &.has-sidebar .content {
+    margin-left: 260px;
+  }
+
+  &.has-sidebar .sidebar.collapsed ~ .content {
+    margin-left: 60px;
+  }
+
+  @media (max-width: 576px) {
+    &.has-sidebar .content {
+      margin-left: 0;
+    }
   }
 
   .footer {
@@ -51,7 +66,10 @@ $sidebar-footer-height: 230px;
     min-width: 60px;
   }
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
 
   &::-webkit-scrollbar-thumb {
     border-radius: 4px;
@@ -110,6 +128,7 @@ $sidebar-footer-height: 230px;
     .sidebar-content {
       flex-grow: 1;
       padding: 10px 0;
+      overflow-y: auto;
     }
     .sidebar-footer {
       height: $sidebar-footer-height;

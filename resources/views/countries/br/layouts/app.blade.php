@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Brazil Curriculum - Learning Hub')
+@section('title', 'Britain Curriculum - Learning Hub')
 
 @section('content')
     <div class="br-curriculum-layout">

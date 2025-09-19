@@ -29,7 +29,7 @@
 ```
 resources/views/
 ├── countries/
-│   ├── br/                           # Brazil (UK Curriculum)
+│   ├── br/                           # Britain (UK Curriculum)
 │   │   ├── layouts/
 │   │   │   ├── app.blade.php         # Main layout
 │   │   │   └── curriculum.blade.php  # Curriculum layout

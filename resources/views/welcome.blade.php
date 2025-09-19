@@ -10,6 +10,8 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://learn.oatutors.co.uk/" />
 
+    @include('partials.meta-favicons')
+
     <link rel="stylesheet" href="{{ asset('css/search.css') }}">
 
     <!-- Open Graph / Facebook -->

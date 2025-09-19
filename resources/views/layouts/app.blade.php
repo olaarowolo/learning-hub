@@ -111,6 +111,8 @@
       border-radius: 50%;
     }
     </style>
+
+    @stack('styles')
 </head>
 <body>
     <div class="layout has-sidebar fixed-sidebar fixed-header">
@@ -122,9 +124,9 @@
         <div class="sidebar-layout">
           <div class="sidebar-header">
             <div class="pro-sidebar-logo">
-              <div>          <img src="{{ asset('favicons/logo.svg') }}" width="35px" alt="OA Tutors Logo" style="border-radius: 5px" >
+              <div h>          <img src="{{ asset('favicons/logo.svg') }}" width="35px" alt="OA Tutors Logo" style="border-radius: 5px" >
               </div>
-              <h5>Learning Hub</h5>
+              <h5><a href="/">Learning Hub</a></h5>
             </div>
           </div>
           <div class="sidebar-content">
@@ -277,6 +279,18 @@
                 <li class="menu-header" style="padding-top: 20px"><span> SITE </span></li>
 
                 <li class="menu-item">
+                  <a href="{{ route('skills.index') }}">
+                    <span class="menu-icon"><i class="ri-book-open-line"></i></span>
+                    <span class="menu-title">Skills</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="/moodle">
+                    <span class="menu-icon"><img src="{{ asset('favicons/moodle-icon.png') }}" alt="Moodle" style="width: 30px; height: 30px; filter: invert(1);"></span>
+                    <span class="menu-title">Moodle</span>
+                  </a>
+                </li>
+                <li class="menu-item">
                   <a href="#">
                     <span class="menu-icon"><i class="ri-rocket-line"></i></span>
                     <span class="menu-title">Purpose in Motion</span>
@@ -301,22 +315,59 @@
                   </a>
                 </li>
 
+                <li class="menu-header" style="padding-top: 20px"><span> ACCOUNT </span></li>
+
+                @if(Auth::check())
+                <li class="menu-item">
+                  <a href="{{ route('profile') }}">
+                    <span class="menu-icon"><i class="ri-user-line"></i></span>
+                    <span class="menu-title">Profile</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{ route('logout') }}">
+                    <span class="menu-icon"><i class="ri-logout-box-line"></i></span>
+                    <span class="menu-title">Logout</span>
+                  </a>
+                </li>
+                @else
+                <li class="menu-item">
+                  <a href="{{ route('register') }}">
+                    <span class="menu-icon"><i class="ri-user-add-line"></i></span>
+                    <span class="menu-title">Sign Up</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{ route('student.login') }}">
+                    <span class="menu-icon"><i class="ri-graduation-cap-line"></i></span>
+                    <span class="menu-title">Student Login</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{ route('tutor.login') }}">
+                    <span class="menu-icon"><i class="ri-teacher-line"></i></span>
+                    <span class="menu-title">Tutor Login</span>
+                  </a>
+                </li>
+                @endif
+
+
                 <li class="menu-header" style="padding-top: 20px"><span> LEGAL </span></li>
 
                 <li class="menu-item">
-                  <a href="#">
+                  <a href="{{ url('/legals/safeguarding') }}">
                     <span class="menu-icon"><i class="ri-shield-check-line"></i></span>
                     <span class="menu-title">Safeguarding</span>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">
+                  <a href="{{ url('/legals/privacy') }}">
                     <span class="menu-icon"><i class="ri-lock-line"></i></span>
                     <span class="menu-title">Privacy</span>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">
+                  <a href="{{ url('/legals/terms') }}">
                     <span class="menu-icon"><i class="ri-file-text-line"></i></span>
                     <span class="menu-title">Terms</span>
                   </a>

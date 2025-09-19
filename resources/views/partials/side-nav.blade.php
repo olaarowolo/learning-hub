@@ -22,7 +22,7 @@
             <div class="pro-sidebar-logo">
               <div>          <img src="{{ asset('favicons/logo.svg') }}" width="35px" alt="OA Tutors Logo" style="border-radius: 5px" >
               </div>
-              <h5>Learning Hub</h5>
+              <h5> <a href="/">Learning Hub</a> </h5>
             </div>
           </div>
           <div class="sidebar-content">
