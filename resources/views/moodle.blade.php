@@ -17,10 +17,16 @@
             <ul class="course-list">
                 @foreach ($courses as $course)
                     <li>
-                        <strong>{{ $course['fullname'] ?? 'N/A' }}</strong>
-                        @if(!empty($course['shortname']))
-                            <span class="text-muted">({{ $course['shortname'] }})</span>
-                        @endif
+                        <form method="POST" action="{{ route('moodle.enrol') }}" style="display:inline;">
+                            @csrf
+                            <input type="hidden" name="course_id" value="{{ $course['id'] ?? '' }}">
+                            <button type="submit" class="btn btn-link p-0 m-0 align-baseline">
+                                <strong>{{ $course['fullname'] ?? 'N/A' }}</strong>
+                                @if(!empty($course['shortname']))
+                                    <span class="text-muted">({{ $course['shortname'] }})</span>
+                                @endif
+                            </button>
+                        </form>
                     </li>
                 @endforeach
             </ul>
@@ -31,4 +37,3 @@
         @endif
     </div>
 @endsection
-a

@@ -42,3 +42,24 @@ class UserFactory extends Factory
         ]);
     }
 }
+
+class BlogPostFactory extends Factory
+{
+    protected $model = BlogPost::class;
+
+    public function definition()
+    {
+        return [
+            'title' => $this->faker->sentence,
+            'slug' => $this->faker->slug,
+            'excerpt' => $this->faker->paragraph,
+            'content' => $this->faker->text(500),
+            'author_id' => User::factory(),
+            'featured_image' => $this->faker->imageUrl,
+            'category' => $this->faker->word,
+            'tags' => $this->faker->words(3),
+            'reading_time' => $this->faker->numberBetween(1, 10),
+            'published_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
+        ];
+    }
+}

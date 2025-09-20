@@ -13,8 +13,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Ensure the admin user exists
+        if (!\App\Models\User::find(1)) {
+            \App\Models\User::factory()->create([
+                'id' => 1, // Ensure the admin user has ID 1
+                'name' => 'Admin User',
+                'email' => 'admin@example.com',
+                'password' => bcrypt('password'),
+            ]);
+        }
+
         $this->call([
             CourseSeeder::class,
+            BlogPostSeeder::class,
         ]);
     }
 }

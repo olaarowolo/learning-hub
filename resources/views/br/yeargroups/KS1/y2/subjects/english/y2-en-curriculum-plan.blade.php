@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 2 English - Curriculum Plan</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/y2-en-curriculum-plan.html" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/y2-en-curriculum-plan.html">
+<meta property="og:title" content="Year 2 English Curriculum Plan - Learning Hub">
+<meta property="og:description" content="Detailed curriculum plan for Year 2 English, covering phonics, reading, writing, and grammar.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/y2-en-curriculum-plan.html">
+<meta property="twitter:title" content="Year 2 English Curriculum Plan - Learning Hub">
+<meta property="twitter:description" content="Detailed curriculum plan for Year 2 English, covering phonics, reading, writing, and grammar.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/data/yeargroups/breadcrumb.css">
+    <link rel="stylesheet" href="/index.css">
+
+    <style>
+        :root {
+            --color-year-2: #2196f3; --color-year-2-light: #64b5f6;
+            --theme-color: var(--color-year-2);
+            --theme-color-light: var(--color-year-2-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        main p { margin-bottom: 1rem; }
+        main ul { padding-left: 40px; margin-bottom: 1rem; }
+        main ul li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+    </style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="year-header">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <a href="{{ route('home') }}">Home</a> > <span>Year Groups</span> > <span>KS1</span> > <a href="/data/yeargroups/KS1/y2/yr2-index.html">Year 2</a> > <a href="/data/yeargroups/KS1/y2/subjects/english/en-index.html">English</a> > <span>Curriculum Plan</span>
+        </nav>
+        <h1>Year 2 English - Curriculum Plan</h1>
+        <a href="/data/yeargroups/KS1/y2/subjects/english/en-index.html" class="back-link">← Back to English Home</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Overview</h2>
+            <p>This page outlines the curriculum plan for Year 2 English, providing a structured overview of the topics and skills to be covered throughout the year. The focus is on consolidating reading, writing, speaking, and listening skills while developing more complex sentence structures, comprehension, grammar, and spelling.</p>
+            <h3>Key Areas of Focus</h3>
+            <ul>
+                <li>Reading: Developing fluency and comprehension of short stories and non-fiction texts.</li>
+                <li>Writing: Constructing simple, compound, and more complex sentences with correct punctuation.</li>
+                <li>Grammar: Understanding and using nouns, verbs, adjectives, and adverbs.</li>
+                <li>Phonics & Spelling: Consolidating phonics knowledge and learning common exception words.</li>
+            </ul>
+            <h3>Term Breakdown</h3>
+            <ul>
+                <li><strong>Autumn Term:</strong> Reading fluency, sentence structure, grammar foundations.</li>
+                <li><strong>Spring Term:</strong> Comprehension, extended writing, grammar.</li>
+                <li><strong>Summer Term:</strong> Consolidation, imaginative writing, reading comprehension, grammar.</li>
+            </ul>
+            <h3>Resources</h3>
+            <p>For detailed weekly plans and activities, please refer to the respective term pages:</p>
+            <ul>
+                <li><a href="/data/yeargroups/KS1/y2/subjects/english/autumn/index.html">Autumn Term English</a></li>
+                <li><a href="/data/yeargroups/KS1/y2/subjects/english/spring/index.html">Spring Term English</a></li>
+                <li><a href="/data/yeargroups/KS1/y2/subjects/english/summer/index.html">Summer Term English</a></li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>

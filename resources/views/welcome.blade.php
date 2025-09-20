@@ -66,48 +66,48 @@
     <!-- KS1 -->
     <h2 id="ks1" class="ks-heading">Key Stage 1</h2>
     <div class="year-grid">
-      <a href="{{ url('/data/yeargroups/KS0/y0/yr0-index.html') }}" id="pre-school" class="year-card reception"><h2>Pre-School Ideas</h2></a>
-      <a href="{{ url('/data/yeargroups/EYFS/y0/yrR-index.html') }}" id="reception" class="year-card reception"><h2>Reception</h2></a>
-      <a href="{{ url('/data/yeargroups/KS1/y1/yr1-index.html') }}" id="year-1" class="year-card year-1"><h2>Year 1</h2></a>
-      <a href="{{ url('/data/yeargroups/KS1/y2/yr2-index.html') }}" id="year-2" class="year-card year-2"><h2>Year 2</h2></a>
+      <a href="{{ route('br.yeargroups.KS0.y0.yr0-index') }}" id="pre-school" class="year-card reception"><h2>Pre-School Ideas</h2></a>
+      <a href="{{ route('br.yeargroups.EYFS.y0.yrR-index') }}" id="reception" class="year-card reception"><h2>Reception</h2></a>
+      <a href="{{ route('br.yeargroups.KS1.y1.yr1-index') }}" id="year-1" class="year-card year-1"><h2>Year 1</h2></a>
+      <a href="{{ route('br.yeargroups.KS1.y2.yr2-index') }}" id="year-2" class="year-card year-2"><h2>Year 2</h2></a>
     </div>
 
     <!-- KS2 -->
     <h2 id="ks2" class="ks-heading">Key Stage 2</h2>
     <div class="year-grid">
-      <a href="{{ url('/data/yeargroups/KS2/y3/yr3-index.html') }}" id="year-3" class="year-card year-3"><h2>Year 3</h2></a>
-      <a href="{{ url('/data/yeargroups/KS2/y4/yr4-index.html') }}" id="year-4" class="year-card year-4"><h2>Year 4</h2></a>
-      <a href="{{ url('/data/yeargroups/KS2/y5/yr5-index.html') }}" id="year-5" class="year-card year-5"><h2>Year 5</h2></a>
-      <a href="{{ url('/data/yeargroups/KS2/y6/yr6-index.html') }}" id="year-6" class="year-card year-6"><h2>Year 6</h2></a>
+      <a href="{{ route('br.yeargroups.KS2.y3.yr3-index') }}" id="year-3" class="year-card year-3"><h2>Year 3</h2></a>
+      <a href="{{ route('br.yeargroups.KS2.y4.yr4-index') }}" id="year-4" class="year-card year-4"><h2>Year 4</h2></a>
+      <a href="{{ route('br.yeargroups.KS2.y5.yr5-index') }}" id="year-5" class="year-card year-5"><h2>Year 5</h2></a>
+      <a href="{{ route('br.yeargroups.KS2.y6.yr6-index') }}" id="year-6" class="year-card year-6"><h2>Year 6</h2></a>
     </div>
 
     <!-- KS3 -->
     <h2 id="ks3" class="ks-heading">Key Stage 3</h2>
     <div class="year-grid">
-      <a href="{{ url('/data/yeargroups/KS3/y7/yr7-index.html') }}" id="year-7" class="year-card year-7"><h2>Year 7</h2></a>
-      <a href="{{ url('/data/yeargroups/KS3/y8/yr8-index.html') }}" id="year-8" class="year-card year-8"><h2>Year 8</h2></a>
-      <a href="{{ url('/data/yeargroups/KS3/y9/yr9-index.html') }}" id="year-9" class="year-card year-9"><h2>Year 9</h2></a>
+      <a href="{{ route('br.yeargroups.KS3.y7.yr7-index') }}" id="year-7" class="year-card year-7"><h2>Year 7</h2></a>
+      <a href="{{ route('br.yeargroups.KS3.y8.yr8-index') }}" id="year-8" class="year-card year-8"><h2>Year 8</h2></a>
+      <a href="{{ route('br.yeargroups.KS3.y9.yr9-index') }}" id="year-9" class="year-card year-9"><h2>Year 9</h2></a>
     </div>
 
     <!-- KS4 -->
     <h2 id="ks4" class="ks-heading">Key Stage 4</h2>
     <div class="year-grid">
-      <a href="{{ url('/data/yeargroups/KS4/y10/yr10-index.html') }}" id="year-10" class="year-card year-10"><h2>Year 10</h2></a>
-      <a href="{{ url('/data/yeargroups/KS4/y11/yr11-index.html') }}" id="year-11" class="year-card year-11"><h2>Year 11</h2></a>
+      <a href="{{ route('br.yeargroups.KS4.y10.yr10-index') }}" id="year-10" class="year-card year-10"><h2>Year 10</h2></a>
+      <a href="{{ route('br.yeargroups.KS4.y11.yr11-index') }}" id="year-11" class="year-card year-11"><h2>Year 11</h2></a>
     </div>
 
     <!-- KS5 -->
     <h2 id="ks5" class="ks-heading">Key Stage 5</h2>
     <div class="year-grid">
-      <a href="{{ url('/data/yeargroups/KS5/y12/yr12-index.html') }}" id="year-12" class="year-card year-12"><h2>Year 12</h2></a>
-      <a href="{{ url('/data/yeargroups/KS5/y13/yr13-index.html') }}" id="year-13" class="year-card year-13"><h2>Year 13</h2></a>
+      <a href="{{ route('br.yeargroups.KS5.y12.yr12-index') }}" id="year-12" class="year-card year-12"><h2>Year 12</h2></a>
+      <a href="{{ route('br.yeargroups.KS5.y13.yr13-index') }}" id="year-13" class="year-card year-13"><h2>Year 13</h2></a>
     </div>
 
     <!-- Purpose-in-Motion -->
     <h2 id="purpose" class="ks-heading">Purpose-in-Motion™</h2>
     <div style="max-width:960px;margin:0 auto 3rem;padding:0 1rem;text-align:center;color:var(--text-light)">
       <p><strong>Purpose-in-Motion™</strong> — short blurb or link to the program page.</p>
-      <p><a href="{{ url('/data/purpose/index.html') }}" style="color:var(--primary);font-weight:700;text-decoration:underline">Learn more</a></p>
+      <p><a href="{{ url('br/yeargroups/purpose') }}" style="color:var(--primary);font-weight:700;text-decoration:underline">Learn more</a></p>
     </div>
   @endif
 </main>

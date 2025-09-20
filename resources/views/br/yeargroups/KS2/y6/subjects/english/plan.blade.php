@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 6 English - Curriculum Plan</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css"><style>
+        :root {
+            --color-year-6: #2196F3; --color-year-6-light: #64B5F6;
+            --theme-color: var(--color-year-6);
+            --theme-color-light: var(--color-year-6-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main p { margin-bottom: 1rem; }
+        .term { margin-bottom: 2rem; }
+        .term h3 { color: var(--theme-color); margin-bottom: 0.5rem; font-size: 1.4rem; }
+        .term ul { margin-left: 1rem; }
+        .term li { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="year-header">
+        <h1>Year 6 English - Curriculum Plan</h1>
+        <a href="/data/yeargroups/KS2/y6/subjects/english/en-index.html" class="back-link">← Back to English Home</a>
+    </header>
+    <main>
+        <h2>Year 6 English Curriculum Plan (UK National Curriculum - KS3)</h2>
+        <p>Year 6 English builds on KS2 skills, introducing KS3 expectations for reading, writing, and spoken language. Pupils read a range of texts, develop their writing for different purposes, and begin to analyse language and structure more deeply.</p>
+
+        <h3>Core Aims</h3>
+        <p>By the end of Year 6, pupils should be able to:</p>
+        <ul>
+            <li>Read and understand a range of fiction and non-fiction texts.</li>
+            <li>Write effectively for different audiences and purposes, using a range of structures.</li>
+            <li>Use grammar and vocabulary accurately to enhance writing.</li>
+            <li>Speak and listen confidently in formal and informal contexts.</li>
+            <li>Begin to analyse texts, identifying language techniques and author's intent.</li>
+            <li>Produce creative writing with developing characters and plots.</li>
+        </ul>
+
+        <div class="term">
+            <h3>Autumn Term</h3>
+            <p>Focus: Reading fiction and narrative writing</p>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> Introduction to KS3 English – reading comprehension and annotation.</li>
+                <li><strong>Weeks 3–4:</strong> Reading fiction – understanding plot, character, and setting.</li>
+                <li><strong>Weeks 5–6:</strong> Narrative writing – developing stories with structure.</li>
+                <li><strong>Weeks 7–8:</strong> Descriptive writing – using language for effect.</li>
+                <li><strong>Weeks 9–10:</strong> Creative writing projects – short stories and poems.</li>
+                <li><strong>Weeks 11–12:</strong> Assessment and review – reading and writing skills.</li>
+            </ul>
+        </div>
+
+        <div class="term">
+            <h3>Spring Term</h3>
+            <p>Focus: Poetry and spoken language</p>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> Poetry analysis – structure, rhyme, and imagery.</li>
+                <li><strong>Weeks 3–4:</strong> Writing poetry – original poems and forms.</li>
+                <li><strong>Weeks 5–6:</strong> Drama and performance – scripts and role-play.</li>
+                <li><strong>Weeks 7–8:</strong> Spoken language – presentations and discussions.</li>
+                <li><strong>Weeks 9–10:</strong> Media texts – analysing advertisements and short films.</li>
+                <li><strong>Weeks 11–12:</strong> Revision and assessment – poetry and speaking skills.</li>
+            </ul>
+        </div>
+
+        <div class="term">
+            <h3>Summer Term</h3>
+            <p>Focus: Non-fiction and language study</p>
+            <ul>
+                <li><strong>Weeks 1–2:</strong> Non-fiction texts – reading and evaluating articles.</li>
+                <li><strong>Weeks 3–4:</strong> Expository writing – reports and explanations.</li>
+                <li><strong>Weeks 5–6:</strong> Grammar and vocabulary – building accuracy.</li>
+                <li><strong>Weeks 7–8:</strong> Persuasive writing – arguments and opinions.</li>
+                <li><strong>Weeks 9–10:</strong> Creative non-fiction – biographies and travel writing.</li>
+                <li><strong>Weeks 11–12:</strong> End-of-year assessment – comprehensive review.</li>
+            </ul>
+        </div>
+
+        <h3>Example Weekly Detail</h3>
+        <p><strong>Week 3 (Autumn) – Understanding Character in Fiction</strong></p>
+        <p>Learning objective: Analyse how authors develop characters in stories.</p>
+        <p>Activity ideas:</p>
+        <ul>
+            <li>Read character descriptions from novels and identify traits.</li>
+            <li>Discuss how characters change throughout the story.</li>
+            <li>Write a character profile with physical and personality traits.</li>
+        </ul>
+        <p>Practice Questions:</p>
+        <ul>
+            <li>Describe a main character's appearance and actions.</li>
+            <li>Explain how dialogue reveals character personality.</li>
+            <li>Predict how a character might develop in the story.</li>
+        </ul>
+
+        <h3>Assessment</h3>
+        <ul>
+            <li><strong>End of Autumn Term:</strong> Reading comprehension and narrative writing.</li>
+            <li><strong>End of Spring Term:</strong> Poetry and spoken language assessment.</li>
+            <li><strong>End of Summer Term:</strong> Non-fiction writing and language skills.</li>
+        </ul>
+    </main>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

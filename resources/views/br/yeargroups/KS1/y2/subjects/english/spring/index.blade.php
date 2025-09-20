@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 2 English - Spring Term</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Spring term curriculum for Year 2 English, covering comprehension, narrative writing, grammar, and poetry.">
+<meta name="keywords" content="Year 2 English, Spring Term, KS1, curriculum, reading comprehension, writing, grammar, poetry">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/spring/index.html" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/spring/index.html">
+<meta property="og:title" content="Year 2 English - Spring Term - Learning Hub">
+<meta property="og:description" content="Weekly lesson plans for Year 2 English during the Spring term.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/data/yeargroups/KS1/y2/subjects/english/spring/index.html">
+<meta property="twitter:title" content="Year 2 English - Spring Term - Learning Hub">
+<meta property="twitter:description" content="Weekly lesson plans for Year 2 English during the Spring term.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+
+    <link rel="stylesheet" href="/data/yeargroups/breadcrumb.css">
+    <link rel="stylesheet" href="/index.css">
+    
+    <style>
+        :root {
+            --color-year-2: #2196f3; --color-year-2-light: #64b5f6;
+            --theme-color: var(--color-year-2);
+            --theme-color-light: var(--color-year-2-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 2.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        .week-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .week-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .week-list a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .week-list a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-shadow);
+            border-left: 4px solid var(--theme-color);
+            padding-left: calc(1.5rem - 4px);
+        }
+
+        .week-list .week-number {
+            background-color: var(--theme-color-light);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.4rem 0.7rem;
+            border-radius: 6px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .week-list li.disabled a {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        /* Floating back button */
+        .floating-back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-back-btn:hover {
+            background-color: var(--theme-color-light);
+            transform: scale(1.1);
+        }
+
+        .floating-back-btn.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .floating-back-btn:hover .close-btn {
+            display: block;
+        }
+    </style>
+<link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+    <header class="year-header">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <a href="{{ route('home') }}">Home</a> >
+            <span>Year Groups</span> >
+            <span>KS1</span> >
+            <a href="/data/yeargroups/KS1/y2/yr2-index.html">Year 2</a> >
+            <a href="/data/yeargroups/KS1/y2/subjects/english/en-index.html">English</a> >
+            <span>Spring Term</span>
+        </nav>
+        <h1>Spring Term</h1>
+        <a href="/data/yeargroups/KS1/y2/subjects/english/en-index.html" class="back-link">&larr; Back to Year 2 English</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Spring Term Weekly Content</h2>
+            <ul class="week-list">
+                <li><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week1.html" class="week-link"><span class="week-number">Week 1</span> Reading Comprehension - Who, What, Where, When</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week2.html" class="week-link"><span class="week-number">Week 2</span> Writing Narratives with Sequencing</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week3.html" class="week-link"><span class="week-number">Week 3</span> Using Conjunctions 'and' and 'because'</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week4.html" class="week-link"><span class="week-number">Week 4</span> Non-fiction Writing - Labels and Lists</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week5.html" class="week-link"><span class="week-number">Week 5</span> Non-fiction Writing - Instructions</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week6.html" class="week-link"><span class="week-number">Week 6</span> Introduction to Past and Present Tense</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week7.html" class="week-link"><span class="week-number">Week 7</span> Correct Verb Usage</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week8.html" class="week-link"><span class="week-number">Week 8</span> Poetry - Rhymes</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week9.html" class="week-link"><span class="week-number">Week 9</span> Poetry - Simple Descriptive Poems</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week10.html" class="week-link"><span class="week-number">Week 10</span> Editing Skills - Checking Spelling</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week11.html" class="week-link"><span class="week-number">Week 11</span> Editing Skills - Punctuation</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS1/y2/subjects/english/spring/week12.html" class="week-link"><span class="week-number">Week 12</span> Editing Skills - Sentence Structure</a></li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Floating Back Button -->
+    <button class="floating-back-btn" onclick="window.location.href='../en-index.html'">
+        ←
+        <button class="close-btn" onclick="event.stopPropagation(); hideButton()">×</button>
+    </button>
+
+    <script>
+        function hideButton() {
+            const btn = document.querySelector('.floating-back-btn');
+            btn.classList.add('hidden');
+        }
+    </script>
+
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = `© ${currentYear} OA Tutors`;
+    }
+  });
+</script></body>
+</html>

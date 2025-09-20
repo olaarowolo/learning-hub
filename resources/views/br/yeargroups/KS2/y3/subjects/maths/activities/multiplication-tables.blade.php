@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Year 3: Multiplication Tables — Interactive Worksheet</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+
+    <link rel="stylesheet" href="/footer.css"><style>
+:root {
+  --color-year-3: #4caf50; --color-year-3-light: #81c784;
+  --theme-color: var(--color-year-3);
+  --theme-color-light: var(--color-year-3-light);
+  --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+  --card-bg: #ffffff; --border-color: #dee2e6;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height:1.6; }
+.year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color:white; padding:2rem; text-align:center; position:relative; }
+.year-header h1 { font-size:2rem; text-shadow:1px 1px 3px rgba(0,0,0,0.2); }
+.back-link { position:absolute; top:50%; left:2rem; transform:translateY(-50%); color:white; text-decoration:none; font-weight:600; background: rgba(255,255,255,0.2); padding:0.5rem 1rem; border-radius:20px; transition: background 0.3s ease; }
+.back-link:hover { background: rgba(255,255,255,0.3); }
+.container { max-width:900px; margin:2rem auto; padding:0 2rem; }
+main { background-color: var(--card-bg); padding:2rem; border-radius:12px; box-shadow: var(--card-shadow); margin-bottom:2rem; }
+main h2 { color: var(--theme-color); margin-bottom:1rem; }
+.lesson-note { background-color: #fff3e0; border-left:5px solid #ff9800; padding:1rem; margin-bottom:2rem; border-radius:6px; }
+.lesson-note h3 { margin-bottom:0.5rem; color:#e65100; }
+.section-box { padding:12px;background:#fbfbff;border-radius:8px;border:1px solid #dfe6ff;margin-bottom:1rem; }
+input[type=text]{padding:8px;font-size:16px;border:1px solid #ccd7f8;border-radius:6px;width:60px;text-align:center;}
+button{padding:10px 14px;margin-top:10px;border:none;border-radius:6px;font-weight:600;cursor:pointer;background:var(--theme-color);color:#fff;}
+button:hover { background: var(--theme-color-light); }
+.feedback{margin-top:12px;}
+.correct{background:#e9fff0;border-left:4px solid #44b36b;padding:8px;border-radius:6px;}
+.incorrect{background:#fff1f1;border-left:4px solid #e06a6a;padding:8px;border-radius:6px;}
+.small{font-size:14px;color:#555;}
+@media (max-width:768px){
+  .year-header{padding-bottom:1rem;}
+  .back-link{position:static; transform:none; display:inline-block; margin-top:1rem;}
+}
+ul{list-style-type:disc;padding-left:2rem;margin-bottom:1rem;}
+ul li{margin-bottom:0.5rem;}
+footer{text-align:center;padding:2rem 1rem;color:var(--text-light);font-size:0.9rem;}
+</style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+<header class="year-header">
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <a href="{{ route('home') }}">Home</a> >
+  <a href="/data/yeargroups/">Year Groups</a> >
+  <a href="/data/yeargroups/KS2/">KS2</a> >
+  <a href="/data/yeargroups/KS2/y3/">Year 3</a> >
+  <a href="/data/yeargroups/KS2/y3/subjects/">Subjects</a> >
+  <a href="/data/yeargroups/KS2/y3/subjects/maths/">Maths</a> >
+  <a href="/data/yeargroups/KS2/y3/subjects/maths/activities/">Activities</a> >
+  <span>Multiplication Tables</span>
+</nav>
+<h1>Year 3 Maths: Multiplication Tables</h1>
+<a href="/data/yeargroups/KS2/y3/subjects/maths/activities/index.html" class="back-link">← Back to Activities Index</a>
+</header>
+
+<div class="container">
+
+<main>
+<h2>📘 Self-Paced Lesson Note</h2>
+<div class="lesson-note">
+<h3>Multiplication Tables Basics</h3>
+<ul>
+  <li>Multiplication is repeated addition.</li>
+  <li>Multiplication tables help us quickly calculate totals in groups.</li>
+  <li>Independent learning: try writing your own examples with everyday items.</li>
+</ul>
+<p class="small">
+Example: 3 × 4 = 12 means 3 groups of 4 items = 12 items total.
+</p>
+<p class="small">
+Key facts:
+<ul>
+  <li>Any number × 0 = 0</li>
+  <li>Any number × 1 = itself</li>
+  <li>Multiplication is commutative: 3 × 4 = 4 × 3</li>
+</ul>
+</p>
+</div>
+</main>
+
+<main>
+<h2>📝 Practice Problems</h2>
+<div class="section-box">
+1. 2 × 3 = <input type="text" id="q1" title="Answer for question 1: 2 times 3">
+</div>
+<div class="section-box">
+2. 4 × 5 = <input type="text" id="q2" title="Answer for question 2: 4 times 5">
+</div>
+<div class="section-box">
+3. 6 × 2 = <input type="text" id="q3" title="Answer for question 3: 6 times 2">
+</div>
+<div class="section-box">
+4. 3 × 7 = <input type="text" id="q4" title="Answer for question 4: 3 times 7">
+</div>
+<div class="section-box">
+5. 5 × 5 = <input type="text" id="q5" title="Answer for question 5: 5 times 5">
+</div>
+<div class="section-box">
+6. 8 × 1 = <input type="text" id="q6" title="Answer for question 6: 8 times 1">
+</div>
+<div class="section-box">
+7. 9 × 0 = <input type="text" id="q7" title="Answer for question 7: 9 times 0">
+</div>
+<div class="section-box">
+8. 2 × 6 = <input type="text" id="q8" title="Answer for question 8: 2 times 6">
+</div>
+
+<button onclick="checkAnswers()">Check Answers</button>
+<div id="feedback" class="feedback"></div>
+
+</div>
+
+<footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+
+<script>
+const answers = {
+  q1: {ans:6, expl:"2 × 3 = 6 (2 groups of 3)"},
+  q2: {ans:20, expl:"4 × 5 = 20 (4 groups of 5)"},
+  q3: {ans:12, expl:"6 × 2 = 12 (6 groups of 2)"},
+  q4: {ans:21, expl:"3 × 7 = 21 (3 groups of 7)"},
+  q5: {ans:25, expl:"5 × 5 = 25 (5 groups of 5)"},
+  q6: {ans:8, expl:"8 × 1 = 8 (any number multiplied by 1 equals itself)"},
+  q7: {ans:0, expl:"9 × 0 = 0 (any number multiplied by 0 equals 0)"},
+  q8: {ans:12, expl:"2 × 6 = 12 (2 groups of 6)"},
+};
+
+function checkAnswers(){
+  let fb = '';
+  for(let q in answers){
+    let user = document.getElementById(q).value.trim();
+    let correct = answers[q].ans;
+    if(Number(user) === correct){
+      fb += `<div class="correct">✅ Q${q.slice(1)} Correct! ${answers[q].expl}</div>`;
+    } else {
+      fb += `<div class="incorrect">❌ Q${q.slice(1)} Incorrect. ${answers[q].expl}</div>`;
+    }
+  }
+  document.getElementById('feedback').innerHTML = fb;
+}
+</script>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

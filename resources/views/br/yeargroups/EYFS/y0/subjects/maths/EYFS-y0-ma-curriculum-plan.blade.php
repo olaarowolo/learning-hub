@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Maths Plan - Reception</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css"><style>
+        :root {
+            --color-reception: #7e57c2; --color-reception-light: #9575cd;
+            --theme-color: var(--color-reception);
+            --theme-color-light: var(--color-reception-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        
+        /* Standalone page styles */
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .page-container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+
+        /* Content styles (for dynamic loading) */
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--theme-color); }
+
+        .plan-section, .assessment-section {
+            background-color: #fdfdfd;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--theme-color-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .plan-section h3, .assessment-section h3 {
+            font-size: 1.4rem;
+            color: var(--theme-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .plan-section h4, .assessment-section h4 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        .plan-section ul, .assessment-section ul {
+            padding-left: 20px;
+            list-style-type: '🎨'; /* Fun emoji bullet */
+            margin-top: 0.5rem;
+        }
+        .plan-section li, .assessment-section li {
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .vocab-list {
+            background-color: #f3e5f5; /* Light purple */
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-style: italic;
+            color: #5d4037; /* Brownish text for contrast */
+        }
+
+        .maths-plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+        .maths-plan-table th, .maths-plan-table td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .maths-plan-table thead {
+            background-color: var(--theme-color-light);
+            color: white;
+            font-weight: 600;
+        }
+        .maths-plan-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .maths-plan-table td:first-child {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+
+    <header class="year-header">
+        <nav aria-label="breadcrumb" style="position: absolute; top: 1rem; left: 50%; transform: translateX(-50%); color: white; font-size: 14px;">
+            <a href="{{ route('home') }}" style="color: white; text-decoration: none;">Home</a> >
+            <span>EYFS</span> >
+            <a href="/data/yeargroups/EYFS/y0/yrR-index.html" style="color: white; text-decoration: none;">Reception</a> >
+            <a href="/data/yeargroups/EYFS/y0/subjects/maths/ma-index.html" style="color: white; text-decoration: none;">Maths</a> >
+            <span>Plan</span>
+        </nav>
+        <h1>Early Maths Plan</h1>
+        <a href="/data/yeargroups/EYFS/y0/subjects/maths/ma-index.html" class="back-link">← Back to Early Maths</a>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <h2>📅 12-Week Early Maths Plan (Year R)</h2>
+
+            <div class="plan-section">
+                <h3>Weeks 1–3: Numbers and Counting Foundations</h3>
+                <p><strong>Focus:</strong> Counting to 5, recognising numerals 0–5.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Counting everyday objects (toys, snacks, natural items).</li>
+                    <li>Number songs/rhymes (e.g., "5 little ducks").</li>
+                    <li>Matching numerals to quantities.</li>
+                    <li>Sorting and comparing small sets (more/less, same).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">one, two, three, more, less, same, count.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 4–6: Building to 10</h3>
+                <p><strong>Focus:</strong> Numbers 6–10, ordering and comparing.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Ten frames for number recognition and counting.</li>
+                    <li>Ordering numbers on a washing line (0–10).</li>
+                    <li>Counting forwards and backwards to 10.</li>
+                    <li>Begin simple addition using objects (e.g., 3 + 2).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">first, last, next, before, after, add, altogether.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 7–9: Shapes, Space & Patterns</h3>
+                <p><strong>Focus:</strong> Shape recognition and spatial awareness.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Recognise and name 2D shapes (circle, square, triangle, rectangle).</li>
+                    <li>Explore patterns (ABAB using colours, sounds, actions).</li>
+                    <li>Building with 3D shapes (blocks, junk modelling).</li>
+                    <li>Positional language (under, next to, behind).</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">circle, square, triangle, rectangle, pattern, behind, in front.</p>
+            </div>
+
+            <div class="plan-section">
+                <h3>Weeks 10–12: Developing Number Sense</h3>
+                <p><strong>Focus:</strong> Numbers beyond 10, early problem solving.</p>
+                <h4>Activities:</h4>
+                <ul>
+                    <li>Counting to 20 with confidence.</li>
+                    <li>One more / one less games.</li>
+                    <li>Sharing and grouping (link to halving/sharing).</li>
+                    <li>Simple subtraction using real objects.</li>
+                    <li>Revisiting patterns and extending them.</li>
+                </ul>
+                <h4>Key Vocabulary:</h4>
+                <p class="vocab-list">more than, fewer than, one more, one less, double, share, half.</p>
+            </div>
+
+            <div class="assessment-section">
+                <h3>📊 Assessment & Review</h3>
+                <p><strong>Ongoing:</strong> Observe children during play and group activities.</p>
+                <h4>End of 12 Weeks: Check progress towards:</h4>
+                <ul>
+                    <li>Confident counting to 10 (and beyond).</li>
+                    <li>Recognising numerals to 10+.</li>
+                    <li>Understanding one more/less.</li>
+                    <li>Beginning to add and subtract practically.</li>
+                    <li>Recognising and using patterns.</li>
+                    <li>Using shape and positional vocabulary.</li>
+                </ul>
+            </div>
+            <table class="maths-plan-table">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Focus / Objective</th>
+                        <th>Activities</th>
+                        <th>Resources</th>
+                        <th>Vocabulary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Counting up to 3</td>
+                        <td>Count objects (toys, fingers), number songs</td>
+                        <td>Small toys, fingers, counting rhymes</td>
+                        <td>one, two, three, count</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Counting up to 5</td>
+                        <td>Match numerals 0–5 to objects; sorting into sets</td>
+                        <td>Number cards 0–5, everyday objects</td>
+                        <td>more, less, same</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Recognising numbers 0–5</td>
+                        <td>Number hunts in classroom/outdoor area</td>
+                        <td>Number cards hidden around space</td>
+                        <td>zero, before, after</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Counting to 10</td>
+                        <td>Ten frame counting; clap counting</td>
+                        <td>Ten frames, counters, clapping</td>
+                        <td>one, two… ten, altogether</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ordering numbers 1–10</td>
+                        <td>Washing line ordering; missing number game</td>
+                        <td>Number cards, string & pegs</td>
+                        <td>order, next, before, after</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Addition within 10</td>
+                        <td>Use objects to combine 2 groups (e.g., 3 + 2)</td>
+                        <td>Counters, cubes, toys</td>
+                        <td>add, altogether, total</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>2D Shape recognition</td>
+                        <td>Shape hunt indoors/outdoors; shape art</td>
+                        <td>Shape cut-outs, crayons, paper</td>
+                        <td>circle, square, triangle, rectangle</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Exploring patterns</td>
+                        <td>Make ABAB patterns with colours, sounds, actions</td>
+                        <td>Beads, coloured blocks, musical instruments</td>
+                        <td>pattern, repeat, same, different</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>3D Shapes & Position</td>
+                        <td>Build towers, describe positions (under, next to)</td>
+                        <td>Blocks, boxes, construction toys</td>
+                        <td>cube, cone, under, behind, next to</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Counting beyond 10</td>
+                        <td>Count to 20; spot numbers in environment</td>
+                        <td>Number line to 20, books, posters</td>
+                        <td>eleven, twelve… twenty</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>One more / one less</td>
+                        <td>Dice games, "What's missing?" number line</td>
+                        <td>Dice, number line 0–20</td>
+                        <td>more than, less than, one more, one less</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Sharing & simple subtraction</td>
+                        <td>Share objects equally; take away using toys</td>
+                        <td>Counters, small snacks (fruit, crackers)</td>
+                        <td>double, half, share, take away</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

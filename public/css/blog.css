@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0px; /* Reduced padding to fix content offset */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    min-height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    padding: 0; /* Fixed typo in padding property */
+    margin-bottom: 20px; /* Add bottom margin to separate cards */
+  }
+
+  .blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .blog-card .meta {
+    position: relative;
+    flex: 1 1 40%;
+    min-height: 250px;
+    overflow: hidden;
+  }
+
+  .blog-card .meta .photo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+
+  .blog-card:hover .photo {
+    transform: scale(1.08);
+  }
+
+  .blog-card .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .blog-card .details li {
+    margin: 3px 0;
+  }
+
+  .blog-card .details li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .blog-card .description {
+    flex: 1 1 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blog-card .description h1 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    color: #222;
+  }
+
+  .blog-card .description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .blog-card .read-more a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0077cc;
+    transition: color 0.3s ease;
+  }
+
+  .blog-card .read-more a:hover {
+    color: #005fa3;
+  }
+
+  /* Alternate Layout */
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 768px) {
+    .blog-card, .blog-card.alt {
+      flex-direction: column;
+    }
+    .blog-card .meta {
+      min-height: 200px;
+    }
+  }

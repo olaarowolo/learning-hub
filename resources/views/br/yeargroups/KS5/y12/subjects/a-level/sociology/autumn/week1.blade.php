@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 1: Introduction to Sociology</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css"><style>
+        .content-section {
+            margin-bottom: 2rem;
+        }
+        .assessment-details {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            background-color: #fdfdfd;
+        }
+        .assessment-details h3 {
+            color: var(--theme-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .assessment-details h4 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.25rem;
+        }
+        .assessment-details ul, .assessment-details ol {
+            padding-left: 20px;
+        }
+        .assessment-details li {
+            margin-bottom: 0.75rem;
+        }
+        .assessment-details .question-list {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        .assessment-details .sub-question {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+            margin-top: 0.5rem;
+        }
+        .solution-request {
+            background-color: #eef7f6;
+            border: 1px solid var(--theme-color-light);
+            border-left: 4px solid var(--theme-color);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .solution-request a {
+            font-weight: 600;
+            color: var(--theme-color);
+            text-decoration: none;
+        }
+        .solution-request a:hover {
+            text-decoration: underline;
+        }
+        .download-links {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .download-links a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.75rem;
+            background-color: #f1f3f5;
+            color: var(--text-dark);
+            padding: 0.85rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+        }
+        .download-links a:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .download-links a svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: var(--text-light);
+        }
+        .info-container {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .info-box {
+            background-color: #f8f9fa;
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+        }
+
+        /* Responsive title */
+        .year-header h1 {
+            font-size: 2.5rem !important;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2) !important;
+        }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 2rem !important; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem !important; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem !important; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem !important; }
+        }
+        @media (max-width: 480px) {
+            .year-header h1 { font-size: 1rem !important; }
+        }
+        @media (max-width: 360px) {
+            .year-header h1 { font-size: 0.9rem !important; }
+        }
+    .download-links a.disabled { pointer-events: none; color: gray; opacity: 0.5; }
+</style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="year-header">
+        <h1>Week 1: Introduction to Sociology</h1>
+        <a href="/data/yeargroups/KS5/y12/subjects/a-level/sociology/autumn/index.html" class="back-link">&larr; Back to Autumn Term</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Learning Objective</h2>
+            <p>Understand sociology as a subject; explore what society and culture are.</p>
+
+            <h2>Topic Introduction</h2>
+            <p>Sociology studies society, social behaviour, and social structures. Key terms: Society, Culture, Norms, Values, Socialisation.</p>
+
+            <div class="info-container">
+                <div class="info-box">
+                    <h3>Key Terms</h3>
+                    <ul>
+                        <li><strong>Society:</strong> A group of people living together with shared rules and culture.</li>
+                        <li><strong>Culture:</strong> Norms, values, beliefs, and traditions shared by a society.</li>
+                        <li><strong>Norms:</strong> Expected behaviours.</li>
+                        <li><strong>Values:</strong> Core beliefs guiding behaviour.</li>
+                        <li><strong>Socialisation:</strong> Process of learning norms and values.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>In-Class Activities</h3>
+                <ul>
+                    <li>Mind map: "What makes up a society?"</li>
+                    <li>Class discussion: Examples of norms in school vs home.</li>
+                    <li>Group activity: Identify cultural differences in a global context.</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Homework Assignments</h3>
+                <ul>
+                    <li>Read chapter on introduction to sociology.</li>
+                    <li>Write a short paragraph on why sociology is important.</li>
+                    <li>Prepare examples of norms and values from your life.</li>
+                </ul>
+            </div>
+
+            <div class="assessment-details">
+                <h3>📖 A-Level Sociology – Week 1 Assessment</h3>
+                <h4>🔹 Structure</h4>
+                <ul>
+                    <li><strong>Duration:</strong> 45–60 minutes</li>
+                    <li><strong>Format:</strong> Short-answer and quiz</li>
+                    <li><strong>Marks:</strong> 10–15 total</li>
+                    <li><strong>Focus:</strong> Key terms and definitions</li>
+                </ul>
+
+                <h3>📝 Assessment Questions</h3>
+                <ol class="question-list">
+                    <li>Define sociology. (2 marks)</li>
+                    <li>Give two examples of social norms. (2 marks)</li>
+                    <li>Explain how culture influences behaviour. (3 marks)</li>
+                    <li>What is socialisation? (2 marks)</li>
+                    <li>Describe the difference between norms and values. (3 marks)</li>
+                </ol>
+
+                <h3>✅ Marking Guidance:</h3>
+                <ul>
+                    <li>Definitions and examples (6 marks)</li>
+                    <li>Explanations and analysis (6 marks)</li>
+                </ul>
+                <p><strong>Total = 12 marks</strong></p>
+            </div>
+
+            <div class="download-links">
+                <a href="https://drive.google.com" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Access on Google Drive</span>
+                </a>
+                <a href="https://classroom.google.com" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.71,3.5,1.15,15,4.58,21,11.14,9.5Zm8.58,0L9.73,15,13.16,21,22.85,3.5ZM6,16.25,2.63,22h12.74L18.75,16.25Z"/></svg>
+                    <span>Access on Google Classroom</span>
+                </a>
+                <a href="#" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download Worksheet PDF</span>
+                </a>
+            </div>
+
+            <div class="solution-request">
+                If you are ready to request for the solution, please use this link: <a href="#" class="disabled" target="_blank" rel="noopener" tabindex="-1" aria-disabled="true">Solution Link</a>.
+            </div>
+        </main>
+    </div>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

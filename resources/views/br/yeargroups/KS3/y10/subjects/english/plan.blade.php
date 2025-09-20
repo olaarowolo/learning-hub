@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 10 English - Curriculum Plan</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css"><style>
+        main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+        main p { margin-bottom: 1rem; }
+        .term { margin-bottom: 2rem; }
+        .term h3 { color: var(--theme-color); margin-bottom: 0.5rem; font-size: 1.4rem; }
+        .term ul { margin-left: 1rem; }
+        .term li { margin-bottom: 0.5rem; }
+    </style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="year-header">
+        <h1>Year 10 English - Curriculum Plan</h1>
+        <a href="/data/yeargroups/KS3/y10/subjects/english/en-index.html" class="back-link">← Back to English Home</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Year 10 English Curriculum Plan (UK)</h2>
+            <p>Year 10 English focuses on developing analytical, creative, and formal writing skills, alongside critical reading and speaking skills. Pupils study a range of literature, non-fiction, and poetry texts, learning to write with clarity, style, and precision, preparing them for GCSE examinations.</p>
+
+            <div class="term">
+                <h3>Autumn Term</h3>
+                <ul>
+                    <li><strong>Weeks 1–2:</strong> Reading comprehension – inference, deduction, identifying themes, motifs, and viewpoints.</li>
+                    <li><strong>Weeks 3–4:</strong> Narrative writing – plot, characterisation, setting, tension, and dialogue.</li>
+                    <li><strong>Weeks 5–6:</strong> Grammar – complex sentences, relative clauses, stylistic devices, sentence variety.</li>
+                    <li><strong>Weeks 7–8:</strong> Punctuation – colons, semi-colons, brackets, dashes, inverted commas, ellipses.</li>
+                    <li><strong>Weeks 9–10:</strong> Extended narratives – climax, resolution, and suspense.</li>
+                    <li><strong>Weeks 11–12:</strong> Speaking and listening – presentations, debates, and storytelling performances.</li>
+                </ul>
+            </div>
+
+            <div class="term">
+                <h3>Spring Term</h3>
+                <ul>
+                    <li><strong>Weeks 1–2:</strong> Reading comprehension – analysing author’s purpose, viewpoint, and language techniques.</li>
+                    <li><strong>Weeks 3–4:</strong> Non-fiction writing – analytical essays, persuasive writing, formal letters, reports; focus on audience and purpose.</li>
+                    <li><strong>Weeks 5–6:</strong> Narrative writing – descriptive and imaginative writing, dialogue, paragraphing, figurative language.</li>
+                    <li><strong>Weeks 7–8:</strong> Poetry – analysis of poetic techniques, structure, rhyme, rhythm, and writing original poetry.</li>
+                    <li><strong>Weeks 9–10:</strong> Grammar – adverbs, prepositions, modal verbs, passive voice, stylistic and rhetorical devices.</li>
+                    <li><strong>Weeks 11–12:</strong> Editing and proofreading – improving grammar, punctuation, sentence variety, vocabulary, and style.</li>
+                </ul>
+            </div>
+
+            <div class="term">
+                <h3>Summer Term</h3>
+                <ul>
+                    <li><strong>Weeks 1–2:</strong> Reading comprehension – summarising, evaluating texts, comparing author techniques and viewpoints.</li>
+                    <li><strong>Weeks 3–4:</strong> Imaginative writing – narratives with plot twists, complex characters, dialogue, and descriptive language.</li>
+                    <li><strong>Weeks 5–6:</strong> Non-fiction – analytical essays, persuasive texts, formal reports, speeches, and letters.</li>
+                    <li><strong>Weeks 7–8:</strong> Creative writing – descriptive passages, diary entries, monologues, and short plays.</li>
+                    <li><strong>Weeks 9–10:</strong> Grammar and vocabulary – compound-complex sentences, figurative language, precise word choice, stylistic techniques.</li>
+                    <li><strong>Weeks 11–12:</strong> End-of-year assessment – reading fluency, comprehension, creative and non-fiction writing, grammar, punctuation, vocabulary, and analytical skills.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

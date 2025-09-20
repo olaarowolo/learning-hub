@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\MoodleService;
 use App\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Http;
 
 class CourseController extends Controller
 {
@@ -25,51 +25,18 @@ class CourseController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function moodle()
+    public function moodle(MoodleService $moodleService)
     {
-        $moodleUrl = env('MOODLE_URL', 'http://localhost');
-        $token = env('MOODLE_TOKEN');
-
-        $functionName = 'core_course_get_courses';
-        $restFormat = 'json';
-
-        $serverUrl = $moodleUrl . '/webservice/rest/server.php';
-
-        Log::info('Moodle API URL', ['url' => $serverUrl]);
-
-        $response = Http::get($serverUrl, [
-            'wstoken' => $token,
-            'wsfunction' => $functionName,
-            'moodlewsrestformat' => $restFormat,
-        ]);
-
         $courses = [];
         $error = null;
 
-        if ($response->ok()) {
-            $responseData = $response->json();
-
-            if (is_array($responseData)) {
-                // Moodle API can return 200 OK with an error payload.
-                // A successful response is an array of courses. An error is an object with an 'exception' key.
-                if (isset($responseData['exception'])) {
-                    $errorMessage = $responseData['message'] ?? 'An unknown Moodle API error occurred.';
-                    $error = 'Moodle API Error: ' . $errorMessage;
-                    Log::error('Moodle API returned an error', [
-                        'exception' => $responseData['exception'],
-                        'errorcode' => $responseData['errorcode'] ?? 'N/A',
-                        'message' => $errorMessage,
-                    ]);
-                } else {
-                    $courses = $responseData;
-                }
-            } else {
-                $error = 'Unexpected Moodle API response format.';
-                Log::warning($error, ['response' => $responseData]);
-            }
-        } else {
-            $error = 'Moodle API request failed with status code: ' . $response->status();
-            Log::error($error, ['status' => $response->status(), 'body' => $response->body()]);
+        try {
+            $courses = $moodleService->getCourses();
+        } catch (\Illuminate\Http\Client\RequestException $e) {
+            $error = 'Moodle API request failed: ' . $e->getMessage();
+            Log::error($error, ['exception' => $e]);
+        } catch (\Exception $e) {
+            $error = $e->getMessage();
         }
 
         Log::info('Moodle API response', ['courses' => $courses]);
@@ -77,7 +44,34 @@ class CourseController extends Controller
         return view('moodle', ['courses' => $courses, 'error' => $error]);
     }
 
+    /**
+     * Enrol the authenticated user in a Moodle course.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Services\MoodleService  $moodleService
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function enrol(Request $request, MoodleService $moodleService)
+    {
+        $user = $request->user();
+        $courseId = $request->input('course_id');
 
+        if (!$user) {
+            return redirect()->route('login')->with('error', 'You must be logged in to enrol.');
+        }
+
+        if (!$courseId) {
+            return redirect()->back()->with('error', 'Course ID is required for enrolment.');
+        }
+
+        try {
+            $moodleService->enrolUser($user->id, $courseId);
+            return redirect()->back()->with('success', 'You have been enrolled in the course.');
+        } catch (\Exception $e) {
+            Log::error('Failed to enrol user in Moodle course', ['user_id' => $user->id, 'course_id' => $courseId, 'error' => $e->getMessage()]);
+            return redirect()->back()->with('error', 'Failed to enrol in the course: ' . $e->getMessage());
+        }
+    }
 
     /**
      * Display the specified course.

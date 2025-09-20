@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A-Level Sociology - Year 13</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="nav-container">
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
+        <div class="nav-inner">
+            <div class="logo"><a href="/">Learning Hub</a></div>
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+        </div>
+        <nav class="mobile-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/#ks1">KS1</a></li>
+                <li><a href="/#ks2">KS2</a></li>
+                <li><a href="/#ks3">KS3</a></li>
+                <li><a href="/#ks4">KS4</a></li>
+                <li><a href="/#ks5">KS5</a></li>
+                <li><a href="/purpose/index.html">Purpose-in-Motion™</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="year-header">
+        <h1>A-Level Sociology - Year 13</h1>
+        <a href="/data/yeargroups/KS5/y13/yr13-index.html" class="back-link">← Back to Year 13 Home</a>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul id="content-links">
+                <li><a id="plan" href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/plan.html">Curriculum Plan</a></li>
+                <li><a id="autumn" href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a id="spring" href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a id="summer" href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Welcome to A-Level Sociology!</h2>
+            <p>This course covers crime & deviance, beliefs in society, and theory & methods.</p>
+            <p>Add notes, videos, exercises, and other learning materials here.</p>
+
+            <h3 class="subject-title">Curriculum Resources</h3>
+            <ul class="resource-links">
+                <li><a href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/plan.html">A-Level Sociology Curriculum Plan</a></li>
+            </ul>
+
+            <h3 class="subject-title">Term Content</h3>
+            <ul class="term-links">
+                <li><a href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/autumn/index.html">Autumn Term</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/spring/index.html">Spring Term</a></li>
+                <li class="disabled"><a href="/data/yeargroups/KS5/y13/subjects/a-level/sociology/summer/index.html">Summer Term</a></li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentArea = document.querySelector('.content');
+            const contentLinks = document.querySelectorAll('#content-links a');
+
+            contentLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const url = link.getAttribute('href');
+
+                    // Don't do anything for placeholder links
+                    if (url === '#') {
+                        event.preventDefault();
+                        return;
+                    }
+
+                    event.preventDefault(); // Prevent the browser from navigating to the link
+
+                    // Remove 'active' class from all links
+                    contentLinks.forEach(l => l.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    // Fetch the content of the linked page
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newContent = doc.querySelector('main').innerHTML;
+                            contentArea.innerHTML = newContent;
+                            contentArea.scrollIntoView({ behavior: 'smooth' });
+                        })
+                        .catch(error => {
+                            console.error('Error fetching content:', error);
+                            contentArea.innerHTML = `
+                                <div style="text-align: center; padding: 3rem 1rem;">
+                                    <h2 style="color: #d9534f; font-size: 1.8rem; margin-bottom: 1rem;">Oops! Content Not Found</h2>
+                                    <p style="margin-bottom: 1.5rem; color: var(--text-light);">We couldn't load the content for this subject. It might be under construction or the link is broken.</p>
+                                    <a href="/data/yeargroups/KS5/y13/yr13-index.html" style="display: inline-block; background-color: var(--theme-color); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600;">Back to Year 13 Home</a>
+                                </div>
+                            `;
+                        });
+                });
+            });
+        });
+    </script><script src="/nav.js" defer></script>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

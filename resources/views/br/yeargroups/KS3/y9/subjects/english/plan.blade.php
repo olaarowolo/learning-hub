@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Year 9 English Curriculum Plan</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Learning Hub by OA Tutors - Interactive educational resources for EYFS, KS1, KS2, KS3, KS4, and KS5. Discover engaging lessons, activities, and Purpose-in-Motion™ program.">
+<meta name="keywords" content="learning hub, OA Tutors, education, EYFS, KS1, KS2, KS3, KS4, KS5, curriculum, lessons, activities, Purpose-in-Motion">
+<meta name="author" content="OA Tutors">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://learn.oatutors.co.uk/" />
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learn.oatutors.co.uk/">
+<meta property="og:title" content="Learning Hub - by OA Tutors">
+<meta property="og:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="og:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://learn.oatutors.co.uk/">
+<meta property="twitter:title" content="Learning Hub - by OA Tutors">
+<meta property="twitter:description" content="Interactive educational resources for EYFS to KS5. Discover engaging lessons and Purpose-in-Motion™ program.">
+<meta property="twitter:image" content="https://learn.oatutors.co.uk/favicons/android-icon-192x192.png">
+
+<!-- Favicon Links -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/favicons/apple-icon-precomposed.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- Android Icons -->
+<link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+
+
+    <link rel="stylesheet" href="/footer.css"><!-- MS Tile Icons -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+<meta name="msapplication-square70x70logo" content="/favicons/ms-icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="/favicons/ms-icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/favicons/ms-icon-310x310.png">
+<meta name="msapplication-square310x310logo" content="/favicons/ms-icon-310x310.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"><link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/footer.css"><style>
+        :root {
+            --color-year-9: #3f51b5; --color-year-9-light: #6573c3;
+            --theme-color: var(--color-year-9);
+            --theme-color-light: var(--color-year-9-light);
+            --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+            --card-bg: #ffffff; --border-color: #dee2e6;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+        .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+        .year-header h1 { font-size: 3rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+        @media (max-width: 1200px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 992px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .year-header h1 { font-size: 1.5rem; }
+        }
+        @media (max-width: 576px) {
+            .year-header h1 { font-size: 1.2rem; }
+        }        .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+        .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        main h2 { color: var(--theme-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); }
+        main h3 { color: var(--theme-color); margin-top: 2rem; margin-bottom: 1rem; }
+        main h4 { color: var(--theme-color-light); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        main p { margin-bottom: 1rem; }
+        main ul, main ol { margin-bottom: 1rem; padding-left: 2rem; }
+        main li { margin-bottom: 0.5rem; }
+        .term-section { margin-bottom: 2rem; padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 8px; background-color: #fdfdfd; }
+        .term-section h3 { margin-top: 0; border-bottom: none; }
+        .week-detail { margin-left: 1rem; padding: 1rem; background-color: #f8f9fa; border-radius: 6px; margin-bottom: 1rem; }
+        .week-detail h4 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .assessment-section { background-color: #e8f4fd; border: 1px solid #b3d9ff; border-radius: 8px; padding: 1.5rem; margin-top: 2rem; }
+        .assessment-section h3 { color: var(--theme-color); margin-top: 0; }
+        footer { text-align: center; padding: 2rem 1rem; color: var(--text-light); font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .year-header { padding-bottom: 1rem; }
+            .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+        }
+    </style>
+<link rel="stylesheet" href="../footer.css">
+<link rel="stylesheet" href="../../../../../../footer.css">
+
+    <link rel="stylesheet" href="/footer.css"></head>
+<body>
+    <header class="year-header">
+        <h1>Year 9 English Curriculum Plan</h1>
+        <a href="/data/yeargroups/KS3/y9/subjects/english/en-index.html" class="back-link">&larr; Back to Year 9 English</a>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Year 9 English Curriculum Overview</h2>
+            <p>Year 9 English focuses on developing analytical, reading, writing, and speaking skills in preparation for GCSEs. Pupils study a broad range of fiction, non-fiction, and poetry texts, learning to write critically and creatively with clarity, accuracy, and style.</p>
+
+            <h3>🎯 Core Aims</h3>
+            <p>By the end of Year 9, pupils should be able to:</p>
+            <ul>
+                <li>Read fluently and critically, analysing and evaluating fiction, non-fiction, and poetry.</li>
+                <li>Understand and explain authorial intent, themes, viewpoints, and language techniques.</li>
+                <li>Plan, draft, edit, and refine writing for different audiences and purposes, including formal and creative styles.</li>
+                <li>Use a wide range of punctuation accurately, including colons, semi-colons, dashes, brackets, ellipses, and inverted commas.</li>
+                <li>Apply grammar confidently: nouns, verbs, adjectives, adverbs, conjunctions, prepositions, pronouns, modal verbs, relative clauses, passive/active voice, and sentence variety.</li>
+                <li>Develop a precise and sophisticated vocabulary; use context, dictionaries, and thesauruses.</li>
+                <li>Speak confidently in debates, presentations, and discussions, articulating ideas clearly and persuasively.</li>
+            </ul>
+
+            <div class="term-section">
+                <h3>📅 Autumn Term</h3>
+                <p><strong>Focus:</strong> Reading comprehension, narrative writing, grammar, and punctuation</p>
+
+                <div class="week-detail">
+                    <h4>Weeks 1–2: Reading Comprehension</h4>
+                    <p>Inference, deduction, identifying themes and viewpoints.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 3–4: Narrative Writing</h4>
+                    <p>Plot, characterisation, setting, tension, and dialogue.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 5–6: Grammar</h4>
+                    <p>Complex sentences, relative clauses, conjunctions, stylistic devices.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 7–8: Punctuation</h4>
+                    <p>Semi-colons, colons, dashes, brackets, inverted commas, ellipses.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 9–10: Writing Extended Narratives</h4>
+                    <p>Climax, resolution, and suspense.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 11–12: Speaking and Listening</h4>
+                    <p>Presentations, debates, storytelling, and drama activities.</p>
+                </div>
+            </div>
+
+            <div class="term-section">
+                <h3>📅 Spring Term</h3>
+                <p><strong>Focus:</strong> Non-fiction writing, extended analysis, comprehension, and poetry</p>
+
+                <div class="week-detail">
+                    <h4>Weeks 1–2: Reading Comprehension</h4>
+                    <p>Analysing author techniques, comparing texts, evaluating viewpoints.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 3–4: Non-fiction Writing</h4>
+                    <p>Reports, persuasive writing, formal letters, articles; using formal tone, headings, and subheadings.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 5–6: Narrative Writing</h4>
+                    <p>Descriptive writing, dialogue, plot structure, character depth.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 7–8: Poetry</h4>
+                    <p>Analysis and creation; figurative language, rhyme, rhythm, tone, and imagery.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 9–10: Grammar</h4>
+                    <p>Adverbs, prepositions, modal verbs, passive voice, sentence variety, stylistic devices.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 11–12: Editing and Proofreading</h4>
+                    <p>Refining grammar, punctuation, vocabulary, sentence structure, and style.</p>
+                </div>
+            </div>
+
+            <div class="term-section">
+                <h3>📅 Summer Term</h3>
+                <p><strong>Focus:</strong> Creative writing, analytical reading, vocabulary development, and GCSE preparation</p>
+
+                <div class="week-detail">
+                    <h4>Weeks 1–2: Reading Comprehension</h4>
+                    <p>Evaluating texts, analysing themes, tone, style, and author's purpose.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 3–4: Imaginative Writing</h4>
+                    <p>Narratives with plot twists, detailed characters, dialogue, and advanced descriptive language.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 5–6: Non-fiction Writing</h4>
+                    <p>Formal reports, persuasive texts, analytical essays, and letters.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 7–8: Creative Writing</h4>
+                    <p>Short stories, diary entries, monologues, and descriptive passages.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 9–10: Grammar and Vocabulary</h4>
+                    <p>Compound-complex sentences, figurative language, precise word choice, and stylistic techniques.</p>
+                </div>
+
+                <div class="week-detail">
+                    <h4>Weeks 11–12: End-of-year Assessment</h4>
+                    <p>Reading comprehension, creative and non-fiction writing, grammar, punctuation, vocabulary, and analytical skills.</p>
+                </div>
+            </div>
+
+            <div class="assessment-section">
+                <h3>📊 Assessment Overview</h3>
+                <ul>
+                    <li><strong>End of Autumn Term:</strong> Reading comprehension, narrative writing, grammar, punctuation, and vocabulary.</li>
+                    <li><strong>End of Spring Term:</strong> Extended writing, non-fiction texts, poetry, comprehension, and analytical skills.</li>
+                    <li><strong>End of Summer Term:</strong> Mastery check – reading fluency, comprehension, creative and non-fiction writing, grammar, punctuation, vocabulary, and preparation for GCSE-style tasks.</li>
+                </ul>
+            </div>
+
+            <h3>✏️ Example Weekly Detail</h3>
+            <div class="week-detail">
+                <h4>Week 4 (Autumn) – Writing Detailed Narratives</h4>
+                <p><strong>Learning objective:</strong> Write a narrative with well-developed characters, plot, dialogue, and figurative language.</p>
+
+                <p><strong>Activity ideas:</strong></p>
+                <ul>
+                    <li>Analyse model texts for structure, tension, and descriptive language.</li>
+                    <li>Plan narratives using storyboards or paragraph planners.</li>
+                    <li>Peer assessment – evaluate paragraphs for clarity, style, grammar, and vocabulary.</li>
+                </ul>
+
+                <p><strong>Practice Questions:</strong></p>
+                <ul>
+                    <li>Write a scene where a character faces a difficult choice.</li>
+                    <li>Include dialogue, at least one simile or metaphor, and varied sentence structures.</li>
+                    <li>Ensure accurate punctuation and paragraphing.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column">
+      <h4>About Learning Hub</h4>
+      <p>
+        Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+      </p>
+      <p id="copyright-year">© 2025 OA Tutors</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="/maths.html">Maths</a></li>
+        <li><a href="/english.html">English</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/safeguarding.html">Safeguarding</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/activities.html">Activities</a></li>
+        <li><a href="/worksheets.html">Worksheets</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Designed & Developed by <a href="https://oatutors.co.uk">OA Tutors</a>  • All Rights Reserved •  <a href="terms.html">Terms of Service</a></p> <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+  </div>
+</footer>
+<script>
+  // Dynamic copyright year
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ©  OA Tutors;
+    }
+  });
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

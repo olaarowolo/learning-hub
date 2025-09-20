@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" href="/favicons/apple-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +91,7 @@
             <div class="left"></div>
             <div class="right"></div>
           </div>
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/maths.html">Maths</a></li>
           <li class="nav-item"><a class="nav-link" href="/english.html">English</a></li>
           <li class="nav-item active"><a class="nav-link" href="/activities.html">Activities</a></li>
@@ -104,7 +104,7 @@
 
     <header>
       <nav aria-label="breadcrumb" class="breadcrumb-nav">
-        <a href="/index.html">Home</a> >
+        <a href="{{ route('home') }}">Home</a> >
         <span>Activities</span>
       </nav>
       <h1>Interactive Activities </h1>
@@ -205,7 +205,7 @@
         <div class="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="/maths.html">Maths</a></li>
             <li><a href="/english.html">English</a></li>
             <li><a href="/contact.html">Contact</a></li>

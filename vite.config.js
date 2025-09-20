@@ -9,6 +9,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/side-nav.scss',
                 'resources/js/side-nav.js',
+                'resources/css/blog.scss',
             ],
             refresh: true,
         }),

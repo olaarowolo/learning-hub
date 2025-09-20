@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Which Even or Odd Number Comes Before or After - Year 3 Maths</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Interactive activity for Year 3 students to practice identifying numbers before and after, focusing on even and odd numbers.">
+  <meta name="author" content="OA Tutors">
+  <link rel="canonical" href="https://learn.oatutors.co.uk/data/yeargroups/KS2/y3/subjects/maths/autumn/activities/before-after-even-odd.html" />
+  <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/data/yeargroups/breadcrumb.css">
+  
+  <style>
+    :root {
+      --color-year-3: #4caf50; --color-year-3-light: #81c784;
+      --theme-color: var(--color-year-3);
+      --theme-color-light: var(--color-year-3-light);
+      --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+      --card-bg: #ffffff; --border-color: #dee2e6;
+      --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+    .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+    .year-header h1 { font-size: 1.5rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+    .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: 0.3s; }
+    .back-link:hover { background-color: rgba(255, 255, 255, 0.3); }
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+    main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); margin-bottom: 2rem; }
+    .lesson-note { background-color: #fff3e0; border-left: 5px solid #ff9800; padding: 1rem; margin-bottom: 2rem; border-radius: 6px; }
+    .lesson-note h3 { margin-bottom: 0.5rem; color: #e65100; }
+    .interactive-box-container { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; }
+    @media (min-width: 768px) { .interactive-box-container { grid-template-columns: 1fr 1fr; } }
+    .interactive-box { padding: 1rem; border-radius: 6px; text-align: center; background-color: #f1f8e9; }
+    input.number-input { width: 50px; text-align: center; margin-right: 0.5rem; border: 1px solid var(--border-color); border-radius: 4px; padding: 5px; }
+    button { padding: 0.5rem 1rem; margin-top: 0.5rem; cursor: pointer; background-color: var(--theme-color); color: white; border: none; border-radius: 5px; font-weight: 600; }
+    button:hover { background-color: var(--theme-color-light); }
+    ul { list-style-type: disc; padding-left: 2rem; margin-bottom: 1rem; }
+    ul li { margin-bottom: 0.5rem; }
+  </style>
+  <link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+  <header class="year-header">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+      <a href="{{ route('home') }}">Home</a> &gt;
+      <a href="/data/yeargroups/KS2/y3/yr3-index.html">Year 3</a> &gt;
+      <a href="../../ma-index.html">Mathematics</a> &gt;
+      <a href="../index.html">Autumn Term</a> &gt;
+      <a href="index.html">Activities</a> &gt;
+      <span>Before or After Even/Odd</span>
+    </nav>
+    <h1>Which Even or Odd Number Comes Before or After?</h1>
+    <a href="index.html" class="back-link">← Back to Activities</a>
+  </header>
+
+  <div class="container">
+    <main>
+      <h2>Lesson Note</h2>
+      <div class="lesson-note">
+        <h3>Finding Numbers Before and After</h3>
+        <ul>
+          <li>Even numbers are every second number on the number line.</li>
+          <li>Odd numbers fill the gaps between even numbers.</li>
+          <li>Practice spotting numbers before and after independently.</li>
+        </ul>
+      </div>
+    </main>
+
+    <main>
+      <h2>Interactive Exercise</h2>
+      <div class="interactive-box-container" id="before-after"></div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Learning Hub</h4>
+        <p>
+          Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+        </p>
+        <p id="copyright-year">© 2025 OA Tutors</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="{{ route('home') }}">Home</a></li>
+          <li><a href="/maths.html">Maths</a></li>
+          <li><a href="/english.html">English</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/safeguarding.html">Safeguarding</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/activities.html">Activities</a></li>
+          <li><a href="/worksheets.html">Worksheets</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed & Developed by OA Tutors • All Rights Reserved • <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const numbers = [
+      { num: 10, before: 9, after: 11 },
+      { num: 25, before: 24, after: 26 },
+      { num: 38, before: 37, after: 39 },
+      { num: 42, before: 41, after: 43 },
+      { num: 59, before: 58, after: 60 },
+      { num: 66, before: 65, after: 67 },
+      { num_odd: 13, before_odd: 11, after_odd: 15 },
+      { num_odd: 31, before_odd: 29, after_odd: 33 },
+      { num_even: 22, before_even: 20, after_even: 24 },
+      { num_even: 50, before_even: 48, after_even: 52 }
+    ];
+
+    const container = document.getElementById("before-after");
+
+    numbers.forEach((item, i) => {
+      const div = document.createElement("div");
+      div.className = "interactive-box";
+      let questionHTML = '';
+
+      if (item.num) {
+        questionHTML = `What comes before and after <strong>${item.num}</strong>?<br>
+          Before: <input type="number" class="number-input" id="before-${i}" placeholder="?">
+          After: <input type="number" class="number-input" id="after-${i}" placeholder="?">`;
+      } else if (item.num_odd) {
+        questionHTML = `What odd number comes before and after <strong>${item.num_odd}</strong>?<br>
+          Before: <input type="number" class="number-input" id="before-odd-${i}" placeholder="?">
+          After: <input type="number" class="number-input" id="after-odd-${i}" placeholder="?">`;
+      } else if (item.num_even) {
+        questionHTML = `What even number comes before and after <strong>${item.num_even}</strong>?<br>
+          Before: <input type="number" class="number-input" id="before-even-${i}" placeholder="?">
+          After: <input type="number" class="number-input" id="after-even-${i}" placeholder="?">`;
+      }
+
+      div.innerHTML = `${questionHTML}
+        <button onclick="checkBA(${i})">Check</button>
+        <span id="ba-feedback-${i}" role="status" aria-live="polite"></span>`;
+      container.appendChild(div);
+    });
+
+    function checkBA(i) {
+      const item = numbers[i];
+      const feedback = document.getElementById(`ba-feedback-${i}`);
+      let isCorrect = false;
+
+      if (item.num) {
+        const beforeVal = document.getElementById(`before-${i}`).value;
+        const afterVal = document.getElementById(`after-${i}`).value;
+        isCorrect = parseInt(beforeVal) === item.before && parseInt(afterVal) === item.after;
+      } else if (item.num_odd) {
+        const beforeVal = document.getElementById(`before-odd-${i}`).value;
+        const afterVal = document.getElementById(`after-odd-${i}`).value;
+        isCorrect = parseInt(beforeVal) === item.before_odd && parseInt(afterVal) === item.after_odd;
+      } else if (item.num_even) {
+        const beforeVal = document.getElementById(`before-even-${i}`).value;
+        const afterVal = document.getElementById(`after-even-${i}`).value;
+        isCorrect = parseInt(beforeVal) === item.before_even && parseInt(afterVal) === item.after_even;
+      }
+
+      if (isCorrect) {
+        feedback.textContent = " ✅ Correct!";
+        feedback.style.color = "green";
+      } else {
+        feedback.textContent = ` ❌ Try again!`;
+        feedback.style.color = "red";
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearEl = document.getElementById('copyright-year');
+      if (yearEl) {
+        yearEl.textContent = `© ${new Date().getFullYear()} OA Tutors`;
+      }
+    });
+  </script>
+</body>
+</html>

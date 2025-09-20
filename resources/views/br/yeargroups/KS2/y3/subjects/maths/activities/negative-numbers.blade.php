@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Understand Negative Numbers - Year 3 Maths</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Interactive activity to help Year 3 students understand negative numbers.">
+  <meta name="author" content="OA Tutors">
+  <link rel="canonical" href="https://learn.oatutors.co.uk/data/yeargroups/KS2/y3/subjects/maths/autumn/activities/negative-numbers.html" />
+  <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/data/yeargroups/breadcrumb.css">
+  
+  <style>
+    :root {
+      --color-year-3: #4caf50; --color-year-3-light: #81c784;
+      --theme-color: var(--color-year-3);
+      --theme-color-light: var(--color-year-3-light);
+      --bg-color: #f8f9fa; --text-dark: #343a40; --text-light: #6c757d;
+      --card-bg: #ffffff; --border-color: #dee2e6;
+      --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; }
+    .year-header { background: linear-gradient(45deg, var(--theme-color), var(--theme-color-light)); color: white; padding: 2rem; text-align: center; position: relative; }
+    .year-header h1 { font-size: 1.5rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+    .back-link { position: absolute; top: 50%; left: 2rem; transform: translateY(-50%); color: white; text-decoration: none; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 20px; transition: background 0.3s ease; }
+    .back-link:hover { background: rgba(255, 255, 255, 0.3); }
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+    main { background-color: var(--card-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+    main h2 { color: var(--theme-color); margin-bottom: 1rem; }
+    .interactive-box { background-color: #f1f8e9; border-left: 5px solid var(--theme-color); padding: 1rem; margin-top: 1rem; border-radius: 6px; }
+    .interactive-box input { width: 60px; padding: 5px; margin: 0 5px; text-align: center; border: 1px solid var(--border-color); border-radius: 4px; }
+    button { padding: 0.5rem 1rem; margin-top: 0.5rem; cursor: pointer; background-color: var(--theme-color); color: white; border: none; border-radius: 5px; font-weight: 600; }
+    button:hover { background-color: var(--theme-color-light); }
+    @media (max-width: 768px) {
+      .year-header { padding-bottom: 4.5rem; }
+      .back-link { position: static; transform: none; display: inline-block; margin-top: 1rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="/footer.css">
+</head>
+<body>
+  <header class="year-header">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+      <a href="{{ route('home') }}">Home</a> &gt;
+      <a href="/data/yeargroups/KS2/y3/yr3-index.html">Year 3</a> &gt;
+      <a href="../../ma-index.html">Mathematics</a> &gt;
+      <a href="../index.html">Autumn Term</a> &gt;
+      <a href="index.html">Activities</a> &gt;
+      <span>Understand Negative Numbers</span>
+    </nav>
+    <h1>Understand Negative Numbers</h1>
+    <a href="index.html" class="back-link">← Back to Activities</a>
+  </header>
+
+  <div class="container">
+    <main>
+      <h2>Activity Overview</h2>
+      <p>Learn to understand and work with negative numbers. These interactive activities will help you count, compare, and solve problems involving numbers below zero.</p>
+
+      <h3>Instructions</h3>
+      <ul>
+        <li>Complete each sequence including negative numbers.</li>
+        <li>Compare numbers and identify which is smaller or larger.</li>
+        <li>Try simple addition and subtraction with negative numbers.</li>
+      </ul>
+
+      <div id="interactive-activities"></div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Learning Hub</h4>
+        <p>
+          Learning Hub provides interactive, curriculum-aligned educational resources for students in the UK. Helping children build confidence and mastery in core subjects.
+        </p>
+        <p id="copyright-year">© 2025 OA Tutors</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="{{ route('home') }}">Home</a></li>
+          <li><a href="/maths.html">Maths</a></li>
+          <li><a href="/english.html">English</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/safeguarding.html">Safeguarding</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/activities.html">Activities</a></li>
+          <li><a href="/worksheets.html">Worksheets</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact & Follow Us</h4>
+        <p>Email: <a href="mailto:info@oatutors.co.uk">info@oatutors.co.uk</a></p>
+        <p>Phone: <a href="tel:+441234567890">+44 123 456 7890</a></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed & Developed by OA Tutors • All Rights Reserved • <a href="/privacy.html">Privacy Policy</a> • <a href="/safeguarding.html">Safeguarding</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const negativeActivities = [
+      {seq:[-5, -4, -3, -2, -1], missing:[-4, -2, -1]},
+      {seq:[-10, -8, -6, -4, -2], missing:[-8, -6, -4]},
+      {seq:[-15, -10, -5, 0, 5], missing:[-10, -5, 0]},
+      {seq:[-7, -5, -3, -1, 1], missing:[-5, -3, -1]},
+      {seq:[-20, -15, -10, -5, 0], missing:[-15, -10, -5]},
+      {seq:[-3, -2, -1, 0, 1], missing:[-2, -1, 0]},
+      {seq:[-12, -9, -6, -3, 0], missing:[-9, -6, -3]},
+      {seq:[-8, -6, -4, -2, 0], missing:[-6, -4, -2]},
+      {seq:[-18, -15, -12, -9, -6], missing:[-15, -12, -9]},
+      {seq:[-25, -20, -15, -10, -5], missing:[-20, -15, -10]}
+    ];
+
+    const container = document.getElementById('interactive-activities');
+
+    negativeActivities.forEach((act, idx) => {
+      const div = document.createElement('div');
+      div.className = 'interactive-box';
+      
+      const sequenceHTML = act.seq.map((n, i) => {
+        if (act.missing.includes(n)) {
+          // Find the index of n in the original sequence to create a unique ID
+          return `<input type="text" id="act${idx}-inp${i}" aria-label="Missing number in sequence ${idx+1}">`;
+        }
+        return n;
+      }).join(', ');
+
+      div.innerHTML = `<strong>Interactive Activity ${idx+1}:</strong><br>Complete the sequence: ${sequenceHTML}
+      <button onclick="checkNegative(${idx})">Check Answers</button>
+      <p id="act${idx}-feedback" role="status" aria-live="polite"></p>`;
+      container.appendChild(div);
+    });
+
+    function checkNegative(idx){
+      const act = negativeActivities[idx];
+      let allCorrect = true;
+      
+      act.seq.forEach((num, i) => {
+        if (act.missing.includes(num)) {
+          const input = document.getElementById(`act${idx}-inp${i}`);
+          if(parseInt(input.value, 10) !== num) {
+            allCorrect = false;
+            input.style.borderColor = 'red';
+          } else {
+            input.style.borderColor = 'green';
+          }
+        }
+      });
+
+      const feedback = document.getElementById(`act${idx}-feedback`);
+      if (allCorrect) {
+        feedback.textContent = '✅ Correct!';
+        feedback.style.color = 'green';
+      } else {
+        feedback.textContent = '❌ Not quite, try again!';
+        feedback.style.color = 'red';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearEl = document.getElementById('copyright-year');
+      if (yearEl) {
+        yearEl.textContent = `© ${new Date().getFullYear()} OA Tutors`;
+      }
+    });
+  </script>
+</body>
+</html>
